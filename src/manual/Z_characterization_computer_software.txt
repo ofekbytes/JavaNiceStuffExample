@@ -1,0 +1,78 @@
+characterization computer software
+----------------------------------
+
+
+
+tic tac toe (X/0)
+-----------------
+
++--+--+--+
+| 1| 2| 3|
++--+--+--+
+| 4| 5| 6|
++--+--+--+
+| 7| 8| 9|
++--+--+--+  
+
+
+class math/english test Grade (sum of grade / sum of students) 
+** sum them up
+** average
+** boost grade (bonus + 20)
+
+
+
+----------------------------------------------------------------------------------------
+
+// Memoize
+//
+// Memoization is a way to optimize your code by having complicated functions cache their return values and reuse them for subsequent calls using the same inputs.
+//
+// Create a function called memoize, which receives a function and returns a new function which caches results for its calls.
+// Assume that the given function accepts a single numeric parameter.
+//
+// For example, given we have a function isPrime(x):
+function isPrime(x) {
+  for (var divisor = 2; divisor * divisor <= x; divisor++) {
+      if (isPrime(divisor) && x % divisor === 0 ) {
+          return true;
+      }
+  }
+  return false;
+}
+
+// We could call memoize as such:
+var cachedIsPrime = memoize(isPrime);
+// Afterwards, we expect this function to only be called once for each parameter. If it is called again, we expect to receive the same answer, from the cache.
+cachedIsPrime(4); // will return false by calling the function
+cachedIsPrime(4); // will return false again, by reading from the cache
+
+// Please define the memoize function after this line.
+// ---------------------------------------------------
+
+var arr = [];
+var arrResult = [];
+
+function  memoize (number) {
+
+   for (i=0; i < arr.length; i++) {
+   
+      //if exist show data from array + result
+   		if(number == arr[i]) {
+        document.write("false - number exist in array");
+        document.write("data reused : arrResult[i];
+    		return false;
+    	}
+      
+      //if not exist inset inside the array the value and the result
+    	else
+    	{
+      	arr.push(number);
+        arrResult(number = number *2); //complicated data        
+        return true;
+    	}
+    }
+}
+    
+
+----------------------------------------------------------------------------------------

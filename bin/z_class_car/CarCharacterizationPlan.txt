@@ -1,0 +1,27 @@
+
+A car manufacturer company had 2 lines of car types: 4x4 and Sedan.
+These car types have several implementations such as Santa-Fe and i30.
+This is how the model classes and interfaces looked like:
+
+public interface Car{
+    void park();
+    void stop();
+    void drive();
+}
+public interface 4x4 extends Car{
+    void 4WeelDrive();
+}
+public class Santa-Fe implements 4x4{
+  public void 4WeelDrive(){...}
+}
+public interface Sedan extends Car{
+    void openTrunk();
+}
+public class i30 implements Sedan{
+  void openTrunk(){..}
+}
+At some point the company decided to create a new type of car: Tuscon.
+This type of car has to have the features of both Sedan(i30) and 4x4(Santa-Fe).
+You need create and code the new Tuscon class using the classes and interfaces above.
+Note that in Java you cannot use multiple inheritance.
+

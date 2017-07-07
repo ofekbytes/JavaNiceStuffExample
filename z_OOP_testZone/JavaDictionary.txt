@@ -1,0 +1,122 @@
+
+class: every line of code in java need to be in class.
+
+variable / value types:
+byte, short, int, long, float, double, boolean
+
+
+variables Reserved words:
+abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
+boolean, do, if, private, this, break, double, implements, protected, throw,
+byte, else, import,	public,	throws, case, enum, instanceof, return, transient
+catch, extends, int	short, try, char, final, interface, static, void,
+class, finally, long, strictfp, volatile, const, float, native, super, while
+
+
+Java arithmetic operators: 
++ addition, 
+- subtraction, 
+* multiplication, 
+/ devision 
+% modulo
+
+increment
+++test; test++;
+
+decrement
+--test; test--;
+
+//prefix
+int a = 2;
+int b = ++a; // a=3, b=3
+
+//postfix
+int c = 3;
+int d = c--; // d=3 c=2
+
+ 
+logical operators - 
+; ==> semicolons
+! ==> not
+|| ==> logical OR
+&& ==> logical AND
+&  ==> logical AND
+
+
+ public - 
+ static - no need for instance of the class (static belongs to class) declare with uppercase.
+ example:
+ public static int COUNT = 0
+ 
+ final - final variable is a constant variable assigned only once; (variable with uppercase)
+ 
+ 
+ Packages -
+ packages are used to avoid name conflicts and to control access to classes
+ import package to be used in another
+ 
+  
+ CLASS -
+ class is a blue print of a object.
+ each class has a name and each is used to define attributes and behavior.
+  example:
+ attributes: name, age, gender.
+ behavior: walk, run, jump, 
+
+ 
+ Methods (function) - define the behavior.
+ method is a collection of statements that group together to perform an operation.
+ example:
+System.out.println();
+ 
+ 
+ attributes / variable declaration : declared inside the Method/s.
+// public methodExample{
+// 	private int age;	
+//	...
+//}
+ 
+ Parameters / Arguments: Values passed to a method "(b1,1)" from outside example main()
+ //methodChange(jb, 1);
+ 
+ 
+ constructor - is special methods invoked when an object is created. 
+ constructor name must be same as its class name (with no return) 
+
+
+ Object -
+
+
+ reference types -  
+ stores a reference (or address) to the memory location where data stored.
+ when you create an object using the constructor you create a reference variable
+ reference types example: Array, String  
+ -!- like pointer in c.
+
+
+ OOP - 
+ Object-Oriented-Programming.
+ programming style that intended to make thinks as close to the real world.
+ each object is an independent unit with a unique identity. 
+ *oop have: identity, attributes, behavior.
+ **oop identity - each object is an independent unit.
+ **oop attributes - describes the current state of an object
+ example: car move, phone rings.
+ **oop behavior - specific to the object type
+ 
+ 
+ OOP - there are 4 core concept in oop:
+ encapsulation, inheritance, polymorphism, abstraction.
+ 
+ 
+ 
+ 
+ =====Find More About====
+ 
+ =?= member methods 
+ 
+ 
+ 
+ 
+ 
+ 

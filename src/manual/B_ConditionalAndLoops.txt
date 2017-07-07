@@ -1,0 +1,143 @@
+//
+//
+// B Java Conditional And Loops
+//
+//
+
+
+Relational Operators: 
+ >    Greater Than
+ <    Less Than
+ ==   Equal To
+ !=   Not Equal To
+ >=   Greater Than Or Equal To
+ <=   Less Than Or Equal To
+ 
+ 
+ 
+---[if() statment]---------- 
+  
+ if (condition)
+     //execute if condition is true
+ 
+ 
+ 
+ ---[if() else statment]---------- 
+     
+ if (condition)
+     //execute if condition is true
+ else
+     //execute if condition is false
+ 
+ 
+ 
+---[if(){} else{} statment]---------- 
+ 
+  if (conditon){
+     //execute if condition is true
+ }
+ else {
+     //execute else if condition is true
+ }
+
+ 
+ ---[if(){} else if(){} else{} statment]---------- 
+ 
+  if (conditon){
+     //execute if condition is true
+ }
+ else if (conditon){
+     //execute else if condition is true
+ }
+ else if (conditon){
+     //execute else if condition is true
+ }
+else{
+    //execute else if nothing is true
+}
+
+
+ 
+---[nested if statements]----------
+ 
+if-else statement inside if-else statement
+
+ if (conditon){
+     //execute if condition is true
+     
+     if (conditon){
+        //execute if condition is true
+     }
+ }
+ else {
+     
+ }
+
+
+
+---[logical operators / statements]----------
+ !    Converts the boolean value to its right to its opposite form ie. true to false
+ &    Returns true if boolean value on the right and left are both true (Always evaluates both boolean values)
+ &&   Returns true if boolean value on the right and left are both true (Stops evaluating after first false)
+ |    Returns true if either boolean value on the right or left are true (Always evaluates both boolean values)
+ ||   Returns true if either boolean value on the right or left are true (Stops evaluating after first true)
+ ^    Returns true if there is 1 true and 1 false boolean value on the right or left
+ 
+ if (condition && condition) {}
+ if (condition || condition) {}
+ if (!(condition)
+
+
+
+---[the switch .. case statement]----------
+
+switch (expression) {
+   case value1:
+       //statments
+       break;
+   case value1:
+       //statments
+       break;
+   default: //optional 
+       //statments
+}
+
+
+
+---[while loops]----------
+
+while (not true) 
+{ 
+	//loop until it is true
+}
+
+
+
+---[do while loops]----------
+
+do  {
+
+	do it at least once;	
+	if true will be executed once	
+	if false will be executed until it will be true}
+	
+	}
+while (condition = false)
+
+
+
+---[for loops]----------
+
+for (startValue; currentValue is not the WantedValue; increment/decrement)
+{
+	do somthing;
+}
+
+
+---[break - terminates the loop]----------
+break;
+
+
+---[continue skip one loop/iteration]----------
+continue;
+

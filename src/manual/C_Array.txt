@@ -1,0 +1,100 @@
+//
+//
+// C Java Array
+//
+//
+array: an array is a collection of variables of the same type.
+
+//array name: "arr"
+//array type: int;
+int [] arr;   //define array: name: arr; type: int;
+arrCount = new int [10];   //define an object of the array, size 10;
+	
+	
+int [] arrAge = new int[5]; //define int array object, size 5
+
+
+array length (array size):
+int [] intArray = new int[7];
+
+System.out.println(intArray.length); //output 7
+
+/****
+ * "enhanced for" loop ("for each" loop) - looping the array in an easy way.
+ *  enhanced for loop One Dimensional Array/ for each loop 
+ */
+		int [] arrCount = new int[] {9,8,7,6,5,4,3,2,1,0};
+		
+		System.out.println("\n\nEnhanced For Loop (for each)");
+		System.out.println("for-each<<>>for");
+		/****
+		 * each iteration of the loop, 
+		 * the variable "i" will be equal to the corresponding elements in the array "arrCount"
+		 * "i" = "arrCount[index]"
+		 */
+		int j = 0;
+		for (int i: arrCount)
+		{
+			System.out.print(i + "<<>>" + arrCount[j] + " , ");
+			j++;		
+		}
+
+
+
+/****
+ * enhanced for loop Two Dimensional Array/ for each loop
+ */
+int [][] arrCount = new int[][] {{11,22,33}, 
+								 {21,22,23}, 
+								 {31,32,33}};
+
+System.out.println("\n\nEnhanced For Loop Two Dimensional (for each)");
+
+for (int[] i: arrCount) {
+	
+	for (int j: i) {
+		System.out.print(" " + j);				
+	}
+	System.out.println("");
+}
+
+
+
+Multidimensional Array - array that contain other arrays.
+2 dimensional array
+
+int [] arrExample {{1,2,3}, {4,5,6}.{7,8,9}};
+
+
+//
+//write to 2d array
+//
+int [][] arrExample = new int[row][col];
+
+//write to 2d array
+for (int r=0; r < arrExample.length; r++) {
+	for (int c=0 ; c < arrExample[r].length ; c++) {
+		arrExample[r][c] = r + c;
+	}
+}
+
+
+//
+//read from 2d array
+//
+
+int [][] arrExample = new int[row][col];
+
+for (int r=0; r < arrExample.length; r++) {
+	for (int c=0 ; c < arrExample[r].length; c++) {
+		System.out.println(r + "." + c + " === " + arrExample[r][c]);				
+	}
+}
+
+
+
+
+
+
+
+

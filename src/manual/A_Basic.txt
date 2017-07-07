@@ -1,0 +1,214 @@
+//
+//
+// A. Java Basic
+//
+//
+
+class: every line of code in java need to be inside a "Class".
+class "access modifiers" is public -or- default.
+   public - accessible by any other class
+      example: 
+      Public class MyPublicClass{} 
+   default: class is accessible only by classes in the same package.(left blank)
+      example: 
+      class MyDefaultClass {}
+   classes are blue prints used to design objects that contain attributes (variables) and methods (functions).
+   class is blueprint / descriptions/ definitions for an object -or for many objects.
+
+
+variable / value types:
+byte, short, int, long, float, double, boolean
+
+variable identifier = value;
+int intAge = 55;
+\\variable: "int"
+\\identifier: "intAge"
+value: "55";
+
+variables Reserved words: (cannot be used as variable 
+abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
+boolean, do, if, private, this, break, double, implements, protected, throw,
+byte, else, import,	public,	throws, case, enum, instanceof, return, transient
+catch, extends, int	short, try, char, final, interface, static, void,
+class, finally, long, strictfp, volatile, const, float, native, super, while
+
+
+Java arithmetic operators: 
++ addition, 
+- subtraction, 
+* multiplication, 
+/ devision 
+% modulo
+
+increment
+++test; test++;
+
+decrement
+--test; test--;
+
+//prefix
+int a = 2;
+int b = ++a; // a=3, b=3
+
+//postfix
+int c = 3;
+int d = c--; // d=3 c=2
+
+ 
+logical operators - 
+; ==> semicolons
+! ==> not
+|| ==> logical OR
+&& ==> logical AND
+&  ==> logical AND
+
+
+String object variable --> 
+string is a sequence of character. 
+
+String Concatenation --> String Concatenation - adding 2 string variable to create a new string variable using the + (plus operator)   	
+example:
+stFullName = stLastName + ", " + stFirstName;
+
+
+Primitive Variable To String -->
+String StringVal; 
+StringVal = Byte.toString(byte);
+StringVal = Short.toString(short);
+StringVal = Integer.toString(Integer);
+StringVal = Long.toString(long);
+StringVal = Float.toString(float);
+StringVal = Double.toString(double);
+StringVal = Boolean.toString(boolean);
+
+
+String To Primitive Variable -->
+short shortNumber = Short.parseShort(StringVal);
+byte byteNumber = Byte.parseByte(StringVal);
+int intNumber = Integer.parseInt(StringVal);
+long LongNumber = Long.parseLong(StringVal); 
+float FloatNumber = Float.parseFloat(StringVal);
+double DoubleNumber = Double.parseDouble(StringVal);
+boolean booleanNumber = Boolean.parseBoolean(StringVal); 
+
+
+Casting - cast one primitive type variable to another primitive type variable: (int)  (byte)  (short)  (long)  (double):
+
+
+
+
+ public - 
+ static - no need for instance of the class (static belongs to class) declare with uppercase.
+ example:
+ public static int COUNT = 0
+ 
+ final - final variable is a constant variable assigned only once; (variable with uppercase)
+ 
+ 
+ Packages -
+ A package is a namespace that organizes a set of related classes and interfaces.
+ packages are used to avoid name conflicts and to control access to classes
+ import package to be used in another
+ 
+  
+ CLASS -
+ A class is the blueprint from which individual objects are created.
+ class is a blue print of a object.
+ each class has a name and each is used to define attributes and behavior.
+  example:
+ attributes: name, age, gender.
+ behavior: walk, run, jump, 
+
+ 
+ Methods (function) - define the behavior.
+ method is a collection of statements that group together to perform an operation.
+ example:
+ System.out.println();
+ 
+ 
+ attributes / variable declaration : declared inside the Method/s.
+ // public methodExample{
+ // 	private int age;	
+ //	...
+ //}
+ 
+ Parameters / Arguments: Values passed to a method "(b1,1)" from outside example main()
+ //methodChange(jb, 1);
+ 
+ 
+ constructor - is special methods invoked when an object is created. 
+ constructor name must be same as its class name (with no "return" option) 
+ (Constructor is used to create a new Instance of the Class)
+ if constructors not exits it will be created by java automatically when object created. 
+ (all class has constructors)
+
+
+ Object - 
+ Object have states -and- behaviors
+ Example: Human have state (name, age) and behavior (running, sleeping, talking)
+ An object is an instance of a class.
+
+ 
+ Instance - (Instance of the class)
+ An instance is a unique copy of a Class that representing an Object. 
+ When a "new" instance of a class is created, the JVM will allocate a room of memory for that class instance.
+
+
+/**** ????
+
+test zone
+
+synonym - java class synonym ???
+
+?????
+****/
+
+ Scanner - a method to deal with user input.
+ 1. import Scanner class
+    import java.util.Scanner;
+    
+ 2. creating instance of the class
+    Scanner sc = new Scanner(System.in);
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+~~~~~   next step c_classs and object 
+copy paste
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+
+reference types -  
+stores a reference (or address) to the memory location where data stored.
+when you create an object using the constructor you create a reference variable
+reference types example: Array, String  
+-!- like pointer in c.
+
+
+ OOP - 
+ Object-Oriented-Programming.
+ programming style that intended to make thinks as close to the real world.
+ each object is an independent unit with a unique identity. 
+ *oop have: identity, attributes, behavior.
+ **oop identity - each object is an independent unit.
+ **oop attributes - describes the current state of an object
+ example: car move, phone rings.
+ **oop behavior - specific to the object type
+ 
+ 
+ OOP - there are 4 core concept in oop:
+ encapsulation, inheritance, polymorphism, abstraction.
+ 
+ 
+ 
+ 
+ =====Find More About====
+ 
+ =?= member methods 
+ 
+ 
+ 
+ 
+ 
+ 

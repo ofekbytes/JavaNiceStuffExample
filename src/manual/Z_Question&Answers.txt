@@ -1,0 +1,11 @@
+what is the difference between final finally and finalize
+https://www.javatpoint.com/difference-between-final-finally-and-finalize
+
+what is the difference between a thread and a process
+
+
+what is the difference between struct and class
+
+
+
+https://www.javatpoint.com/jdbc-driver

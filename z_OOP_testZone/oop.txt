@@ -1,0 +1,92 @@
+OOP - 
+ Object-Oriented-Programming.
+ programming style that intended to make thinks as close to the real world.
+ each object is an independent unit with a unique identity. 
+ *oop have: identity, attributes, behavior.
+ **oop identity - each object is an independent unit.
+ **oop attributes - describes the current state of an object
+ example: car move, phone rings.
+ **oop behavior - specific to the object type
+ 
+ 
+ OOP - there are 4 core concept in oop:
+ encapsulation, inheritance, polymorphism, abstraction.
+ 
+ 
+ OOP ENCAPSULATION -
+ class hidding data (variable) from other class/user using the private to do the job
+ and use public "getter" and "setters" method to modified 
+ that way we can make data validation.
+ *oop encapsulation summary:
+ **control data is access / modified. 
+ **easy to change code. 
+ **change code on one part without effecting other parts 
+ 
+ 
+ OOP INHERITANCE:
+ inheritance is the process that enables one class to acquire the properties (method and variables) of another
+ more manageable hierarchical order.
+ **subclass - The class inheriting the properties of another is the subclass (derived class -or- chiled class)
+ **superclass - the class whose properties are inherited is the superclass (base class -or- parent class)
+ to inherit from a class, use the "extends" keyword.
+
+ **subclass inherited from another class (superclass) variable and methods (non private)
+ // example: 
+ // class Animal{
+ //    protected int age;
+ //    public void food(){
+ //        System.out.println("foot 3 time a day");
+ //    }
+ // }
+ //
+ //
+ // class Cat extends Animal{
+ // Cat(){
+ //   age = 7;
+ // }
+ 
+ 
+ -!- constructors are not "member methods" and so are not inherited by subclasses.
+ -!- the constructor of the superclass is called when the subclass is instantiated
+
+ 
+// public class testA {
+//
+//	public testA() {
+//		System.out.println("testA");
+//	}
+// }
+//
+//
+// public class testB extends testA{
+//
+//	public testB() {
+//		System.out.println("testB");
+//	}
+// }
+
+// public class util {
+//
+// 	public static void main(String[] args) {
+// 	  testB tb = new testB();  instantiated of the class
+//    }
+// } 
+// 
+//  output: 
+//  testA
+//  testB
+
+
+-!- you can access the superclass from the subclass using "super" keyword
+// super.intVariable
+
+
+OOP POLYMORPHISM-
+refers to the idea of "having many forms"
+occurs when there is a hierarchy of classes related to each other through "inheritance"
+
+
+
+OOP ABSTRACTION -
+    
+ 
