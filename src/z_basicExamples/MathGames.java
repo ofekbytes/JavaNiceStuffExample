@@ -72,7 +72,25 @@ public class MathGames {
 		 *  2. create 2 argument for method/function 
 		 */
 		
-		System.out.println("\nMultiplication table");
+		System.out.println("\nMultiplication table \n");
+		
+		for (int horizontal = 0; horizontal <= count; horizontal++) {
+			if (horizontal == 0) {
+				System.out.print("   X");
+			}
+			if (horizontal > 0 && horizontal < 10) 
+				System.out.print("   " + horizontal); // 3x space/s
+
+			
+			if (horizontal >= 10)
+				System.out.print("  " + horizontal); // 2x space/s
+//			else
+//			{
+//				System.out.print(horizontal + "   ");
+//			}
+		}
+		
+		
 		for (x=1; x<=10; x++)
 		{
 			System.out.println(" ");
