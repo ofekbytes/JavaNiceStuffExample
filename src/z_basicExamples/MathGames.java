@@ -61,47 +61,55 @@ public class MathGames {
 	
 	/***
 	 * 
-	 * @param count
+	 * @param count - total number (default 10x10 = 100)
 	 */
 	public void MathMultiplicationTable(int count) {
 		
-		int x=0, y=0;
-		
-		//TODO 2 
-		/** 1. create table border 0..10 (horizontal, vertical)
-		 *  2. create 2 argument for method/function 
-		 */
-		
+
 		System.out.println("\nMultiplication table \n");
 		
-		for (int horizontal = 0; horizontal <= count; horizontal++) {
-			if (horizontal == 0) {
+		// header - 1..max
+		for (int header = 0; header <= count; header++) {
+	
+			if (header == 0) {
 				System.out.print("   X");
 			}
-			if (horizontal > 0 && horizontal < 10) 
-				System.out.print("   " + horizontal); // 3x space/s
-
 			
-			if (horizontal >= 10)
-				System.out.print("  " + horizontal); // 2x space/s
-//			else
-//			{
-//				System.out.print(horizontal + "   ");
-//			}
+//			//header 1 digit number space
+			if (header > 0 && header < 10) 
+				System.out.print("   " + header); // 3x space/s
+
+//			//header 2 digit number space
+			if (header >= 10)
+				System.out.print("  " + header); // 2x space/s
 		}
 		
 		
-		for (x=1; x<=10; x++)
+//		//table + left header
+		for (int x=1; x<=10; x++)
 		{
-			System.out.println(" ");
-			for (y=x; y<=x*10; y=y+x)
+//			//left header 
+			System.out.println("");
+			
+//			//left header 1 digit number space
+			if (x < 10)
+			  System.out.print("   " + x);
+			
+//			//left header 2 digit number space
+			if (x >= 10) 
+			  System.out.print("  " + x);
+			
+			
+//			//table MathMultiplication Table
+			for (int y=x; y<=x*10; y=y+x)
 			{
+//				//MathMultiplication Table with 1 digit space
 				if (y > 0 && y < 10) 
-					System.out.print("   " + y); // 3x space/s
+					System.out.print("   " + y); 
 	
-				
+//				//MathMultiplication Table with 2 digit space				
 				if (y >= 10)
-					System.out.print("  " + y); // 2x space/s
+					System.out.print("  " + y); 
 			}
 		}		
 		System.out.println("\n");
