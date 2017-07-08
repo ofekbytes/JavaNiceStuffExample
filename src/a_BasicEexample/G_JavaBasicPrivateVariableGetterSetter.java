@@ -48,9 +48,9 @@ public class G_JavaBasicPrivateVariableGetterSetter {
 		jbpvg.setFirstName("avi");
 		
 		//getter
-		jbpvg.getId();
-		jbpvg.getLastName();
-		jbpvg.getFirstName();
+		System.out.println(jbpvg.getId());
+		System.out.println(jbpvg.getLastName());
+		System.out.println(jbpvg.getFirstName());
 	
 	}
 	

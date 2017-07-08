@@ -16,96 +16,108 @@
 //	
 
 
-//	//constructors "JavaBasic" - if not exits will be created by java automatically when object created. (all class has constructors)
-//	public JavaBasicFull() {
-//		//super();
-//		System.out.println("constructor say i am the first");
-//	}
-//
-//	/**
-//	 * Methods examples
-//	 */
-////	method with NO parameters
-//	public void methodCalling()	{
-//		System.out.println("this is a method without parameters");
-//	}
-//
-////	method with one parameters
-//	public void methodCalling(int parameterOne){
-//		System.out.println("method with a parameters , parameterOne >> " +  parameterOne);
-//	}
-//	
-////	method + 2 parameters
-//	public void methodCalling(int parameterOne, int parameterTwo){
-//		System.out.println("method with a parameters , parameterOne >> " +  parameterOne + " , "+ parameterTwo);
-//	}
-//	
+////	//constructors "JavaBasic" - if not exits will be created by java automatically when object created. (all class has constructors)
+////	public JavaBasicFull() {
+////		//super();
+////		System.out.println("constructor say i am the first");
+////	}
+////
+////	/**
+////	 * Methods examples
+////	 */
+//////	method with NO parameters
+////	public void methodCalling()	{
+////		System.out.println("this is a method without parameters");
+////	}
+////
+//////	method with one parameters
+////	public void methodCalling(int parameterOne){
+////		System.out.println("method with a parameters , parameterOne >> " +  parameterOne);
+////	}
+////	
+//////	method + 2 parameters
+////	public void methodCalling(int parameterOne, int parameterTwo){
+////		System.out.println("method with a parameters , parameterOne >> " +  parameterOne + " , "+ parameterTwo);
+////	}
+////	
 //
 
-//	
-//	
-//	
-//	/*
-//	 * Getter , Setter
-//	 */
-//	public static int getIntCount() {
-//		return intCount;
-//	}
+
 //
-//	public static void setIntCount(int intCount) {
-//		JavaBasicFull.intCount = intCount;
-//	}
+////	
+////	
+////	
+////	/*
+////	 * Getter , Setter
+////	 */
+////	public static int getIntCount() {
+////		return intCount;
+////	}
+////
+////	public static void setIntCount(int intCount) {
+////		JavaBasicFull.intCount = intCount;
+////	}
+////
+////	public int getAge() {
+////		return age;
+////	}
+////
+////	public void setAge(int age) {
+////		this.age = age; //"this." refer to the current object.
+////	}
+////
+////	public String getStDescribe() {
+////		return StDescribe;
+////	}
+////	
+////	public void setStDescribe(String stDescribe) {
+////		StDescribe = stDescribe;
+////	}
+////	/**
+////	 * /Getter , /Setter
+////	 */
+////	
+
+
 //
-//	public int getAge() {
-//		return age;
-//	}
-//
-//	public void setAge(int age) {
-//		this.age = age; //"this." refer to the current object.
-//	}
-//
-//	public String getStDescribe() {
-//		return StDescribe;
-//	}
-//	
-//	public void setStDescribe(String stDescribe) {
-//		StDescribe = stDescribe;
-//	}
-//	/**
-//	 * /Getter , /Setter
-//	 */
-//	
-//	
-////	"Math" class "Math.method"
-//	public void MathMethod()
-//	{
-//		
-//		System.out.println("\nMath.method: ");
-//		System.out.println("Math.abs(10) ==> " + Math.abs(10)); //10
-//		System.out.println("Math.abs(10) ==> " + Math.abs(-20)); //20
-//		
-//		System.out.println("Math.ceil(3.23) ==> " + Math.ceil(3.23)); //4
-//		System.out.println("Math.floor(-3.23) ==> " + Math.floor(3.23)); //3
-//		
-//		System.out.println("Math.max(3,7) ==> " + Math.max(3,7)); //7
-//		System.out.println("Math.min(5,3) ==> " + Math.min(5,3)); //3
-//		
-//		System.out.println("Math.pow(3,2) ==> " + Math.pow(3,2)); //9.0
-//		
-//		//Math.method more example
-//		//Math.sqrt(), Math.sin(), Math.cos(), Math.PI(), Math.random()
-//		
-//	}
-//	
+////	
+//////	"Math" class "Math.method"
+////	public void MathMethod()
+////	{
+////		
+////		System.out.println("\nMath.method: ");
+////		System.out.println("Math.abs(10) ==> " + Math.abs(10)); //10
+////		System.out.println("Math.abs(10) ==> " + Math.abs(-20)); //20
+////		
+////		System.out.println("Math.ceil(3.23) ==> " + Math.ceil(3.23)); //4
+////		System.out.println("Math.floor(-3.23) ==> " + Math.floor(3.23)); //3
+////		
+////		System.out.println("Math.max(3,7) ==> " + Math.max(3,7)); //7
+////		System.out.println("Math.min(5,3) ==> " + Math.min(5,3)); //3
+////		
+////		System.out.println("Math.pow(3,2) ==> " + Math.pow(3,2)); //9.0
+////		
+////		//Math.method more example
+////		//Math.sqrt(), Math.sin(), Math.cos(), Math.PI(), Math.random()
+////		
+////	}
+////	
+
+
+
 ////1>>	reference type	
 //	static void methodChange (JavaBasicFull j) {
 //		j.setAge(333);
 //	}
 //	
+
+
 //	public static void BIP(){
 //		System.out.print(" bip ");
 //	}
-//	
+//
+
+
 //	//main method (function) with String Array parameters
 //	public static void main(String[] args) {
 //		

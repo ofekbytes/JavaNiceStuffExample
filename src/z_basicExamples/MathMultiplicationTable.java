@@ -66,7 +66,6 @@ public class MathMultiplicationTable {
 	{	
 		MathMultiplicationTable mt = new MathMultiplicationTable();
 		mt.MathMultiplicationTable (20); //10 = 10x10; 20=20x20
-
 	}
 
 }

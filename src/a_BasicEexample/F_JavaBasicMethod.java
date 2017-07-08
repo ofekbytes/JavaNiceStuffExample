@@ -35,17 +35,19 @@ public class F_JavaBasicMethod {
 	}
 	
 	
-	//public generalDeteals(String firstName, String MiddelName, String LastName, int identificationCard)
+
 	public void generalDeteals(int id)
 	{
 		System.out.println("id number: " + id);
 	}
+
 	
 	public void generalDeteals(int id, String lastName)
 	{
 		System.out.println("id number: " + id + " LastName: " + lastName);
 	}
 
+	
 	public void generalDeteals(int id, String lastName, String FirstName)
 	{
 		System.out.println("id number: " + id + " LastName: " + lastName + " FirstName: " + FirstName);

@@ -48,38 +48,42 @@
 ////	}
 //
 
+
+////
+////	
+////	/*
+////	 * Getter , Setter
+////	 */
+////	public static int getIntCount() {
+////		return intCount;
+////	}
+////
+////	public static void setIntCount(int intCount) {
+////		JavaBasic.intCount = intCount;
+////	}
+////
+////	public int getAge() {
+////		return age;
+////	}
+////
+////	public void setAge(int age) {
+////		this.age = age; //"this." refer to the current object.
+////	}
+////
+////	public String getStDescribe() {
+////		return StDescribe;
+////	}
+////	
+////	public void setStDescribe(String stDescribe) {
+////		StDescribe = stDescribe;
+////	}
+////	/**
+////	 * /Getter , /Setter
+////	 */
+////	
 //
-//	
-//	/*
-//	 * Getter , Setter
-//	 */
-//	public static int getIntCount() {
-//		return intCount;
-//	}
-//
-//	public static void setIntCount(int intCount) {
-//		JavaBasic.intCount = intCount;
-//	}
-//
-//	public int getAge() {
-//		return age;
-//	}
-//
-//	public void setAge(int age) {
-//		this.age = age; //"this." refer to the current object.
-//	}
-//
-//	public String getStDescribe() {
-//		return StDescribe;
-//	}
-//	
-//	public void setStDescribe(String stDescribe) {
-//		StDescribe = stDescribe;
-//	}
-//	/**
-//	 * /Getter , /Setter
-//	 */
-//	
+
+
 //	
 //	
 ////1>>	//reference type 	
@@ -89,12 +93,18 @@
 //	//	j.setAge(333);
 //	}
 //	
+
+
+
 //	public static void BIP(){
 //		System.out.print(" bip ");
 //	}
 //
 //	
-//	
+//
+
+
+
 //	//main method (function) with String Array parameters
 //	public static void main(String[] args) {
 //		//variable
@@ -126,15 +136,24 @@
 //		System.out.println("\nStatic int intCount === " + jb.intCount);	  		   
 //		
 //		
-//		//object to Math class example
-//		MathMethod m = new MathMethod();
-//		
-//		//prefix/postfix (increment/decrement)
-//		m.methodPrePostFix();
-//		
-//		//random number
-//		m.GenerateRandomNumber(66);
-//		
+
+//
+////		//object to Math class example
+////		MathMethod m = new MathMethod();
+
+
+////		
+////		//prefix/postfix (increment/decrement)
+////		m.methodPrePostFix();
+//
+
+////		
+////		//random number
+////		m.GenerateRandomNumber(66);
+////
+//
+
+
 //		
 //		//object to class with static
 //		counter c1 = new counter();
