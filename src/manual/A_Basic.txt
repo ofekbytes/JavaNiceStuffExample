@@ -25,6 +25,19 @@ int intAge = 55;
 \\identifier: "intAge"
 value: "55";
 
+
+[Variable / Attributes]
+boolean true/false.
+Byte   (8 bit / 1 byte)  <number> == -128 <--> 127
+Short  (16 bit / 2 byte) <number> == -32768 <--> 32767
+int    (32 bit / 4 byte) <number> == -2147483648 <--> 2147483647
+Long   (64 bit / 8 byte) <number> == -9223372036854775808 <--> 9223372036854775807
+char   (16 bit / 2 byte) <unicode> 
+Float  (32 bit / 4 byte) <bit decimal> == 1.4E-45 <--> 3.4028235E38
+Double (64 bit / 8 byte) <bit decimal> == 4.9E-324 <--> 1.7976931348623157E308
+
+
+
 variables Reserved words: (cannot be used as variable 
 abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
 boolean, do, if, private, this, break, double, implements, protected, throw,
@@ -106,7 +119,7 @@ Casting - cast one primitive type variable to another primitive type variable: (
  
  
  Packages -
- A package is a namespace that organizes a set of related classes and interfaces.
+ A package is a "name space" that organizes a set of related classes and interfaces.
  packages are used to avoid name conflicts and to control access to classes
  import package to be used in another
  

@@ -150,6 +150,9 @@ public class A_javaBasicVariable {
         intCount++;
         System.out.println("Calling static variable: intCount++ : "  + intCount);
         
+	}
+}
+
 /********************
  * 
  * variables Reserved words - cannot be used as variable identifier (variable name)
@@ -162,5 +165,17 @@ public class A_javaBasicVariable {
  * 
  ********************/
 				
-	}
-}
+/***
+ * 
+ *  [Variable / Attributes]
+ *  
+ *  boolean true/false.
+ *  Byte   (8 bit / 1 byte)  <number> == -128 <--> 127
+ *  Short  (16 bit / 2 byte) <number> == -32768 <--> 32767
+ *  int    (32 bit / 4 byte) <number> == -2147483648 <--> 2147483647
+ *  Long   (64 bit / 8 byte) <number> == -9223372036854775808 <--> 9223372036854775807
+ *  char   (16 bit / 2 byte) <unicode> 
+ *  Float  (32 bit / 4 byte) <bit decimal> == 1.4E-45 <--> 3.4028235E38
+ *  Double (64 bit / 8 byte) <bit decimal> == 4.9E-324 <--> 1.7976931348623157E308
+ *   
+**/

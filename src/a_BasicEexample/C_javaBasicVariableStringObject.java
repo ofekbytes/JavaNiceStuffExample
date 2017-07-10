@@ -44,7 +44,7 @@ public class C_javaBasicVariableStringObject {
 	 */
 	public void StringConcatenation() {
 		
-		//Declare String Varibale and assing then a string value
+		//Declare String variable and assign then a string value
 		String stFullName ="", stFirstName = "yaki", stLastName="yak";
 		
 		//String Concatenation - adding 2 string variable to create a new string variable using the + (plus operator)  

@@ -8,6 +8,14 @@ what is the difference between struct and class
 
 
 
+the first thing that run in the program
+
+what is running first when you declare static
+
+what good static
+
+variable static
+
 
 
 https://www.javatpoint.com/jdbc-driver

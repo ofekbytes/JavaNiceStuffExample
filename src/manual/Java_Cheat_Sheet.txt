@@ -3,58 +3,42 @@
 Java Cheat Sheet
 
 
-[Variable / Attributes]
-Variable / Atributes:
-Byte  (8 bit / 1 byte) == -128 <--> 127
-Short (16 bit / 2 byte) == -32768 <--> 32767
-int   (32 bit / 4 byte) == -2147483648 <--> 2147483647
-Long  (64 bit / 8 byte)  == -9223372036854775808 <--> 9223372036854775807
-char  (16 bit / 2 byte) unicode  == -32768 <--> 32767  
-char / Character (16 bit / 2 byte)  decimal == 2 
-Float (32 bit / 4 byte) == 1.4E-45 <--> 3.4028235E38
-Double (64 bit / 8 byte) == 4.9E-324 <--> 1.7976931348623157E308
+
+JRE:
+JAVA Runtime Enviro​ nment
+
+JDK: 
+JAVA Develo​ pment Kit
+
+bytecode:  
+interm​ ediate level long
+
+compiler: 
+JAVA -> Bytecode
+
+Java Runtime:  
+bytecode -> machine
+
+native compiler:
+directly to machine
 
 
 
-Commands
- \n new line
- \t tab
- \" "
- \' '
- \\ \
 
-
-Do - While loop
-do {
-​ ​ //codes
-} while (condi​ tion);
-Encaps​ ulation
+Encaps​ulation:
 public user can see
 private hide from user
-For Loop List
-int mylist = {100,200,300,400};
-for(int item = 0; item< mylist.le​ ngth; iterm++){
-Swap
-​ //codes
-int temp = e1; }
-e1 = e2; for(int item mylist) {
-e2 = temp;
-​ //codes
-}
-While loop
-while(condition) { Abbrev​ iation //codes JVM JAVA Virtual Machine
-} JRE JAVA Runtime Enviro​ nment
-JDK JAVA Develo​ pment Kit
-bytecode interm​ ediate level long
-compiler JAVA -> Bytecode
-Java Runtime bytecode -> machine
-native compiler directly to machine
+
+
+
+
 For Loop Array
 string word = "Hello";
 for (char c: word.t​ oCh​ arA​ rra​ y()){
 ​ ​ ​ ​ sys​ tem.ou​ t.p​ rin​ tln()
 ​ ​ ​ ...
 }
+
 Array
 int[] mylist = new int[2]
 Class
@@ -71,3 +55,11 @@ int[] mylist = {100, 200}
 }
 *public A = default, run automatic
 *public void B = need call
+
+
+
+
+
+
+
+
