@@ -51,6 +51,9 @@ public class B_javaBasicVariableMath {
 	 **********/
 	public void JavaArithmeticOperators()
 	{
+		
+		System.out.println("\nJava Arithmetic Operators\n");
+		
 		System.out.println("6 + 2 = " + (6 + 2));
 		System.out.println("6 - 2 = " + (6 - 2));
 		System.out.println("6 * 2 = " + (6 * 2));
@@ -59,13 +62,112 @@ public class B_javaBasicVariableMath {
 	}
 	
 	
+	
+	/**
+	 * 
+	 * Java Arithmetic Operators Shorthand
+	 * +=   -=   *=   /=   %=   
+	 * 
+	 */
+	public void JavaArithmeticOperatorsShorthand(int number)
+	{
+		System.out.println("\nJava Arithmetic Operators Short hand\n");
+		System.out.println("number = " + number);
+		
+		// +=
+		System.out.println(" number ("+ number +") += 2 ==> " + (number += 2));
+		
+		// -=
+		System.out.println(" number ("+ number +") -= 3 ==> " + (number -= 3));
+
+		// *=
+		System.out.println(" number ("+ number +") *= 2 ==> " + (number *= 2));		
+
+		// /=
+		System.out.println(" number ("+ number +") /= 5 ==> " + (number /= 5));
+		
+		// %=
+		System.out.println(" number ("+ number +") %= 2 ==> " + (number %= 2));
+		
+		//\n
+		System.out.print("\n");
+		
+		// number++
+		System.out.println(" number ("+ number +") ++ ==> " + (number++));
+		
+		// ++number
+		System.out.println(" number ("+ number +") ++ ==> " + (++number));
+		
+		// number--
+		System.out.println(" number ("+ number +") -- ==> " + (number--));
+		
+		// --number
+		System.out.println(" number ("+ number +") -- ==> " + (--number));
+
+	}
+
+	
+	
+	/**
+	 * 
+	 * Java Arithmetic Operators Shorthand
+	 * 
+	 */
+	public void JavaArithmeticOperatorsShorthand2(int number)
+	{
+		System.out.printf("\n\nJava Arithmetic Operators Short hand\n");
+		System.out.printf("number = " + number);
+		
+		// +=
+		System.out.printf("\n (%3d) number += 2 == %3d ", number, (number += 2));
+		
+		// -=
+		System.out.printf("\n (%3d) number -= 3 == %3d ", number, (number -= 3));
+
+		// *=
+		System.out.printf("\n (%3d) number *= 2 == %3d ", number, (number *= 2));		
+
+		// /=
+		System.out.printf("\n (%3d) number /= 5 == %3d ", number, (number /= 5));
+		
+		// %=
+		System.out.printf("\n (%3d) number %%= 2 == %3d ", number, number %2); //"%%" = $"
+		
+		
+		System.out.printf("\n");
+
+		// number++
+		System.out.printf("\n (%3d)  number++ == %3d ", number, number++ );
+		
+		// ++number
+		System.out.printf("\n (%3d)  ++number == %3d ", number, ++number );
+		
+		// number--
+		System.out.printf("\n (%3d)  number-- == %3d ", number, number-- );
+
+		// --number		
+		System.out.printf("\n (%3d)  --number == %3d ", number, --number );
+		
+		System.out.printf("\n");
+	}
+	
+	
 	//main method
 	public static void main(String[] args) {
-		//object
+//		//object
 		B_javaBasicVariableMath b = new B_javaBasicVariableMath();
+		
+//		//JavaArithmetic Operators
 		b.JavaArithmeticOperators();
+		
+//		//method Pre Post Fix
 		b.methodPrePostFix();
 		
+		//Java Arithmetic Operators Shor thand
+		b.JavaArithmeticOperatorsShorthand(10);
+		
+		//printf()  data sorting
+		b.JavaArithmeticOperatorsShorthand2(8);
 	}
 
 }
