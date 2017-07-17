@@ -103,6 +103,33 @@ public class Example1 {
 				System.out.print(stArray2D[x][y] + " , ");
 			}
 		}
+
+		
+		String stText = "test";
+		char [] letter;
+		System.out.printf("\n\nstText.length() ==> " +  stText.length());
+		letter = stText.toLowerCase().toCharArray();
+		
+		System.out.println();
+		
+		for (int i=0; i<letter.length; i++){
+			System.out.print(" . " + letter[i]);
+		}
+		
+		
+		System.out.println("");
+		for(char ch: letter) {
+			System.out.print(" " + ch);
+		}
+		
+		
+		int idx = letter.length - 1;
+		System.out.println("\n\nidx == " + idx + "   \n");
+		
+		
+		for (; idx >= 0 ; idx--) {
+			System.out.print(letter[idx] + "  ");
+		}
 		
 //		System.out.println("enhanced for loop / for each loop");
 //		for (String [] stX : stArray2D) {
