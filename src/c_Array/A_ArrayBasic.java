@@ -198,6 +198,34 @@ public class A_ArrayBasic {
 	
 	
 	
+	public void printUpsideDown(String stName) {
+		
+		char ch[];
+		
+		ch = stName.toLowerCase().toCharArray();
+		
+		System.out.println("the Name is= " + stName);
+		
+		System.out.println("\nNormal print");
+		for (char chText : ch) {
+			System.out.print(chText + " ");
+		}
+		
+		
+		System.out.println("\n\nupside down");
+		
+		int idx = ch.length-1;
+		for ( ; idx >= 0 ; idx-- ) {
+			System.out.print(ch[idx] + "");
+		}
+		
+//		TODO: Yak it
+		//System.out.println("\n"+ch);
+		
+	}
+	
+	
+	
 	/****
 	 * enhanced for loop Two Dimensional Array/ for each loop
 	 */
@@ -346,6 +374,10 @@ public class A_ArrayBasic {
 		
 //		//enhanced for loop Two Dimensional Array/ for each loop
 //		getEnhancedForLoopTwoDimensionalArray();
+		
+		
+//		//print Upside Down
+		printUpsideDown("text me");
 		
 //		//read fixed 2d array
 //		ReadMultidimensionalArray();

@@ -1,0 +1,65 @@
+
+
+Java Cheat Sheet
+
+
+
+JRE:
+JAVA Runtime Enviro​ nment
+
+JDK: 
+JAVA Develo​ pment Kit
+
+bytecode:  
+interm​ ediate level long
+
+compiler: 
+JAVA -> Bytecode
+
+Java Runtime:  
+bytecode -> machine
+
+native compiler:
+directly to machine
+
+
+
+
+Encaps​ulation:
+public user can see
+private hide from user
+
+
+
+
+For Loop Array
+string word = "Hello";
+for (char c: word.t​ oCh​ arA​ rra​ y()){
+​ ​ ​ ​ sys​ tem.ou​ t.p​ rin​ tln()
+​ ​ ​ ...
+}
+
+Array
+int[] mylist = new int[2]
+Class
+mylist[0] = 100;
+public class ABCD {
+mylist[1] = 200;
+​ ​ ​ ​ public A () {
+int[] mylist = {100, 200}
+​ ​ ​ ​ ​ ​ ​ ​ ​ //codes
+​ ​ ​ }
+​ ​ ​ ​ public void B() {
+​ ​ ​ ​ ​ ​ ​ ​ ​ //codes
+​ ​ ​ }
+}
+*public A = default, run automatic
+*public void B = need call
+
+
+
+
+
+
+
+
