@@ -63,7 +63,7 @@ public class A_ArrayBasic {
 	public void ArrayOneDimensionalChangeValue2(int arrayIndex, int ArrayValue)
 	{
 		
-		System.out.println("\n change value with try..catch validation");
+		System.out.println("\n change value with try..catch..finally validation");
 		
 		//check if the value we wish to change is array valid
 		try{
@@ -335,7 +335,7 @@ public class A_ArrayBasic {
 //		ArrayOneDimensionalWrite(); //1D
 //		ArrayOneDimensionalRead();  //1D
 //		ArrayOneDimensionalChangeValue(8,223); //1D with if validation check 
-//		ArrayOneDimensionalChangeValue2(8,223); //1D with try..catch validation check
+//		ArrayOneDimensionalChangeValue2(8,223); //1D with try..catch..finally validation check
 
 		
 //		//1D String array
