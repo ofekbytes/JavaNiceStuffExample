@@ -150,6 +150,8 @@ public class A_javaBasicVariable {
         intCount++;
         System.out.println("Calling static variable: intCount++ : "  + intCount);
         
+        System.out.println("PI == " + PI);
+        
 	}
 }
 
