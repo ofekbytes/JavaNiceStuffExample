@@ -24,14 +24,16 @@ public class C_javaBasicVariableStringObject {
 	 * escaped characters
 	 * 
 	 **********/
-	private char b = '\b'; //backSpace
-	private char ff = '\f'; //formFeed
-	private char lf = '\n'; //lineFeed
-	private char cr = '\r'; //carriageReturn
-	private char ht = '\t';  //horizontalTab
-	private char dq = '\"'; //doubleQuote
-	private char sq = '\''; //singleQuote
-	private char bs = '\\'; //backSlash
+	
+	//constant
+	private static final char b = '\b'; //backSpace
+	private static final char ff = '\f'; //formFeed
+	private static final char lf = '\n'; //lineFeed
+	private static final char cr = '\r'; //carriageReturn
+	private static final char ht = '\t';  //horizontalTab
+	private static final char dq = '\"'; //doubleQuote
+	private static final char sq = '\''; //singleQuote
+	private static final char bs = '\\'; //backSlash
 
 	
 	
@@ -159,6 +161,50 @@ public class C_javaBasicVariableStringObject {
 				
 				
 	
+	public void TextFormatingPrintF() 
+	{
+		byte byteNumber = 1;
+		short shortNumber = 21;
+		int intNumner = 321;
+		long longNumber = 54321;
+		float floatNumber = 12.32F;
+		double doubleNumber = 1234.432;
+		char ch = 'A';
+		String [] stText = {"this", "is", "some", "text"};
+		int [] number = {22,33,1,44,55,433,22,334,223,4444};
+		
+		
+		/****
+		 * 
+		 *	printf()
+		 *
+		 * 	% [flags] [width] [.precision] conversion-character
+		 * 
+		 * [flag]
+		 *  -  : left alignment (default alignment)
+		 *  +  : output a plus ( + ) or minus ( - ) sign for a numerical value
+		 *  0  : forces numerical values to be zero-padded ( default is blank padding ) 
+		 *  ,  : comma grouping separator (for numbers > 1000)
+		 *  ' '  : space will display a minus sign if the number is negative or a space if it is positive
+		 *   
+		 *   
+		 *   [width]
+		 *   
+		 *   
+		 *   [.precision]
+		 *   
+		 */
+		
+		System.out.println("\nprintf(\"byte  =  %-,5d \\n\" ,byteNumber);");
+		System.out.println("% [flags] [width] [.precision] conversion-character");
+		System.out.printf("byte  =  %-,5d \n" ,byteNumber);
+		System.out.printf("short =  %-,5d \n" ,shortNumber);
+		System.out.printf("int   =  %,5d \n" ,intNumner);
+		System.out.printf("long  =  %,5d \n" ,longNumber);
+		System.out.printf("char  =  %-5c \n" ,ch);
+	}
+	
+	
 	public static void main(String[] args) {
 		
 		C_javaBasicVariableStringObject c = new C_javaBasicVariableStringObject();
@@ -175,6 +221,7 @@ public class C_javaBasicVariableStringObject {
 		//Casting Numbers
 		c.CastingNumbers();
 		
+		c.TextFormatingPrintF();
 	}
 
 }

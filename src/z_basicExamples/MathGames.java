@@ -131,7 +131,7 @@ public class MathGames {
 		
 		mt.MathConnectionPanel(9);
 		
-		mt.MathMultiplicationTable(20);
+		mt.MathMultiplicationTable(10);
 	}
 
 }

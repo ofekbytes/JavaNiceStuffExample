@@ -1,0 +1,30 @@
+rtf
+---
+
+//**main java 8
+https://docs.oracle.com/javase/8/
+
+
+//*api
+https://docs.oracle.com/javase/8/docs/api/index.html
+http://docs.oracle.com/javase/8/javafx/api/toc.htm
+
+
+//* api - math
+https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+
+
+
+//*doc
+https://docs.oracle.com/javase/8/docs/index.html
+https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
+
+//** tutorial
+http://docs.oracle.com/javase/tutorial/
+https://docs.oracle.com/javase/tutorial/
+
+
+//*Lesson: Numbers and Strings 
+https://docs.oracle.com/javase/tutorial/java/data/index.html
+
+
