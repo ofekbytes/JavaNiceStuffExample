@@ -163,22 +163,26 @@ public class C_javaBasicVariableStringObject {
 	
 	public void TextFormatingPrintF() 
 	{
-		byte byteNumber = 1;
+		byte byteNumber = -1;
 		short shortNumber = 21;
 		int intNumner = 321;
 		long longNumber = 54321;
 		float floatNumber = 12.32F;
 		double doubleNumber = 1234.432;
 		char ch = 'A';
-		String [] stText = {"this", "is", "some", "text"};
-		int [] number = {22,33,1,44,55,433,22,334,223,4444};
+		String welcome = "good morning";
 		
+		String [] stText = {"this", "is", "some", "text"};
+		int [] number = {62,73,81,64,55,43,92,54,63,74};
+				
+
 		
 		/****
 		 * 
 		 *	printf()
 		 *
-		 * 	% [flags] [width] [.precision] conversion-character
+		 *  printf(" % [flags] [width] [.precision] conversion-character
+		 * 
 		 * 
 		 * [flag]
 		 *  -  : left alignment (default alignment)
@@ -189,19 +193,74 @@ public class C_javaBasicVariableStringObject {
 		 *   
 		 *   
 		 *   [width]
+		 *   Specifies the field width for outputting the argument.
 		 *   
 		 *   
 		 *   [.precision]
+		 *   Specifies the floating-point values or the length
+		 *   
+		 *   
+		 *   conversion-character
+		 *   d : decimal integer [byte, short, int, long] 
+		 *   f : floating-point number [float, double] 
+		 *   c : character Capital C will uppercase the letter 
+		 *   s : String Capital S will uppercase all the letters in the string 
+		 *   h : hashcode A hashcode is like an address. This is useful for printing a reference 
+		 *   n : newline Platform specific newline character- use %n instead of \n for greater compatibility
 		 *   
 		 */
 		
 		System.out.println("\nprintf(\"byte  =  %-,5d \\n\" ,byteNumber);");
 		System.out.println("% [flags] [width] [.precision] conversion-character");
-		System.out.printf("byte  =  %-,5d \n" ,byteNumber);
-		System.out.printf("short =  %-,5d \n" ,shortNumber);
-		System.out.printf("int   =  %,5d \n" ,intNumner);
-		System.out.printf("long  =  %,5d \n" ,longNumber);
-		System.out.printf("char  =  %-5c \n" ,ch);
+		
+		// bytes/ short/ int/ long/ === %d 
+		System.out.printf("byte  =  %10d \n" ,byteNumber);
+		System.out.printf("short =  %10d \n" ,shortNumber);
+		System.out.printf("int   =  %10d \n" ,intNumner);
+		System.out.printf("long  =  %10d \n" ,longNumber);
+		System.out.printf("long  =  %,10d \n" ,longNumber);
+
+		
+		// bytes/ short/ int/ long/ === %d
+		System.out.printf("byte  =  %,-10d \n" ,byteNumber);
+		System.out.printf("short =  %,-10d \n" ,shortNumber);
+		System.out.printf("int   =  %,-10d \n" ,intNumner);
+		System.out.printf("long  =  %,-10d \n" ,longNumber);
+		
+
+		// bytes/ short/ int/ long/ === %d
+		System.out.printf("byte  =  %,010d \n" ,byteNumber);
+		System.out.printf("short =  %,010d \n" ,shortNumber);
+		System.out.printf("int   =  %,010d \n" ,intNumner);
+		System.out.printf("long  =  %,010d \n" ,longNumber);
+
+		
+		// char === %c
+		System.out.printf("char  =  %-10c \n" ,ch);
+		
+		
+		// float / float ===  %f
+		System.out.printf("float  =  %-,10.5f \n" ,floatNumber);
+		System.out.printf("double =  %-,10.5f \n" ,doubleNumber);
+		
+		
+		System.out.printf("String = %s %n         to you", welcome);
+		
+		System.out.printf("%n");
+		for (String  StringOutput: stText) {
+			System.out.printf("%10s", StringOutput);
+		}
+		
+		
+		//int [] number = {62,73,81,64,55,43,92,54,63,74};
+		String StFormat = "";
+		//formating
+		for (int i=0; i < number.length; i++) {
+			StFormat = StFormat.format("%nid: %-3d  ,value: %-5d ", i ,number[i]);
+			System.out.printf("%s" ,StFormat);
+		}
+
+		
 	}
 	
 	
