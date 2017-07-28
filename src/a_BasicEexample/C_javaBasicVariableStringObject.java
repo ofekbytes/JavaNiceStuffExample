@@ -175,7 +175,7 @@ public class C_javaBasicVariableStringObject {
 		String [] stText = {"this", "is", "some", "text"};
 		int [] number = {62,73,81,64,55,43,92,54,63,74};
 				
-
+		String StFormat = "";
 		
 		/****
 		 * 
@@ -252,14 +252,13 @@ public class C_javaBasicVariableStringObject {
 		}
 		
 		
-		//int [] number = {62,73,81,64,55,43,92,54,63,74};
-		String StFormat = "";
-		//formating
+
+		//formating - String.format()
 		for (int i=0; i < number.length; i++) {
 			StFormat = StFormat.format("%nid: %-3d  ,value: %-5d ", i ,number[i]);
 			System.out.printf("%s" ,StFormat);
 		}
-
+		
 		
 	}
 	
