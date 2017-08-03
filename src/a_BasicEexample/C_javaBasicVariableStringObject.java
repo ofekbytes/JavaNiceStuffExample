@@ -244,8 +244,8 @@ public class C_javaBasicVariableStringObject {
 		System.out.printf("double =  %-,10.5f \n" ,doubleNumber);
 		
 		
-		System.out.printf("String = %s %n         to you", welcome);
-		
+		System.out.printf("%nString = %s %n         to you", welcome);
+		System.out.printf("%nString = %S %n         to you", welcome);
 		System.out.printf("%n");
 		for (String  StringOutput: stText) {
 			System.out.printf("%10s", StringOutput);
@@ -254,11 +254,20 @@ public class C_javaBasicVariableStringObject {
 		
 
 		//formating - String.format()
+		//game score:
+		StFormat = StFormat.format("%n  index    value");
+		System.out.printf("%s",StFormat);
+
+		StFormat = StFormat.format("%n+---------+---------+/");
+		System.out.printf("%s",StFormat);
+	
 		for (int i=0; i < number.length; i++) {
-			StFormat = StFormat.format("%nid: %-3d  ,value: %-5d ", i ,number[i]);
+			StFormat = StFormat.format("%n|  %05d  |   %05d |/", (i+1) ,number[i]);
 			System.out.printf("%s" ,StFormat);
 		}
 		
+		StFormat = StFormat.format("%n+---------+---------+/");
+		System.out.printf("%s",StFormat);
 		
 	}
 	
