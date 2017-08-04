@@ -1,3 +1,7 @@
+/***
+ * view - GUI - Graphic User Interface
+ */
+
 
 package z_example_mvc_calc;
 
