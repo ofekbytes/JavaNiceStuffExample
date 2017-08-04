@@ -202,21 +202,25 @@ public class A_ArrayBasic {
 		
 		char ch[];
 		
+		//take the String "stName" and assign it to char array "ch[]".
 		ch = stName.toLowerCase().toCharArray();
 		
+		//print the String
 		System.out.println("the Name is= " + stName);
 		
-		System.out.println("\nNormal print");
+		//Print the char array (letter by letter)
+		System.out.println("\nprint ch array (letter by letter) ");
 		for (char chText : ch) {
 			System.out.print(chText + " ");
 		}
 		
 		
-		System.out.println("\n\nupside down");
+		System.out.println("\n\nprint ch array upside down");
 		
+		//Print the char array (letter by letter) upside down
 		int idx = ch.length-1;
 		for ( ; idx >= 0 ; idx-- ) {
-			System.out.print(ch[idx] + "");
+			System.out.print(ch[idx] + " ");
 		}
 		
 //		TODO: Yak it
