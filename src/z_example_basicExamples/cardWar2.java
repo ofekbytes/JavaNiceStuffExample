@@ -1,6 +1,6 @@
 package z_example_basicExamples;
 
-public class cardWar {
+public class cardWar2 {
 	
 	//card value (1-14)
 	private static final int j = 10; //jack
@@ -143,12 +143,31 @@ public class cardWar {
 	}
 	
 	
+	public int test(int name)
+	{
+		
+		return 0;
+	}
+	
 	
 	public int solution(String cardsOfPlayerA, String cardsOfPlayerB) {
 		int win = 0;
 		char [] chA;
 		char [] chB;
+		int  [] test = new int [cardsOfPlayerA.length()]; 
+		
+		for (int i=0; i < cardsOfPlayerA.length(); i++) {
+			if (Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString()) > 0 && Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString()) < 10) {
+				test[i] = Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString());				
+			}
 
+
+			
+			System.out.println(cardsOfPlayerA.subSequence(i, i+1));
+			System.out.println(">> " + test[i]);
+		}
+		
+		
 		if ((cardsOfPlayerA == null) ||  
 			(cardsOfPlayerB == null) || 
 			(cardsOfPlayerA.length() == 0) || 
@@ -166,8 +185,13 @@ public class cardWar {
 		
 		chA = cardsOfPlayerA.toLowerCase().toCharArray();
 		chB = cardsOfPlayerB.toLowerCase().toCharArray();
-			
-			
+
+		
+//		test[0] = (int) chA[0];
+//		test[1] = (int) chB[0];
+//		System.out.println("int = " + test[0] + " \n " + test[1]);
+
+		
 		//if player 1 have more or equal total of card as player 2  
 		if (cardsOfPlayerA.length() >= cardsOfPlayerB.length()){
 			setTotalGameRounds(cardsOfPlayerA.length()); 
@@ -195,8 +219,8 @@ public class cardWar {
 	
 	public static void main(String[] args) {
 
-		cardWar cw = new cardWar();
-		int win = cw.solution("91a","23J");
+		cardWar2 cw = new cardWar2();
+		int win = cw.solution("12a","23J");
 		//System.out.println("\winner result = " + win);
 	    System.out.println("\n\n--The-End--");    
 	}
