@@ -129,10 +129,10 @@ public class cardWar {
 		intPlayer1 = fncharToInt(chPlayer1);
 		intPlayer2 = fncharToInt(chPlayer2);
 		
-		if (intPlayer1 < intPlayer2) {
+		if (intPlayer1 > intPlayer2) {
 			setPlayer1();
 		}
-		else if (intPlayer1 > intPlayer2) {
+		else if (intPlayer1 < intPlayer2) {
 			setPlayer2();
 		}
 		
@@ -146,8 +146,8 @@ public class cardWar {
 	
 	public int solution(String cardsOfPlayerA, String cardsOfPlayerB) {
 		int win = 0;
-		char [] chA;
-		char [] chB;
+		char [] chPlayerA;
+		char [] chPlayerB;
 
 		if ((cardsOfPlayerA == null) ||  
 			(cardsOfPlayerB == null) || 
@@ -164,24 +164,24 @@ public class cardWar {
 		System.out.println("Player #2 cards: " + cardsOfPlayerB);
 		
 		
-		chA = cardsOfPlayerA.toLowerCase().toCharArray();
-		chB = cardsOfPlayerB.toLowerCase().toCharArray();
+		chPlayerA = cardsOfPlayerA.toLowerCase().toCharArray();
+		chPlayerB = cardsOfPlayerB.toLowerCase().toCharArray();
 			
 			
 		//if player 1 have more or equal total of card as player 2  
-		if (cardsOfPlayerA.length() >= cardsOfPlayerB.length()){
-			setTotalGameRounds(cardsOfPlayerA.length()); 
-			for (int index = 0; index < cardsOfPlayerA.length(); index++) {
-				fnCheckWin(chA[index], chB[index]);
+		if (chPlayerA.length >= chPlayerB.length){
+			setTotalGameRounds(chPlayerA.length); 
+			for (int index = 0; index < chPlayerA.length; index++) {
+				fnCheckWin(chPlayerA[index], chPlayerB[index]);
 			}
 				
 		}
 		else
 		{
 			//if player 2 have more total of card then player 1
-			for (int index = 0; index < cardsOfPlayerB.length(); index++) {
-				setTotalGameRounds(cardsOfPlayerB.length());
-				fnCheckWin(chA[index], chB[index]);
+			for (int index = 0; index < chPlayerB.length; index++) {
+				setTotalGameRounds(chPlayerB.length);
+				fnCheckWin(chPlayerA[index], chPlayerB[index]);
 			}
 			
 		}
@@ -196,7 +196,7 @@ public class cardWar {
 	public static void main(String[] args) {
 
 		cardWar cw = new cardWar();
-		int win = cw.solution("91a","23J");
+		int win = cw.solution("91q","23j");
 		//System.out.println("\winner result = " + win);
 	    System.out.println("\n\n--The-End--");    
 	}

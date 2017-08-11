@@ -16,9 +16,16 @@ public class cardWar2 {
 	private static int TotalGameRounds = 0;
 	
 	
-	private void setTotalGameRounds(int number) {
+	//total game - find the minimum card available. 
+	private void setTotalGameRounds(String player1, String player2) {
 		
-		TotalGameRounds=number;		
+		if (player1.length() <= player2.length()) {
+			TotalGameRounds = player1.length();
+		}
+		else
+		{
+			TotalGameRounds = player2.length();
+		}
 	}
 	
 	private int getTotalGameRounds() {
@@ -69,56 +76,6 @@ public class cardWar2 {
 	}
 
 		
-	public int fncharToInt(char character)
-	{
-		int charToNumber=0;
-		
-		switch (character) {
-		case '1':
-			charToNumber = 1;
-			break;
-		case '2':
-			charToNumber = 2;
-			break;
-		case '3':
-			charToNumber = 3;
-			break;
-		case '4':
-			charToNumber = 4;
-			break;
-		case '5':
-			charToNumber = 5;
-			break;
-		case '6':
-			charToNumber = 6;
-			break;
-		case '7':
-			charToNumber = 7;
-			break;
-		case '8':
-			charToNumber = 8;
-			break;
-		case '9':
-			charToNumber = 9;
-			break;
-		case 'j': //prince
-			charToNumber = 10;
-			break;
-		case 'q': //queen
-			charToNumber = 11;
-			break;
-		case 'k': //king
-			charToNumber = 12;
-			break;
-		case 'a': //ace
-			charToNumber = 13;
-			break;			
-		default: //space or other value
-			charToNumber = 0;
-		}
-		
-		return charToNumber;
-	}
 	 
 	
 	public int fnCheckWin(char chPlayer1, char chPlayer2) {
@@ -126,9 +83,7 @@ public class cardWar2 {
 		int intPlayer1=0;
 		int intPlayer2=0;
 		
-		intPlayer1 = fncharToInt(chPlayer1);
-		intPlayer2 = fncharToInt(chPlayer2);
-		
+	
 		if (intPlayer1 < intPlayer2) {
 			setPlayer1();
 		}
@@ -143,74 +98,75 @@ public class cardWar2 {
 	}
 	
 	
-	public int test(int name)
-	{
+	//convert character from smaller to bigger
+	public char chConvert(char charSource){
+		char charTarget = charSource;
 		
-		return 0;
+		switch (charSource) 
+		{
+			case j:
+				charSource = 'a';
+				break;
+			case q:
+				charSource = 'b';
+				break;			
+			case k:
+				charSource = 'c';
+				break;
+			case a:
+				charSource = 'd';
+				break;
+			default:
+				charSource = '0';
+		}
+		
+		return charTarget;
 	}
 	
 	
 	public int solution(String cardsOfPlayerA, String cardsOfPlayerB) {
 		int win = 0;
-		char [] chA;
-		char [] chB;
-		int  [] test = new int [cardsOfPlayerA.length()]; 
+		char [] chPlayerA;
+		char [] chPlayerB;
+ 
 		
-		for (int i=0; i < cardsOfPlayerA.length(); i++) {
-			if (Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString()) > 0 && Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString()) < 10) {
-				test[i] = Integer.parseInt(cardsOfPlayerA.toLowerCase().subSequence(i, i+1).toString());				
-			}
 
-
-			
-			System.out.println(cardsOfPlayerA.subSequence(i, i+1));
-			System.out.println(">> " + test[i]);
-		}
+		setTotalGameRounds(cardsOfPlayerA,cardsOfPlayerB);
 		
+		if (getTotalGameRounds() == 0) 
+			return win;
 		
-		if ((cardsOfPlayerA == null) ||  
-			(cardsOfPlayerB == null) || 
-			(cardsOfPlayerA.length() == 0) || 
-			(cardsOfPlayerB.length() == 0)) 
-		{
-			
-			System.out.println("\nError: player #1 or player #2 without any playing cards");
-			
-			return 0;
-		}
+		//display player cards
 		System.out.println("-----");
 		System.out.println("Player #1 cards: " + cardsOfPlayerA);
 		System.out.println("Player #2 cards: " + cardsOfPlayerB);
 		
 		
-		chA = cardsOfPlayerA.toLowerCase().toCharArray();
-		chB = cardsOfPlayerB.toLowerCase().toCharArray();
+		//split the string to char so we can view the cards one by one
+		chPlayerA = cardsOfPlayerA.toLowerCase().toCharArray();
+		chPlayerB = cardsOfPlayerB.toLowerCase().toCharArray();
 
 		
-//		test[0] = (int) chA[0];
-//		test[1] = (int) chB[0];
-//		System.out.println("int = " + test[0] + " \n " + test[1]);
-
+		//TODO think on converting character (by value) j=a, q=b, k=c, a=d
 		
-		//if player 1 have more or equal total of card as player 2  
-		if (cardsOfPlayerA.length() >= cardsOfPlayerB.length()){
-			setTotalGameRounds(cardsOfPlayerA.length()); 
-			for (int index = 0; index < cardsOfPlayerA.length(); index++) {
-				fnCheckWin(chA[index], chB[index]);
-			}
-				
-		}
-		else
-		{
-			//if player 2 have more total of card then player 1
-			for (int index = 0; index < cardsOfPlayerB.length(); index++) {
-				setTotalGameRounds(cardsOfPlayerB.length());
-				fnCheckWin(chA[index], chB[index]);
-			}
+		
+		for (int index=0; index < getTotalGameRounds(); index++) {
 			
+			//convert - because we working with char 'a' is small then 'k'
+			chPlayerA[index] = chConvert (chPlayerA[index]);
+			chPlayerB[index] = chConvert (chPlayerB[index]);
+			if (chPlayerA[index] > chPlayerB[index]) {
+				setPlayer1();
+			}
+			else
+			{
+				setPlayer2();
+			}
 		}
 		
+
 		win = getTotalGameScore();
+		
 		
 		return win;
 	}
@@ -220,8 +176,8 @@ public class cardWar2 {
 	public static void main(String[] args) {
 
 		cardWar2 cw = new cardWar2();
-		int win = cw.solution("12a","23J");
-		//System.out.println("\winner result = " + win);
+		int win = cw.solution("14j","23kd");
+		System.out.println("\n winner result = " + win);
 	    System.out.println("\n\n--The-End--");    
 	}
 
