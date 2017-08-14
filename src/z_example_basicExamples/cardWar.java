@@ -15,6 +15,18 @@ public class cardWar {
 	private static int playerTwoTotalScore = 0;
 	private static int TotalGameRounds = 0;
 	
+	//total game - find the minimum card available. 
+	private void setTotalGameRounds(String player1, String player2) {
+		
+		
+		if (player1.length() <= player2.length()) {
+			TotalGameRounds = player1.length();
+		}
+		else
+		{
+			TotalGameRounds = player2.length();
+		}
+	}
 	
 	private void setTotalGameRounds(int number) {
 		
@@ -149,16 +161,22 @@ public class cardWar {
 		char [] chPlayerA;
 		char [] chPlayerB;
 
-		if ((cardsOfPlayerA == null) ||  
-			(cardsOfPlayerB == null) || 
-			(cardsOfPlayerA.length() == 0) || 
-			(cardsOfPlayerB.length() == 0)) 
-		{
-			
-			System.out.println("\nError: player #1 or player #2 without any playing cards");
-			
+	
+		
+		if (cardsOfPlayerA == null || cardsOfPlayerB == null) {
+			System.out.println("Error: no Card available (NULL)");
 			return 0;
 		}
+	
+		//get total cards
+		setTotalGameRounds(cardsOfPlayerA,cardsOfPlayerB);
+		
+		if (getTotalGameRounds() == 0) {
+			System.out.println("Error: no Card available (0 Cards)");
+			return win;
+		}		
+	
+			
 		System.out.println("-----");
 		System.out.println("Player #1 cards: " + cardsOfPlayerA);
 		System.out.println("Player #2 cards: " + cardsOfPlayerB);
@@ -167,38 +185,56 @@ public class cardWar {
 		chPlayerA = cardsOfPlayerA.toLowerCase().toCharArray();
 		chPlayerB = cardsOfPlayerB.toLowerCase().toCharArray();
 			
+		for (int index=0; index < getTotalGameRounds(); index++) {
+			fnCheckWin(chPlayerA[index], chPlayerB[index]);
+		}	
 			
-		//if player 1 have more or equal total of card as player 2  
-		if (chPlayerA.length >= chPlayerB.length){
-			setTotalGameRounds(chPlayerA.length); 
-			for (int index = 0; index < chPlayerA.length; index++) {
-				fnCheckWin(chPlayerA[index], chPlayerB[index]);
-			}
-				
-		}
-		else
-		{
-			//if player 2 have more total of card then player 1
-			for (int index = 0; index < chPlayerB.length; index++) {
-				setTotalGameRounds(chPlayerB.length);
-				fnCheckWin(chPlayerA[index], chPlayerB[index]);
-			}
-			
-		}
-		
 		win = getTotalGameScore();
 		
 		return win;
 	}
 	
 	
-	
+
 	public static void main(String[] args) {
 
 		cardWar cw = new cardWar();
-		int win = cw.solution("91q","23j");
-		//System.out.println("\winner result = " + win);
+		//int win = cw.solution("91q","23j");
+		cw.crashingTestZone();
 	    System.out.println("\n\n--The-End--");    
 	}
 
+	
+	
+	private void crashingTestZone()
+	{
+		cardWar ctz1 = new cardWar();
+		int ctzResult1 = ctz1.solution(null,null); //#1# NULL argument test
+
+		ctz1.setPlayer12(0);
+		cardWar ctz2 = new cardWar();
+		int ctzResult2 = ctz2.solution("",""); //#2# empty  test
+
+		ctz2.setPlayer12(0);
+		cardWar ctz3 = new cardWar();
+		int ctzResult3 = ctz3.solution("12k3","21j3"); //#3# simple  test
+		
+		ctz3.setPlayer12(0);
+		cardWar ctz4 = new cardWar();
+		int ctzResult4 = ctz4.solution("12k","21j2"); //#3# game count = 3
+		
+		ctz4.setPlayer12(0);
+		cardWar ctz5 = new cardWar();
+		int ctzResult5 = ctz5.solution("12K3","21"); //#3# game count = 3		
+	}
+	
+
+	
+	private void setPlayer12(int newValue) 
+	{
+		playerOneTotalScore = 0;
+		playerTwoTotalScore = 0;
+		TotalGameRounds = 0;
+	}
+	
 }
