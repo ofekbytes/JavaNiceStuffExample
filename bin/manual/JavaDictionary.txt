@@ -2,6 +2,25 @@
 class: every line of code in java need to be in class.
 
 
+JRE:
+JAVA Runtime Enviro​ nment
+
+JDK: 
+JAVA Develo​ pment Kit
+
+bytecode:  
+interm​ ediate level long
+
+compiler: 
+JAVA -> Bytecode
+
+Java Runtime:  
+bytecode -> machine
+
+native compiler:
+directly to machine
+
+
 Value Type:
 A Value Type stores its contents in memory allocated on the stack. 
 When you created a Value Type, a single space in memory is allocated to store the value and 
@@ -179,7 +198,9 @@ meaning that objects are instances of classes, which typically also determine th
  
  =?= member methods 
  
- 
+ //
+ //
+ //TODO: Java Dictionary.txt should summering of all the subjects and topics
  
  
  

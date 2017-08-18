@@ -2,7 +2,7 @@ package d_ClassAndObjects;
 
 /**
  * 
- * Object Oriented Programming (oop) - 
+ * Object Oriented Programming (OOP) - 
  *
  */
 public class A_OOP {
