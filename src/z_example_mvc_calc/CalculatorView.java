@@ -49,7 +49,7 @@ public class CalculatorView extends JFrame{
 		TextFirstNumber = new JTextField();
 		TextFirstNumber.setText("");
 		TextFirstNumber.setHorizontalAlignment(SwingConstants.CENTER);
-		TextFirstNumber.setBounds(10, 14, 50, 20); //x, y, width, height
+		TextFirstNumber.setBounds(10, 20, 50, 20); //x, y, width, height
 		TextFirstNumber.setFont(new Font("Dialog", Font.BOLD, 12));
 		TextFirstNumber.setToolTipText("Enter First Number");
 		
@@ -57,28 +57,28 @@ public class CalculatorView extends JFrame{
 		LabelMathSign = new JLabel();
 		LabelMathSign.setText("+");
 		LabelMathSign.setHorizontalAlignment(SwingConstants.CENTER);
-		LabelMathSign.setBounds(64, 14, 16, 20);
+		LabelMathSign.setBounds(64, 20, 16, 20);
 		LabelMathSign.setFont(new Font("dialog",Font.BOLD,12));
 		
 		
 		TextSecondNumber = new JTextField();
 		TextSecondNumber.setText("");
 		TextSecondNumber.setHorizontalAlignment(SwingConstants.CENTER);
-		TextSecondNumber.setBounds(84,14,50,20);
+		TextSecondNumber.setBounds(84,20,50,20);
 		TextSecondNumber.setFont(new Font("dialog",Font.BOLD,12));
 		
 		
 		ButtonCalculate = new JButton();
 		ButtonCalculate.setText("Calculate");
 		ButtonCalculate.setHorizontalAlignment(SwingConstants.CENTER);
-		ButtonCalculate.setBounds(150,14,90,20);
+		ButtonCalculate.setBounds(150,20,110,20);
 		ButtonCalculate.setFont(new Font("dialog",Font.BOLD,12));
 		
 		
 		TextCalcSolution = new JTextField();
 		TextCalcSolution.setText("");
 		TextCalcSolution.setHorizontalAlignment(SwingConstants.CENTER);
-		TextCalcSolution.setBounds(256,14,50,20);
+		TextCalcSolution.setBounds(276,20,90,20);
 		TextCalcSolution.setFont(new Font("dialog",Font.BOLD,12));
 			
 		

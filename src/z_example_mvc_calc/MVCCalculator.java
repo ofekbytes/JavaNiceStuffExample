@@ -22,7 +22,8 @@ public class MVCCalculator {
 	 */
 	public static void main(String[] args) {
 		CalculatorView c = new CalculatorView();
-
+		CalculatorView c2 = new CalculatorView();
+//		//test
 	}
 
 }
