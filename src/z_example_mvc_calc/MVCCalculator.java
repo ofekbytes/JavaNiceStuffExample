@@ -21,7 +21,7 @@ public class MVCCalculator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		CalculatorView c = new CalculatorView();
 
 	}
 
