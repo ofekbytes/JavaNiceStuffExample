@@ -112,8 +112,13 @@ public class CalculatorView extends JFrame{
 
 
 	// Get/Set for fields.
-	public int getTextFirstNumber() {  return Integer.parseInt(TextFirstNumber.getText());  }
-	
+	public int getTextFirstNumber() {  
+//		if (Integer.parseInt(TextFirstNumber.getText() == null))
+//			return 0;
+//		else
+//			return Integer.parseInt(TextFirstNumber.getText());
+		return 0;
+	}
 	public int getTextSecondNumber() {  return Integer.parseInt(TextSecondNumber.getText());  }
 	
 	public int getTextCalcSolution() {  return Integer.parseInt(TextCalcSolution.getText());  }

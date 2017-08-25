@@ -21,8 +21,10 @@ public class MVCCalculator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		CalculatorView c = new CalculatorView();
-		CalculatorView c2 = new CalculatorView();
+		CalculatorModel model = new CalculatorModel(); 
+		CalculatorView view = new CalculatorView();
+		CalculatorController controller = new CalculatorController(model, view);
+
 //		//test
 	}
 
