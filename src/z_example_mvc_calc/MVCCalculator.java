@@ -5,7 +5,7 @@
 package z_example_mvc_calc;
 
 /**
- * @author yaron ...
+ * @author yaron
  *
  */
 public class MVCCalculator {
