@@ -7,9 +7,8 @@
 
 package z_example_mvc_calc;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class CalculatorController  {
 	
@@ -17,23 +16,44 @@ public class CalculatorController  {
 	private CalculatorView cview;
 		
 	public CalculatorController(CalculatorModel cm, CalculatorView cv) {
-		cmodel = cm;
-		cview = cv;
+		this.cmodel = cm;
+		this.cview = cv;
 		
-		System.out.println("first number"  + cview.getTextFirstNumber());
+		
+		this.cview.addCalculateListener(new CalculateListener());
+
+		
+		
 	}
 	
-	public CalculatorController() {
-		
-		
-
-	}
-
 	
-	public static void main(String[] args) {		
-		// TODO Auto-generated method stub
+	class CalculateListener implements ActionListener {
 		
-		
+		public void actionPerformed (ActionEvent e) {
+			int firstNumber, secondNumber = 0;
+			
+			try 
+			{
+				firstNumber = cview.getTextFirstNumber();
+				secondNumber = cview.getTextSecondNumber();
+				cmodel.addTwoNumber(firstNumber, secondNumber);
+				cview.setTextCalcSolution(cmodel.getCalcResult());
+			}
+			catch (NumberFormatException ex) 
+			{
+				System.out.println(ex);
+				cview.displayErrorMessage("please enter Two/2 numbers");
+			}
+			
+		}
 	}
+	
+	
+	
+//	public static void main(String[] args) {		
+//		// TODO Auto-generated method stub
+//		
+//		
+//	}
 
 }

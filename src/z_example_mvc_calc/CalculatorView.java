@@ -6,16 +6,15 @@
 package z_example_mvc_calc;
 
 import java.awt.Font;
-import java.security.PublicKey;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 
 public class CalculatorView extends JFrame{
@@ -112,26 +111,31 @@ public class CalculatorView extends JFrame{
 
 
 	// Get/Set for fields.
-	public int getTextFirstNumber() {  
-//		if (Integer.parseInt(TextFirstNumber.getText() == null))
-//			return 0;
-//		else
-//			return Integer.parseInt(TextFirstNumber.getText());
-		return 0;
-	}
+	public int getTextFirstNumber()  {  return Integer.parseInt(TextFirstNumber.getText());   }
+	
 	public int getTextSecondNumber() {  return Integer.parseInt(TextSecondNumber.getText());  }
 	
 	public int getTextCalcSolution() {  return Integer.parseInt(TextCalcSolution.getText());  }
 	
 	public void setTextCalcSolution(int solution)  {  TextCalcSolution.setText(Integer.toString(solution));  }
 	
-	
-	
-	// Main()
-	public static void main(String[] args) {
-		
-		// TODO Auto-generated method stub
-		CalculatorView c = new CalculatorView();
+	//listeners
+	void addCalculateListener(ActionListener listenForCalcButton) { 
+		ButtonCalculate.addActionListener(listenForCalcButton);
 	}
+
+	//error message
+	void displayErrorMessage(String errorMessage)
+	{
+	         JOptionPane.showMessageDialog(this, errorMessage);
+	}
+
+	
+//	// Main()
+//	public static void main(String[] args) {
+//		
+//		// TODO Auto-generated method stub
+//		CalculatorView c = new CalculatorView();
+//	}
 
 }

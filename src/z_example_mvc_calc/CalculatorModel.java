@@ -5,25 +5,28 @@
  */
 package z_example_mvc_calc;
 
-/**
- * @author yaron
- *
- */
+
 public class CalculatorModel {
 
-	/**
-	 * 
-	 */
+	private int calcResult = 0;
+	
+	public void addTwoNumber(int firstNumber, int secondNumber)
+	{
+		calcResult = firstNumber + secondNumber;
+	}
+	
+	public int getCalcResult()
+	{
+		return calcResult;
+	}
+	
 	public CalculatorModel() {
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
 
 }
