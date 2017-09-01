@@ -1,0 +1,20 @@
+------------------------
+programming concept idea
+------------------------
+
+creating three method / function
+#1 crashingTestZone
+#2 debugingTestZone
+#3 testingZone
+
+ 
+#1 crashingTestZone - 
+things we know that will make our programmer crashs
+
+#2 debugingTestZone - 
+things we think look strange or told by the Quality assurance team it look like strange
+
+#3 testingZone - 
+develop a script that made by the user -or- the quality assurance think you should make 
+that make our programming life easyer
+
