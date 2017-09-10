@@ -10,6 +10,10 @@ https://docs.oracle.com/javase/8/docs/api/index.html
 http://docs.oracle.com/javase/8/javafx/api/toc.htm
 
 
+//* time api
+https://www.tutorialspoint.com/java8/java8_datetime_api.htm
+https://www.tutorialspoint.com/java8/index.htm
+
 //* api - math
 https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 
@@ -26,5 +30,4 @@ https://docs.oracle.com/javase/tutorial/
 
 //*Lesson: Numbers and Strings 
 https://docs.oracle.com/javase/tutorial/java/data/index.html
-
 

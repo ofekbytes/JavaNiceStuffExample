@@ -67,10 +67,12 @@ public class PangramTester {
 	    		+ "\n(enter the word 007 and press enter to exit this area)"
 	 			+ "\nenter a text here");
 	    while ((s = in.readLine()) != null) {
-	    	
-	    if (s.equals("007")) //exit/ break the loop
+	    System.out.println("Input>>");	
+	    if (s.equals("quit()")) //exit/ break the loop
+	    {
+	    	System.out.println("GoodBy, Have a nice day :-) ");
 	    	break;
-	    
+	    }
 	    stMissingLatter =  t.findMissingLetters(s);
 	    
 	    t.PrintTemplateResult(stMissingLatter);
