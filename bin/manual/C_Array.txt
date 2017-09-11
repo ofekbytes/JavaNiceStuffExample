@@ -59,7 +59,6 @@ for (int[] i: arrCount) {
 }
 
 
-
 Multidimensional Array - array that contain other arrays.
 2 dimensional array
 

@@ -6,7 +6,7 @@
 
 OOP - 
  Object-Oriented-Programming.
- programming style that intended to make thinks as close to the real world.
+ programming style that intended to make (thinking) things as close to the real world.
  each object is an independent unit with a unique identity.
   
  *oop have: identity, attributes, behavior:
@@ -17,7 +17,14 @@ OOP -
  example: car move, phone rings.
  
  **oop behavior (method / function) - specific to the object type (what the object can do)
- method  - method/function - collection of statements that are grouped together to perform an operation /action.
+ method - method/function - collection of statements that are grouped together to perform an operation /action.
+ method parameters - method can take data called parameters.
+ 	static void myMethod(String MyParameters) { }
+ -!- method advantage is write once and use it multiple times.
+  
+ -!- example: a class describes what the object will be, but is separate from the object itself.
+ class is a blueprints for an object.
+ one class blueprints class can create many object/s.
  
  -!- each class has a name, and each is used to define "attributes" -and- "behavior"
  example: 

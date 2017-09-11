@@ -1,0 +1,27 @@
+
+
+//cut Sting to String array using " " (space)
+str = "Hello I'm your String";
+String[] splited = str.split(" ");
+
+
+//cut Sting to String array using " " (space with regex)
+str = "Hello I'm your String";
+String[] splited = str.split("\\s+");
+
+
+//cut Sting to String array using " " (space with regex)
+String[] splited = str.split("\\s");
+
+
+try 
+{
+String[] splited = NameParameters.split("\\s");
+	for (String stPrint : splited)
+		System.out.println(stPrint);
+}
+catch (Exception e) 
+{
+	e.printStackTrace();
+}
+	

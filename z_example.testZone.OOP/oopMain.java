@@ -1,4 +1,3 @@
-package OOP;
 
 public class oopMain {
 
