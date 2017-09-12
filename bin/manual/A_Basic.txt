@@ -167,63 +167,8 @@ Casting - cast one primitive type variable to another primitive type variable: (
  When a "new" instance of a class is created, the JVM will allocate a room of memory for that class instance.
 
 
-/**** ????
-
-test zone
-
-synonym - java class synonym ???
-
-?????
-****/
-
- Scanner - a method to deal with user input.
- 1. import Scanner class
-    import java.util.Scanner;
-    
- 2. creating instance of the class
-    Scanner sc = new Scanner(System.in);
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~
-~~~~~   next step c_classs and object 
-copy paste
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~
-
-reference types -  
-stores a reference (or address) to the memory location where data stored.
-when you create an object using the constructor you create a reference variable
-reference types example: Array, String  
--!- like pointer in c.
-
-
- OOP - 
- Object-Oriented-Programming.
- programming style that intended to make thinks as close to the real world.
- each object is an independent unit with a unique identity. 
- *oop have: identity, attributes, behavior.
- **oop identity - each object is an independent unit.
- **oop attributes - describes the current state of an object
- example: car move, phone rings.
- **oop behavior - specific to the object type
- 
- 
- OOP - there are 4 core concept in oop:
- encapsulation, inheritance, polymorphism, abstraction.
- 
- 
- 
- 
- =====Find More About====
- 
- =?= member methods 
- 
- 
- //
- //
- //TODO: Java Dictionary.txt should summering of all the subject topics
- 
  
  

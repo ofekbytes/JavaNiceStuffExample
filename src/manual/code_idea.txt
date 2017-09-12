@@ -24,4 +24,23 @@ catch (Exception e)
 {
 	e.printStackTrace();
 }
+
+
+	
+/**** ????
+
+test zone
+
+synonym - java class synonym ???
+
+?????
+****/
+
+ Scanner - a method to deal with user input.
+ 1. import Scanner class
+    import java.util.Scanner;
+    
+ 2. creating instance of the class
+    Scanner sc = new Scanner(System.in);
+
 	

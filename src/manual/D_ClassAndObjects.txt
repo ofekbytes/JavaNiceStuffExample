@@ -4,6 +4,7 @@
 //
 //
 
+
 OOP - 
  Object-Oriented-Programming.
  programming style that intended to make (thinking) things as close to the real world.
@@ -13,12 +14,13 @@ OOP -
  
  **oop identity - each object is an independent unit.
  
- **oop attributes (global variable) - describes the current state of an object
+ **oop attributes (global variable / variable inside a class) - describes the current state of an object
  example: car move, phone rings.
  
  **oop behavior (method / function) - specific to the object type (what the object can do)
  method - method/function - collection of statements that are grouped together to perform an operation /action.
- method parameters - method can take data called parameters.
+ method parameters - method can take data called parameters 
+ method can return a value or not using void.
  	static void myMethod(String MyParameters) { }
  -!- method advantage is write once and use it multiple times.
   
@@ -30,10 +32,47 @@ OOP -
  example: 
  attributes: (global variable): name, age...
  behavior: talk, walk...
+
+-------------------------------------------------------------------------------------------
  
- 
- 
- OOP - there are 4 core concept in oop:
+ public class A_OOP {	
+	private String stName = "" ; //attributes
+	
+	//method
+	static void fnHello() 
+	{
+		System.out.println("Hello...");
+	}
+	
+	public static void main(String [] args) 
+	{	
+		//declare an object "ap" of the class "A_OOP()"
+		A_OOP ap = new A_OOP();
+	
+		//"ap" is an object of type "A_OOP" (class) with a call to "fnHello()" method
+		ap.fnHello();
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+Access Modifiers - is a access level/s for accessing classes, attributes, methods
+Access Modifiers Attributes: private/ public/ default/ protected
+
+classes access modifiers are: public/ default
+public: accessible from any other class.
+default: access from the same package. 
+
+attributes/ methods access modifies are:
+private: accessible only within the declared class itself.
+public: accessible from any other class
+default: no access control modifier available to any other class in the same package
+protected: like "default" + "subclasses" can access protected variable/method of the superclass
+
+------TODO write about superclass------
+
+
+OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
  encapsulation, inheritance, polymorphism, abstraction.
  
  
@@ -55,7 +94,8 @@ OOP -
  to inherit from a class, use the "extends" keyword.
 
  **subclass inherited from another class (superclass) variable and methods (non private)
- // example: 
+ // example:
+ //------------------------------------------------------------------------------------------
  // class Animal{
  //    protected int age;
  //    public void food(){
@@ -68,12 +108,13 @@ OOP -
  // Cat(){
  //   age = 7;
  // }
- 
+ //------------------------------------------------------------------------------------------
+
  
  -!- constructors are not "member methods" and so are not inherited by subclasses.
  -!- the constructor of the superclass is called when the subclass is instantiated
 
- 
+//------------------------------------------------------------------------------------------ 
 // public class testA {
 //
 //	public testA() {
@@ -101,6 +142,9 @@ OOP -
 //  testB
 
 
+//------------------------------------------------------------------------------------------
+
+
 -!- you can access the superclass from the subclass using "super" keyword
 // super.intVariable
 
@@ -112,5 +156,26 @@ occurs when there is a hierarchy of classes related to each other through "inher
 
 
 OOP ABSTRACTION -
+    
+    
+    
+    
+    
+------------------------
+
+reference types -  
+stores a reference (or address) to the memory location where data stored.
+when you create an object using the constructor you create a reference variable
+reference types example: Array, String  
+-!- like pointer in c.
+
+
+ 
+ =====Find More About====
+ =?= member methods 
+ ========================    
+    
+    
+    
     
  
