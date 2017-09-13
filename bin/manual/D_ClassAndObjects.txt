@@ -61,13 +61,49 @@ Access Modifiers Attributes: private/ public/ default/ protected
 
 classes access modifiers are: public/ default
 public: accessible from any other class.
-default: access from the same package. 
+default: accessible from class from the same package. 
 
 attributes/ methods access modifies are:
 private: accessible only within the declared class itself.
 public: accessible from any other class
 default: no access control modifier available to any other class in the same package
 protected: like "default" + "subclasses" can access protected variable/method of the superclass
+
+-!- keep variables/attributes within class "private",
+    and access them using Getter and Setter method.
+    
+
+Getters and Setters - used to protect your data (encapsulation) 
+"Getters" to get data, "Setters" to set data.
+using "Setters" to validate data before setting it to attributes.
+
+-------------------------------------------------------------------------------------------
+public class A_OOP {
+	// Global variable / attributes
+	private String stFName = "";
+	
+	//Getters
+	public String getStFName() {
+		return stFName;
+	}
+	
+	//Setters
+	public void setStFName(String stFName) {
+		this.stFName = stFName;
+	}
+
+	public static void main(String [] args) 
+	{
+		A_OOP ap = new A_OOP();
+	
+		//getter and setter
+		ap.setStFName("yaki");
+		System.out.println(ap.getStFName());
+	}
+}
+-------------------------------------------------------------------------------------------
+
+this - refer to the attributes "stFName".
 
 ------TODO write about superclass------
 
@@ -77,11 +113,11 @@ OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
  
  
  OOP ENCAPSULATION -
- class hidding data (variable) from other class/user using the private to do the job
+ class hiding data (variable) from other class/user using the private to do the job
  and use public "getter" and "setters" method to modified 
  that way we can make data validation.
  *oop encapsulation summary:
- **control data is access / modified. 
+ **control data is access modified. 
  **easy to change code. 
  **change code on one part without effecting other parts 
  

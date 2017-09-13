@@ -15,6 +15,22 @@ public class A_OOP {
 	private String stFName = "";
 	private String stLName = "";
 	
+	
+	public String getStFName() {
+		return stFName;
+	}
+
+	public void setStFName(String stFName) {
+		this.stFName = stFName;
+	}
+
+	public String getStLName() {
+		return stLName;
+	}
+
+	public void setStLName(String stLName) {
+		this.stLName = stLName;
+	}
 
 	/****
 	 * method no parameters
@@ -81,6 +97,10 @@ public class A_OOP {
 		//reading from object attributes
 		System.out.println("object " + ap.stFName);
 		System.out.println("object " + ap2.stFName);
+
+		//getter and setter
+		ap.setStFName("yaki");
+		System.out.println("getStFName()=== "+ ap.getStFName());
 	}
 
 }
