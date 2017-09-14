@@ -105,7 +105,13 @@ public class A_OOP {
 
 this - refer to the attributes "stFName".
 
-------TODO write about superclass------
+*-*-*------TODO write about superclass------
+
+
+CONSTRUCTORS - constructors are special methods invoked when an object is created
+constructors name must be same as its class name.
+constructors have no explicit return type.
+constructors can have/take a parameters.
 
 
 OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
