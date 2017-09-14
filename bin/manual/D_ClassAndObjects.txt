@@ -112,6 +112,73 @@ CONSTRUCTORS - constructors are special methods invoked when an object is create
 constructors name must be same as its class name.
 constructors have no explicit return type.
 constructors can have/take a parameters.
+-!- java automatically provides a default constructor. (all classes have a constructor)
+
+-------------------------------------------------------------------------------------------
+public class B_OOP_constructor 
+{
+
+	private String FName = "";
+	
+	//constructor #1
+	B_OOP_constructor() 
+	{
+		FName = "yaki";		
+		System.out.println("FName === " + FName);
+	}
+	
+	B_OOP_constructor(String fname) 
+	{
+		FName = fname;
+		System.out.println("parameters + FName  === " + FName);
+	}
+	
+	//constructor #2
+	public static void main(String[] args) 
+	{
+		B_OOP_constructor boop = new B_OOP_constructor(); //object call constructor #1
+		B_OOP_constructor boopB = new B_OOP_constructor("eli");	//object call constructor #2 with parameter.
+	}
+}
+-------------------------------------------------------------------------------------------
+
+********* here ****************
+
+Reference Type:
+Reference Types are used by a reference which holds a reference (address) to the object 
+but not the object itself. 
+Because reference types represent the address of the variable rather than the data itself, 
+assigning a reference variable to another doesn't copy the data. 
+Instead it creates a second copy of the reference, which refers to the same location of the heap 
+as the original value. 
+Reference Type variables are stored in a different area of memory called the heap. 
+This means that when a reference type variable is no longer used, it can be marked for garbage collection. 
+Examples of reference types are Classes, Objects, Arrays, Indexers, Interfaces etc.
+
+example:
+int[] iArray = new int[20]; //the space required for the 20 integers that make up the array is allocated on the heap.
+
+
+ reference types -  
+ stores a reference (or address) to the memory location where data stored.
+ when you create an object using the constructor you create a reference variable
+ reference types example: Array, String  
+ -!- like pointer in c.
+
+
+
+    
+------------------------
+
+reference types -  
+stores a reference (or address) to the memory location where data stored.
+when you create an object using the constructor you create a reference variable
+reference types example: Array, String  
+-!- like pointer in c.
+
+------------------------
+
+
 
 
 OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
@@ -202,19 +269,12 @@ OOP ABSTRACTION -
     
     
     
-    
-------------------------
-
-reference types -  
-stores a reference (or address) to the memory location where data stored.
-when you create an object using the constructor you create a reference variable
-reference types example: Array, String  
--!- like pointer in c.
 
 
  
  =====Find More About====
- =?= member methods 
+ =?= member methods
+ supper class 
  ========================    
     
     
