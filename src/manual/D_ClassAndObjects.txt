@@ -142,15 +142,42 @@ public class B_OOP_constructor
 }
 -------------------------------------------------------------------------------------------
 
-********* here ****************
+
+Value Types - 
+value types are the basic types (bytes, short, int, long, float, double, boolean, char).
+the value types (data types) assigned value to them in a memory location.
+when you pass them (Value Types) to a method/function you pass the variable value (not the variable)
+
+-------------------------------------------------------------------------------------------
+public class E_OOP_ValueType {
+	
+	static void addOne(int number) {
+		number++;
+	}
+	
+	public static void main(String[] args) {
+		int intValueType = 9;
+		System.out.println(intValueType); // 9
+	}
+}
+-------------------------------------------------------------------------------------------
+
+
+Reference Types -  
+ stores a reference (address) to the memory location where data stored.
+ when you create an object using the constructor you create a reference variable.
+ reference types example: Array, String  
+ -!- Reference Types like pointer in c.
 
 Reference Type:
 Reference Types are used by a reference which holds a reference (address) to the object 
 but not the object itself. 
+
 Because reference types represent the address of the variable rather than the data itself, 
 assigning a reference variable to another doesn't copy the data. 
 Instead it creates a second copy of the reference, which refers to the same location of the heap 
 as the original value. 
+
 Reference Type variables are stored in a different area of memory called the heap. 
 This means that when a reference type variable is no longer used, it can be marked for garbage collection. 
 Examples of reference types are Classes, Objects, Arrays, Indexers, Interfaces etc.
@@ -159,24 +186,8 @@ example:
 int[] iArray = new int[20]; //the space required for the 20 integers that make up the array is allocated on the heap.
 
 
- reference types -  
- stores a reference (or address) to the memory location where data stored.
- when you create an object using the constructor you create a reference variable
- reference types example: Array, String  
- -!- like pointer in c.
+ 
 
-
-
-    
-------------------------
-
-reference types -  
-stores a reference (or address) to the memory location where data stored.
-when you create an object using the constructor you create a reference variable
-reference types example: Array, String  
--!- like pointer in c.
-
-------------------------
 
 
 
