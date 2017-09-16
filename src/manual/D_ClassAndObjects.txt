@@ -283,7 +283,36 @@ final classes will restrict subclasses.
  
  
  
- Packages
+ Packages - package are used to avoid name conflicts and to control access to class.
+ Packages can be defined as a group with similar classes -or- similar subject.
+ when creating a class in a package, the first line in the class will be the package name.
+ package packageName;
+ 
+ import the classes inside a package to be able to use them as they were in the same package.
+ 
+ Two things happen when a class in a package.
+ #1: name of the package becomes a part of the name of the class.
+ #2: the name of the package must match the directory structure.
+ 
+ import one class 
+ import c_Array.A_ArrayBasic;
+ 
+ import all of the class with "*" (wildcard)
+ import c_Array.*;
  
  
+-------------------------------------------------------------------------------------------
+ package d_ClassAndObjects;
+
+import c_Array.A_ArrayBasic;
+
+public class J_ImportClasses 
+{
+	public static void main(String[] args) {
+		A_ArrayBasic a = new A_ArrayBasic();
+		a.ArrayOneDimensionalWrite();
+		a.ArrayOneDimensionalRead();
+	}
+}
+-------------------------------------------------------------------------------------------
  
