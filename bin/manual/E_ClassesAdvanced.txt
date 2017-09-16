@@ -1,27 +1,37 @@
 
 
-OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
- encapsulation, inheritance, polymorphism, abstraction.
+OOP - Object-Oriented-Programming - 
+there are 4 core concept in oop:
+Encapsulation, 
+Inheritance, 
+Polymorphism, 
+Abstraction.
  
  
  OOP ENCAPSULATION -
- class hiding data (variable) from other class/user using the private to do the job
- and use public "getter" and "setters" method to modified 
+ class hiding data (variable) from other class/user using the private to do the job (data hiding)
+ and use public "getter" and "setters" method to modified.
  that way we can make data validation.
- *oop encapsulation summary:
- **control data is access modified. 
+ *oop encapsulation:
+ **control data is access -or- modified. 
  **easy to change code. 
  **change code on one part without effecting other parts 
  
+ example: 
+ [e_ClassAdvanced.A_oop_encapsulation.java]
+ 
  
  OOP INHERITANCE:
- inheritance is the process that enables one class to acquire the properties (method and variables) of another
- more manageable hierarchical order.
+ inheritance is the process that enables one class to acquire the properties 
+ (method and variables) of another (more manageable hierarchical order).
  **subclass - The class inheriting the properties of another is the subclass (derived class -or- chiled class)
  **superclass - the class whose properties are inherited is the superclass (base class -or- parent class)
  to inherit from a class, use the "extends" keyword.
 
+[supper-class] <-- [subclass]
+
  **subclass inherited from another class (superclass) variable and methods (non private)
+ 
  // example:
  //------------------------------------------------------------------------------------------
  // class Animal{
