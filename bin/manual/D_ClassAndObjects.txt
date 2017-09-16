@@ -186,109 +186,20 @@ example:
 int[] iArray = new int[20]; //the space required for the 20 integers that make up the array is allocated on the heap.
 
 
- 
+Math Class -
+the JDK have many classes, like Math Class.
+no need to create an object of the Math Class to use it.
+enter the Math and the wanted method.
 
+Math.abs() - return absolute value
+Math.ceil() - return round a floating point value up
+Math.floor() - return round a floating point value down
+Math.max() - return max value of parameters
+Math.min() - return min value of parameters
+Math.pow() - return power of second parameter
+Math.sqrt() - return square root value 
+Math.sin() - return sinus value
+Math.cos() - return cosine value
 
-
-
-
-OOP -  Object-Oriented-Programming - there are 4 core concept in oop:
- encapsulation, inheritance, polymorphism, abstraction.
- 
- 
- OOP ENCAPSULATION -
- class hiding data (variable) from other class/user using the private to do the job
- and use public "getter" and "setters" method to modified 
- that way we can make data validation.
- *oop encapsulation summary:
- **control data is access modified. 
- **easy to change code. 
- **change code on one part without effecting other parts 
- 
- 
- OOP INHERITANCE:
- inheritance is the process that enables one class to acquire the properties (method and variables) of another
- more manageable hierarchical order.
- **subclass - The class inheriting the properties of another is the subclass (derived class -or- chiled class)
- **superclass - the class whose properties are inherited is the superclass (base class -or- parent class)
- to inherit from a class, use the "extends" keyword.
-
- **subclass inherited from another class (superclass) variable and methods (non private)
- // example:
- //------------------------------------------------------------------------------------------
- // class Animal{
- //    protected int age;
- //    public void food(){
- //        System.out.println("foot 3 time a day");
- //    }
- // }
- //
- //
- // class Cat extends Animal{
- // Cat(){
- //   age = 7;
- // }
- //------------------------------------------------------------------------------------------
-
- 
- -!- constructors are not "member methods" and so are not inherited by subclasses.
- -!- the constructor of the superclass is called when the subclass is instantiated
-
-//------------------------------------------------------------------------------------------ 
-// public class testA {
-//
-//	public testA() {
-//		System.out.println("testA");
-//	}
-// }
-//
-//
-// public class testB extends testA{
-//
-//	public testB() {
-//		System.out.println("testB");
-//	}
-// }
-
-// public class util {
-//
-// 	public static void main(String[] args) {
-// 	  testB tb = new testB();  instantiated of the class
-//    }
-// } 
-// 
-//  output: 
-//  testA
-//  testB
-
-
-//------------------------------------------------------------------------------------------
-
-
--!- you can access the superclass from the subclass using "super" keyword
-// super.intVariable
-
-
-OOP POLYMORPHISM-
-refers to the idea of "having many forms"
-occurs when there is a hierarchy of classes related to each other through "inheritance"
-
-
-
-OOP ABSTRACTION -
-    
-    
-    
-    
-
-
- 
- =====Find More About====
- =?= member methods
- supper class 
- ========================    
-    
-    
-    
     
  
