@@ -201,5 +201,89 @@ Math.sqrt() - return square root value
 Math.sin() - return sinus value
 Math.cos() - return cosine value
 
-    
+ 
+Static - when we declare a Variable / Method as static,
+the static variable / static method belongs to the class -and- not to a specific instance.
+(instance - each object is called an instance of a class.
+static variable will declare in UPPER-CASE
+
+-------------------------------------------------------------------------------------------
+public class H_Counter 
+{
+	//attribute 
+	public static int COUNT=0;
+	
+	//method / constructor
+	public H_Counter() {
+		COUNT++;
+	}
+}
+
+
+public class H_Counter_Main 
+{
+	public static void main(String[] args) {	
+		H_Counter hc = new H_Counter();  //==1
+		System.out.println("count == " + hc.COUNT);
+		
+		H_Counter hc2 = new H_Counter(); //==2
+		System.out.println("count == " + hc2.COUNT);
+		
+		hc2.COUNT++;
+		System.out.println("count == " + hc2.COUNT); //==3
+	}
+}
+-------------------------------------------------------------------------------------------
+ 
+ 
+Static Method
+ 
+-------------------------------------------------------------------------------------------
+public class H_Counter 
+{
+	//static method
+	public static void version() {
+		System.out.println("Version 1.4");
+	}
+}
+
+
+public class H_Counter_Main 
+{
+	public static void main(String[] args) {	
+		H_Counter.version(); //call static Method
+	}
+}
+-------------------------------------------------------------------------------------------
+ 
+ Static Method Example: 
+ Math class
+ main method
+ 
+ 
+ 
+ Final - final keyword make variable constant (assigned once)
+ Final variable will declare in UPPER-CASE 
+
+------------------------------------------------------------------------------------------- 
+public class I_Constant 
+{
+	private static final double PI = 3.14;
+	
+	public static void main(String[] args) 
+	{	
+		System.out.println("PI === " + PI);
+	}
+}
+------------------------------------------------------------------------------------------- 
+ 
+-!- Method / classes can be marked "final"
+final method will restrict methods that they cannot be overridden 
+final classes will restrict subclasses. 
+ 
+ 
+ 
+ Packages
+ 
+ 
  
