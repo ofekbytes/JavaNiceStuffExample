@@ -9,7 +9,7 @@ Abstraction.
  
  
  
- OOP ENCAPSULATION -
+ OOP ENCAPSULATION - encapsulate / keep data safe.
  class hiding data (variable) from other class/user using the private to do the job (data hiding)
  and use public "getter" and "setters" method to modified.
  that way we can make data validation.
@@ -18,9 +18,9 @@ Abstraction.
  **easy to change code. 
  **change code on one part without effecting other parts 
  
- example: 
- [e_ClassAdvanced.A_oop_encapsulation.java]
- 
+.
+<<<[e_ClassAdvanced.A_oop_encapsulation.java]>>>
+.
  
  
  OOP INHERITANCE:
@@ -35,80 +35,261 @@ Abstraction.
  **subclass inherited from another class (superclass) variable and methods (non private)
  
 ------------------------------------------------------------------------------------------- 
-//SuperClass
-class Animal{
-    protected int age;
-    public void food(){
-        System.out.println("foot 3 time a day");
-    }
- }
+/SupperClass
+class Animal 
+{
+	protected int age;
+	
+	public void walk()
+	{
+		System.out.println("Animal Walk All Day " + age);
+	}
+
+}
+
 
 //SubClass
-class Cat extends Animal
+class Cat extends Animal 
 {
-	Cat()
+	Cat() 
 	{
-	  age = 7;
+		age = 4;
+	}
+}
+
+
+class AnimalMainClass 
+{
+	public static void main(String[] args) 
+	{
+		Cat c = new Cat();
+		c.age = 10;
+		c.walk(); //SuperClass method.
 	}
 }
  -------------------------------------------------------------------------------------------
  
  Inheritance -
- when one class is Inherited from another class  (supperClass subClass)
+ when one class is Inherited from another class  (subClass from supperClass)
  it inherits all of the superClass none private variable and method. 
  
  
  
  -!- constructors are not "member methods" and so are not inherited by subclasses.
  -!- the constructor of the superclass is called when the subclass is instantiated
+ -!- protected access modifier makes the members visible only to the subclasses.
+ 
 
-//------------------------------------------------------------------------------------------ 
-// public class testA {
-//
-//	public testA() {
-//		System.out.println("testA");
-//	}
-// }
-//
-//
-// public class testB extends testA{
-//
-//	public testB() {
-//		System.out.println("testB");
-//	}
-// }
-
-// public class util {
-//
-// 	public static void main(String[] args) {
-// 	  testB tb = new testB();  instantiated of the class
-//    }
-// } 
-// 
-//  output: 
-//  testA
-//  testB
+-------------------------------------------------------------------------------------------
+//SupperClass
+class classA 
+{
+	//constructor SupperClass is called
+	classA()
+	{
+		System.out.println("Class-A");
+	}
+}
 
 
-//------------------------------------------------------------------------------------------
+//SubClass
+class classB extends classA 
+{
+	//constructor SubClass is called
+	public classB() 
+	{
+		System.out.println("Class-B");
+	}
+	
+}
 
+
+//main
+public class C_SupperClassCall 
+{
+	public static void main(String[] args) 
+	{
+		classB cb = new classB();
+		//-!- call constructor of Class-A and Class-B
+	}
+}
+-------------------------------------------------------------------------------------------
+Class-A
+Class-B
+-------------------------------------------------------------------------------------------
 
 -!- you can access the superclass from the subclass using "super" keyword
 // super.intVariable
 
 
-OOP POLYMORPHISM-
-refers to the idea of "having many forms"
-occurs when there is a hierarchy of classes related to each other through "inheritance"
 
+OOP POLYMORPHISM -
+refers to the idea of "having many forms"
+occurs when there is a hierarchy of classes related to each other through "inheritance" (SubClass inheritance SuperClass)
+-!- "inheritance" (a process by which one class inherits the members and methods of another class)
+
+a call to member method will cause a different implementation to be executed, 
+depending on the type of the object invoking the method. 
+
+
+-------------------------------------------------------------------------------------------
+//SupperClass Animals
+class Animels
+{
+	public void makeSound()
+	{
+		System.out.println("Soundit");
+	}
+
+}
+
+
+//SubSlass - Cats
+class Cats extends Animels {
+	public void makeSound() {
+		System.out.println("Sound of mitzi");
+	}
+}
+
+
+//SubClass - Dog
+class Dogs extends Animels {
+	
+	public void makeSound() {
+		System.out.println("Sound of Rexi");
+	}
+}
+
+
+public class D_AnimalSoundsClass {
+
+	public static void main(String[] args) {
+		Cats c = new Cats();
+		Dogs d = new Dogs();
+		
+		c.makeSound();
+		d.makeSound();
+	}
+}
+-------------------------------------------------------------------------------------------
+Sound of mitzi
+Sound of Rexi
+-------------------------------------------------------------------------------------------
+
+-!- you can use SupperClass without knowing what inside of the SubClass 
+(useful in multiple SubClasses that extends the SupperClass.
+
+-!- SubClass can define a behavior thats specific to the subclass type.
+SubClass can implement a parent class method based on it requirement.
+this feature is know as "method overriding"
+
+
+
+Overriding - Method Overriding (runtime PolyMorphism)  
+SubClass can define a behavior thats specific to the subclass type.
+SubClass can implement a parent class method based on it requirement.
+this feature is know as "method overriding"
+
+-------------------------------------------------------------------------------------------
+//SupperClass Animals
+class Animels
+{
+	public void makeSound()
+	{
+		System.out.println("Soundit");
+	}
+
+}
+
+
+//SubSlass - Cats
+class Cats extends Animels {
+	public void makeSound() {
+		System.out.println("Sound of mitzi");
+	}
+}
+
+
+//SubClass - Dog
+class Dogs extends Animels {
+	
+	public void makeSound() {
+		System.out.println("Sound of Rexi");
+	}
+}
+
+
+public class D_AnimalSoundsClass {
+
+	public static void main(String[] args) {
+		Cats c = new Cats();
+		Dogs d = new Dogs();
+		
+		c.makeSound();
+		d.makeSound();
+	}
+}
+-------------------------------------------------------------------------------------------
+Sound of mitzi
+Sound of Rexi
+-------------------------------------------------------------------------------------------
+
+cats and dogs are overrides the MakeSound() Method of Animals.
+
+method overriding should have:
+1. the same argument/s and return type.
+2. The access level cannot be more restrictive then the overridden method/s access level.
+SupperClass method declared as public, the overriding method in the SubClass can be neither private nor protected)
+
+-!- Method Overriding (runtime PolyMorphism).
+
+
+
+Overloading - Method Overloading (Compile-time PolyMorphism)
+method overloading - is a methods that have the same method name but different type of parameters.  
+
+
+-------------------------------------------------------------------------------------------
+public class E_overridingMethod 
+{	
+	static double add (double num1, double num2) {
+		return num1 + num2;
+	}
+
+	static int add (int num1, int num2) {
+		return num1 + num2;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(add(22,33));  //===55
+		System.out.println(add(22.3,33.2)); //===55.5
+	}
+}
+-------------------------------------------------------------------------------------------
+55
+55.5
+-------------------------------------------------------------------------------------------
+
+
+
+Abstract Classes
+
+
+
+
+
+--next subject/s ???
+Interfaces
+Casting
+DownCasting
+Anonymous Classes
+Inner Classes
+Equal() method
+Enums
+Java API
 
 
 OOP ABSTRACTION -
-    
-    
-    
-    
-
 
  
  =====Find More About====
