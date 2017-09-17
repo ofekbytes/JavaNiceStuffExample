@@ -19,7 +19,9 @@ Abstraction.
  **change code on one part without effecting other parts 
  
 .
+-------------------------------------------------------------------------------------------
 <<<[e_ClassAdvanced.A_oop_encapsulation.java]>>>
+-------------------------------------------------------------------------------------------
 .
  
  
@@ -272,14 +274,32 @@ public class E_overridingMethod
 
 
 
-Abstract Classes
+Abstract Classes / Method - 
+- abstract is a SuperClass, an empty template, without any default value/s (without implementation detailes).
+- abstract is a SuperClass that cannot be instantiated directly (cannot create an object of that type)   
+  and need to be extends (inherit it) by SubClass to assign value to them.
+- abstract method is a method that is declared without an implementation (without braces {} and follow by semicolon)
+- abstract can be public -or- protected.
 
+abstract class Car {
+	int wheel; //variable/attributes
+	abstract void beep(); //method
+}
+
+.
+-------------------------------------------------------------------------------------------
+<<<[e_ClassAdvanced.F_AbstractClass.java]>>>
+-------------------------------------------------------------------------------------------
+.
+
+
+
+Interfaces - 
 
 
 
 
 --next subject/s ???
-Interfaces
 Casting
 DownCasting
 Anonymous Classes
