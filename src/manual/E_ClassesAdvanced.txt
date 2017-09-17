@@ -8,6 +8,7 @@ Polymorphism,
 Abstraction.
  
  
+ 
  OOP ENCAPSULATION -
  class hiding data (variable) from other class/user using the private to do the job (data hiding)
  and use public "getter" and "setters" method to modified.
@@ -21,6 +22,7 @@ Abstraction.
  [e_ClassAdvanced.A_oop_encapsulation.java]
  
  
+ 
  OOP INHERITANCE:
  inheritance is the process that enables one class to acquire the properties 
  (method and variables) of another (more manageable hierarchical order).
@@ -32,22 +34,30 @@ Abstraction.
 
  **subclass inherited from another class (superclass) variable and methods (non private)
  
- // example:
- //------------------------------------------------------------------------------------------
- // class Animal{
- //    protected int age;
- //    public void food(){
- //        System.out.println("foot 3 time a day");
- //    }
- // }
- //
- //
- // class Cat extends Animal{
- // Cat(){
- //   age = 7;
- // }
- //------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------- 
+//SuperClass
+class Animal{
+    protected int age;
+    public void food(){
+        System.out.println("foot 3 time a day");
+    }
+ }
 
+//SubClass
+class Cat extends Animal
+{
+	Cat()
+	{
+	  age = 7;
+	}
+}
+ -------------------------------------------------------------------------------------------
+ 
+ Inheritance -
+ when one class is Inherited from another class  (supperClass subClass)
+ it inherits all of the superClass none private variable and method. 
+ 
+ 
  
  -!- constructors are not "member methods" and so are not inherited by subclasses.
  -!- the constructor of the superclass is called when the subclass is instantiated
@@ -102,8 +112,7 @@ OOP ABSTRACTION -
 
  
  =====Find More About====
- =?= member methods
- supper class 
+ =?= member methods 
  ========================    
     
     
