@@ -8,8 +8,8 @@ abstract class Mycars
 	abstract void beep();
 }
 
-
- class MyFiat extends Mycars {
+class MyFiat extends Mycars
+{
 	int wheels = 4;
 	
 	@Override
@@ -17,10 +17,10 @@ abstract class Mycars
 		System.out.println("Fiat beep");
 	}
 	
+	
 	@Override
 	void getwheels() {
 		System.out.println("wheels == " + wheels);
-		
 	}
 }
 

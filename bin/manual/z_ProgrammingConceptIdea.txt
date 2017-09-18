@@ -18,3 +18,15 @@ things we think look strange or told by the Quality assurance team it look like 
 develop a script that made by the user -or- the quality assurance think you should make 
 that make our programming life easyer
 
+
+4# 
+convert Celsius to Fahrenheit
+Convert 20 degrees Celsius to degrees Fahrenheit:
+//T(°F) = 20°C × 9/5 + 32 = 68 °F
+
+
+convert Fahrenheit to Celsius
+T(°C) = (T(°F) - 32) × 5/9
+T(°C) = (68°F − 32)×(5÷9) = 20°C
+
+

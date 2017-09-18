@@ -28,7 +28,7 @@ Abstraction.
  OOP INHERITANCE:
  inheritance is the process that enables one class to acquire the properties 
  (method and variables) of another (more manageable hierarchical order).
- **subclass - The class inheriting the properties of another is the subclass (derived class -or- chiled class)
+ **subclass - The class inheriting the properties of another is the subclass (derived class -or- child class)
  **superclass - the class whose properties are inherited is the superclass (base class -or- parent class)
  to inherit from a class, use the "extends" keyword.
 
@@ -275,11 +275,14 @@ public class E_overridingMethod
 
 
 Abstract Classes / Method - 
-- abstract is a SuperClass, an empty template, without any default value/s (without implementation detailes).
-- abstract is a SuperClass that cannot be instantiated directly (cannot create an object of that type)   
+- abstract is a SuperClass, an empty template, without any default value/s (without implementation details).
+- abstract is a SuperClass that cannot be instantiated directly (cannot create an object of that type..."abstract")   
   and need to be extends (inherit it) by SubClass to assign value to them.
 - abstract method is a method that is declared without an implementation (without braces {} and follow by semicolon)
 - abstract can be public -or- protected.
+
+-!- class can inherit from One/1 SuperClass
+
 
 abstract class Car {
 	int wheel; //variable/attributes
@@ -295,12 +298,50 @@ abstract class Car {
 
 
 Interfaces - 
+interface is an "abstract class" that contains only abstract methods.
+interface define:
+- interface defined with "interface" keyword.
+- interface cannot contain "constructor" because "interface" cannot be instantiated directly (cannot create an "object" of that type..."interface")
+  and need to be extends (inherit it) by SuperClass -or- SubClass to assign value to them.
+- interface can extends other interface/s.
+- a class can implement any number of interfaces.
+- interface is an abstract. (no need to declare "abstract interface")
+- each "method" in a "interface" is also "abstract" (no need to declare "abstract method()"
+  and method are public by default.
 
+-!- interface contain only "static final" variable. (constant variable)
+-!- class can inherit from One/1 SuperClass, and can implement many "interface".
+-!- when implement an interface, override all of the interface method.
+
+
+-------------------------------------------------------------------------------------------
+e_ClassAdvanced.G_InterfaceOne.java
+e_ClassAdvanced.G_InterfaceAndAbsract.java
+e_ClassAdvanced.G_InterfaceMainCall.java
+-------------------------------------------------------------------------------------------
+
+
+
+Casting - Type Casting -
+Casting - A way to assign value of one type in variable of another type.
+Casting - cast one primitive type variable to another primitive type variable: (int)  (byte)  (short)  (long)  (double): 
+
+-------------------------------------------------------------------------------------------
+a_BasicEexample.C_javaBasicVariableStringObject.java 
+CastingNumbers()
+-------------------------------------------------------------------------------------------
+
+
+DownCasting - Type Casting - Classes.
+class casting have two/2 types of casting: UpCasting, DownCasting.
+
+Class UpCasting
+
+Class DownCasting  
 
 
 
 --next subject/s ???
-Casting
 DownCasting
 Anonymous Classes
 Inner Classes
