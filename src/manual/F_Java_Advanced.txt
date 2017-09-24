@@ -1,0 +1,20 @@
+
+
+
+
+subject:
+
+exception handling
+multiple exceptions
+threads
+runtime vs checked exception
+arraylist
+linkedlist
+hashmap
+sets
+
+sorting list
+iterators
+working with files
+reading files
+creating and writeing files

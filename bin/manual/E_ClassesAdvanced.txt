@@ -332,23 +332,50 @@ CastingNumbers()
 -------------------------------------------------------------------------------------------
 
 
+
 DownCasting - Type Casting - Classes.
 class casting have two/2 types of casting: UpCasting, DownCasting.
 
+
+
 Class UpCasting
+you can cast an (object) instance of subclass to its superclass.
+cat is a subclass of Animal.
+
+----------------------
+Animal a = new Cat();
+----------------------
+upcast the cat type variable to the animal type
+
+
 
 Class DownCasting  
+Casting an object of SupperClass to its SubClass is called downcasting.
+
+------------------------
+Animal a = new Animal()
+((Cat)a).makeSound()
+------------------------
+This will try to cast the variable a to the Cat type
+and call its makeSound() method
+
+
+-!- upcasting automatic , because upcasting can never fail.
+
+
+
+
 
 
 
 --next subject/s ???
-DownCasting
+
 Anonymous Classes
 Inner Classes
 Equal() method
 Enums
-Java API
-
+Java API  
+Oracle Api List (http://docs.oracle.com/javase/8/docs/api/)
 
 OOP ABSTRACTION -
 
