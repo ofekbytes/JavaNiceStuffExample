@@ -1,7 +1,7 @@
-package e_ClassAdvanced;
+package e_ClassAdvanced.Abstract_Interface;
 
 // class G_InterfaceAndAbsract implements G_InterfaceOne {
-public class G_InterfaceAndAbsract implements G_InterfaceOne{
+public class InterfaceAndAbsract implements InterfaceOne{
 
 	
 	@Override

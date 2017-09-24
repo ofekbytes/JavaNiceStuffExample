@@ -1,8 +1,8 @@
 
-package e_ClassAdvanced;
+package e_ClassAdvanced.Abstract_Interface;
 
 
-public abstract interface G_InterfaceOne 
+public abstract interface InterfaceOne 
 {
 	//final / constant
 	public Double PI = 3.14159265359; 
