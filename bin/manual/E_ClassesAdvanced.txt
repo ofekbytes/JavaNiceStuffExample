@@ -362,9 +362,15 @@ and call its makeSound() method
 
 -!- upcasting automatic , because upcasting can never fail.
 
-
-
-
+-------------------------------------------------------------------------------------------
+UpCasting & DownCasting Example in package
+-------------------------------------------------------------------------------------------
+e_ClassAdvanced.castingExample
+Animal.java
+AnimalMainClass.java
+Cat.java
+Dog.java
+-------------------------------------------------------------------------------------------
 
 
 

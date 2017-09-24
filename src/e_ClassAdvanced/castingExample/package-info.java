@@ -1,8 +1,11 @@
-/**
- * 
+/**** 
+ * -------------------------------------------------------------------------------------------
+ * UpCasting & DownCasting Example in package
+ * e_ClassAdvanced.castingExample
+ * Animal.java
+ * Cat.java
+ * Dog.java
+ * -------------------------------------------------------------------------------------------
  */
-/**
- * @author user
- *
- */
+
 package e_ClassAdvanced.castingExample;

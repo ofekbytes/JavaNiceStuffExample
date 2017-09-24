@@ -5,6 +5,10 @@ class Cat extends Animal {
 	/***
 	 * SubClass extends SupperClass Animal
 	 */
+	public void walk(){
+		System.out.println("Cat Walk");
+	}
+	
 	//Constructor
 	Cat() 
 	{
