@@ -9,7 +9,7 @@ creating three method / function
 
  
 #1 crashingTestZone - 
-things we know that will make our programmer crashs
+things we know that will make our programmer crash/es
 
 #2 debugingTestZone - 
 things we think look strange or told by the Quality assurance team it look like strange
@@ -28,5 +28,31 @@ Convert 20 degrees Celsius to degrees Fahrenheit:
 convert Fahrenheit to Celsius
 T(°C) = (T(°F) - 32) × 5/9
 T(°C) = (68°F − 32)×(5÷9) = 20°C
+
+
+#5
+Find Sum of Product of 1st N Natural Numbers taken 2 at a time
+example: Input = 4
+
+#1:
+((1*1) + (1*2) + (1*3) + (1*4)) + ((2*2) + (2*3) + (2*4)) + ((3*3) + (3*4)) + ((4*4)) =  65
+
+#2: 
+1*2+1*3+1*4+2*3+2*4+3*4 = 35
+
+
+#6
+friday the 13th - count how many friday the 13th we have a year
+
+
+#7
+random - games
+lotto - random number games 
+
+
+#8
+
+
+
 
 

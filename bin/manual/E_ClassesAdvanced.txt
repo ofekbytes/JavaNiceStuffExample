@@ -20,7 +20,8 @@ Abstraction.
  
 .
 -------------------------------------------------------------------------------------------
-<<<[e_ClassAdvanced.A_oop_encapsulation.java]>>>
+.\e_ClassAdvanced\
+A_oop_encapsulation.java]
 -------------------------------------------------------------------------------------------
 .
  
@@ -291,7 +292,8 @@ abstract class Car {
 
 .
 -------------------------------------------------------------------------------------------
-<<<[e_ClassAdvanced.F_AbstractClass.java]>>>
+.\e_ClassAdvanced\
+F_AbstractClass.java]
 -------------------------------------------------------------------------------------------
 .
 
@@ -315,9 +317,10 @@ interface define:
 
 
 -------------------------------------------------------------------------------------------
-e_ClassAdvanced.G_InterfaceOne.java
-e_ClassAdvanced.G_InterfaceAndAbsract.java
-e_ClassAdvanced.G_InterfaceMainCall.java
+.\e_ClassAdvanced.Abstract_Interface\
+G_InterfaceOne.java
+G_InterfaceAndAbsract.java
+G_InterfaceMainCall.java
 -------------------------------------------------------------------------------------------
 
 
@@ -365,12 +368,34 @@ and call its makeSound() method
 -------------------------------------------------------------------------------------------
 UpCasting & DownCasting Example in package
 -------------------------------------------------------------------------------------------
-e_ClassAdvanced.castingExample
+.\e_ClassAdvanced.castingExample\
 Animal.java
 AnimalMainClass.java
 Cat.java
 Dog.java
 -------------------------------------------------------------------------------------------
+
+
+
+Anonymous Classes - 
+Anonymous Classes is a way to extend the existing classes.
+if we have a class named "Animal" with a method/function "walk()" to be 
+extended and override a method in another Class.
+example: walk() method
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.AnonymousClasses\
+Animal.java
+AnonymousClassesMain
+-------------------------------------------------------------------------------------------
+
+-!- "@verride"  - write "@verride" to make things more clear in the code. 
+(it can help other user/s  to understand the code)
+
+-!- the "@verride" is apply to the current object.
+we can create another object of that Class (original Class) "walk()" method. 
+
+
 
 
 
