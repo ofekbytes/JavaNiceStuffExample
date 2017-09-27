@@ -397,12 +397,24 @@ we can create another object of that Class (original Class) "walk()" method.
 
 
 
+Inner Classes - 
+Java support nesting classes (class inside class).
+a class can be a member of another class.
+To Creating an inner class, write a class within a class.
+inner class can be private.
+when inner class is private it cannot be accessed from an object outside the class.
 
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.InnerClasses\
+Animal.java
+AnonymousClassesMain
+-------------------------------------------------------------------------------------------
+
+  
 
 --next subject/s ???
 
-Anonymous Classes
-Inner Classes
+
 Equal() method
 Enums
 Java API  
