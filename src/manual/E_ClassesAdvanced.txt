@@ -275,7 +275,7 @@ public class E_overridingMethod
 
 
 
-Abstract Classes / Method - 
+Abstraction / Abstract Classes / Method - 
 - abstract is a SuperClass, an empty template, without any default value/s (without implementation details).
 - abstract is a SuperClass that cannot be instantiated directly (cannot create an object of that type..."abstract")   
   and need to be extends (inherit it) by SubClass to assign value to them.
@@ -423,21 +423,57 @@ Animal.java
 EqualMethodMain
 -------------------------------------------------------------------------------------------
 
+-!-  when we match Two/2 Objects with the same name, the result will be false.
+because we have Two/2 different objects / references / memory locations. 
 
---next subject/s ???
 
 
-Equal() method
-Enums
-Java API  
-Oracle Api List (http://docs.oracle.com/javase/8/docs/api/)
+enum - 
+enum is a collection of constants.
+collection separated with separated comma "," .
 
-OOP ABSTRACTION -
+-------------------------------------------------------------------------------------------
+public enum CardDecks { ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE }
+-------------------------------------------------------------------------------------------
+.
+.
+-------------------------------------------------------------------------------------------
+\e_ClassAdvanced.EnumsConstants\ 
+CardDecks.java 
+EnumsConstantsMain.java
+-------------------------------------------------------------------------------------------
+.
+.
+-!- enum define variables that represent fixed member.
 
+-!- using emum when a variable can only take one out of a small set of possible values.
+
+-!- compile time longer , avoiding errors.
  
- =====Find More About====
- =?= member methods 
- ========================    
+-!- use enum for: day of week, week numbers, month, names, deck of cards.
+
+
+**** TODO: fix card game using enum ****
+
+
+
+
+Java API - (Application Program Interface)
+The Java API is a collection of "packages", with a "classes" and "interfaces" that have been written for use.
+using package with import "keyword".
+
+-------------------------------------------------------------------------------------------
+import javax.swing.*;
+import java.awt.*;
+-------------------------------------------------------------------------------------------
+.
+.
+-------------------------------------------------------------------------------------------
+Oracle Api List 
+http://docs.oracle.com/javase/8/docs/api/
+-------------------------------------------------------------------------------------------
+.
+.
     
     
     
