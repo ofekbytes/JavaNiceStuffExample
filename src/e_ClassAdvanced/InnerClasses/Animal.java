@@ -18,7 +18,7 @@ class Animal
 	//Speed Class
 	private class Speed { 
 		public void run() {
-			System.out.println("Speed - run () is " + intTestSpeed);
+			System.out.println("Speed - run () === " + intTestSpeed);
 		}
 	} //Speed Class
 	

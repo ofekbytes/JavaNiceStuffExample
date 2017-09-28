@@ -412,6 +412,18 @@ AnonymousClassesMain
 
   
 
+Equal() method -
+when we create object, the variables store references to the objects.
+when we compare object using the equality testing operator "==",
+it compares the references and not the object value.
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.EqualMethod\
+Animal.java
+EqualMethodMain
+-------------------------------------------------------------------------------------------
+
+
 --next subject/s ???
 
 
