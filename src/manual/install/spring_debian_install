@@ -1,0 +1,14 @@
+
+
+Spring Install
+
+
+sudo apt-get install spring
+sudo apt-get install springlobby
+
+
+
+-------------------------------------------------------------------------------------------
+https://springrts.com/wiki/Debian_install
+http://packages.debian.org/sid/spring
+-------------------------------------------------------------------------------------------
