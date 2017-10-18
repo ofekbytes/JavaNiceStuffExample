@@ -1,0 +1,7 @@
+
+
+
+Java_Design_Patterns - 
+
+Java_Design_Patterns represent the best practices used by experienced object-oriented software developers.
+a Design pattern is a well described solution to a common software problem.

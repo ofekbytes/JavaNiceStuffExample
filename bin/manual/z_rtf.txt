@@ -32,5 +32,7 @@ https://docs.oracle.com/javase/tutorial/
 https://docs.oracle.com/javase/tutorial/java/data/index.html
 
 
+//design pattern
+https://www.tutorialspoint.com/design_pattern/index.htm
 
 /the end/
