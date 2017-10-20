@@ -1,9 +1,13 @@
 
 
+--------------
+Java_Advanced
+--------------
 
 
-exception handling
-multiple exceptions
+- exception handling - is a way to deal with software runtime error/s.
+  multiple exceptions - throw, Exception Handling.
+  
 threads
 runtime vs checked exception
 arraylist
@@ -15,6 +19,8 @@ iterators
 working with files
 reading files
 creating and writing files
+
+-------------------------------------------------------------------------------------------
 
 
 
@@ -87,12 +93,14 @@ throws statement in the method definition defines the type of exception/s the me
 Exception Handling - 
 single try/catch contain multiple catch block that handle different exceptions separately.
 
+-------------------------------------------------------------------------------------------
 try {
 }
 catch (
+-------------------------------------------------------------------------------------------
 
 
 
-threads
+threads - 
 
 

@@ -1,5 +1,10 @@
 
 
+----------------
+Classes Advanced
+----------------
+
+
 OOP - Object-Oriented-Programming - 
 there are 4 core concept in oop:
 Encapsulation, 
@@ -7,21 +12,50 @@ Inheritance,
 Polymorphism, 
 
 
-Abstraction.
-------------
+
+- OOP ENCAPSULATION - encapsulate / keep data safe.
+ class hiding data (variable) from other class/user using the private to do the job (data hiding)
+ and use public "getter" and "setters" method to modified.
+
+- OOP INHERITANCE - inheritance is the process that enables one class to acquire the properties 
+ (method and variables) of another (more manageable hierarchical order).
+ 
+- OOP POLYMORPHISM - refers to the idea of "having many forms" -
+  occurs when there is a hierarchy of classes related to each other through "inheritance" (SubClass inheritance SuperClass)
+  -!- "inheritance" (a process by which one class inherits the members and methods of another class)
+
+
+- Overriding - Method Overriding (runtime PolyMorphism)  
+
+- Overloading - Method Overloading (Compile-time PolyMorphism)
+  method overloading - is a methods that have the same method name but different type of parameters.  
+
+- Abstraction / Abstract Classes / Method - 
+  abstract is a SuperClass, an empty template, without any default value/s 
+  (without implementation details).
+  
+- Interfaces - interface is an "abstract class" that contains only abstract methods.
+
 - casting -  class casting have two/2 types of casting: UpCasting, DownCasting.
 -- Class UpCasting - you can cast an (object) instance of subclass to its superclass.
    example: cat is a subclass of Animal. (cat upCast Animal)
 -- Class DownCasting - Casting an object of SupperClass to its SubClass is called downcasting.
    example:cat is a subclass of Animal. (Animal DownCast cat)
-------------   
+  
 - Anonymous Classes- Java way to extend the existing classes.
+
 - Inner Classes - Java support nesting classes (class inside class).
+
 - Equal() method - compare two or more objects.
+
 - enum - enum is a collection of constants.
+
 - Java API - API (Application Program Interface) 
 
- 
+-------------------------------------------------------------------------------------------
+
+
+
  
  OOP ENCAPSULATION - encapsulate / keep data safe.
  class hiding data (variable) from other class/user using the private to do the job (data hiding)
