@@ -1,6 +1,24 @@
 
 
 
+
+exception handling
+multiple exceptions
+threads
+runtime vs checked exception
+arraylist
+linkedlist
+hashmap
+sets
+sorting list
+iterators
+working with files
+reading files
+creating and writing files
+
+
+
+
 exception handling - 
 exception handling is a way to deal with software runtime error/s.  
 example:
@@ -75,20 +93,6 @@ catch (
 
 
 
-
-subject:
-
-exception handling
-multiple exceptions
 threads
-runtime vs checked exception
-arraylist
-linkedlist
-hashmap
-sets
 
-sorting list
-iterators
-working with files
-reading files
-creating and writeing files
+

@@ -5,8 +5,22 @@ there are 4 core concept in oop:
 Encapsulation, 
 Inheritance, 
 Polymorphism, 
+
+
 Abstraction.
- 
+------------
+- casting -  class casting have two/2 types of casting: UpCasting, DownCasting.
+-- Class UpCasting - you can cast an (object) instance of subclass to its superclass.
+   example: cat is a subclass of Animal. (cat upCast Animal)
+-- Class DownCasting - Casting an object of SupperClass to its SubClass is called downcasting.
+   example:cat is a subclass of Animal. (Animal DownCast cat)
+------------   
+- Anonymous Classes- Java way to extend the existing classes.
+- Inner Classes - Java support nesting classes (class inside class).
+- Equal() method - compare two or more objects.
+- enum - enum is a collection of constants.
+- Java API - API (Application Program Interface) 
+
  
  
  OOP ENCAPSULATION - encapsulate / keep data safe.
