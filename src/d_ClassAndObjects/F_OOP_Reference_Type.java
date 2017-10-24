@@ -13,8 +13,11 @@ public class F_OOP_Reference_Type {
 	
 	
 	public static void main(String[] args) {
+		
+//		//F_Person f = new F_Person();
 		F_Person f;
 		f = new F_Person();
+
 		f.setFName("lee");
 		f.setFName("you");
 		f.setAge(44);

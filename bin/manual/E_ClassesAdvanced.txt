@@ -5,11 +5,10 @@ Classes Advanced
 ----------------
 
 
-OOP - Object-Oriented-Programming - 
-there are 4 core concept in oop:
-Encapsulation, 
-Inheritance, 
-Polymorphism, 
+- OOP - Object-Oriented-Programming - there are 4 core concept in oop:
+-- Encapsulation, 
+-- Inheritance, 
+-- Polymorphism, 
 
 
 
