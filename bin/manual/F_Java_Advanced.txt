@@ -25,7 +25,7 @@ creating and writing files
 
 
 
-exception handling - 
+Exception handling - 
 exception handling is a way to deal with software runtime error/s.  
 example:
 - user entered wrong data
@@ -101,6 +101,28 @@ catch (
 
 
 
-threads - 
+Threads - 
+Java is multi-threaded programming language.
+Using threaded programming we can make optimal use of computer resources.
+Using threads to run different tanks in parallel.
+
+Two/2 ways to create a thread
+1. Extend the Thread Class inherit from the Thread class, override its run() method.
+2. implementing the Runnable interface.
+
+-------------------------------------------------------------------------------------------
+new Thread() --> [new] --> [runnable] run() --> [Running] --> end of exection --> [dead]
+
+new Thread() --> [new] --> [runnable] run() --> [Running] --> sleep(), wait() --> [waiting] --> go back to Running step until it become death process.
+-------------------------------------------------------------------------------------------
+
+
+Thread - Extend Thread - 
+Extend the Thread Class inherit from the Thread class, override its run() method. 
+1. create a new object of your class
+2. call the start() method - running the thread/s.
+
+
+
 
 

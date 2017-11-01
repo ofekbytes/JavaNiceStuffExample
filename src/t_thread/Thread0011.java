@@ -22,7 +22,12 @@ public class Thread0011 extends Thread {
 		Thread0011 td1 = new Thread0011();
 		Thread0011 td2 = new Thread0011();
 		Thread0011 td3 = new Thread0011();
-
+		
+		System.out.println(td1);
+		System.out.println(td2);
+		System.out.println(td3);
+		
+		System.out.println("---");
 		
 		td1.start();
 		td2.start();

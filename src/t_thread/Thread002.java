@@ -26,6 +26,9 @@ public class Thread002 extends Thread {
 		Thread002 td1 = new Thread002("Thread_1");
 		Thread002 td2 = new Thread002("Thread_2");
 		
+		System.out.println(td1);
+		System.out.println(td2);
+		System.out.println("---");
 		
 		td1.start();
 		td2.start();		
