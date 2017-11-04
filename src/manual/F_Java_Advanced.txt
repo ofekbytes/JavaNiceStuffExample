@@ -6,10 +6,10 @@ Java_Advanced
 
 
 - exception handling - is a way to deal with software runtime error/s.
-  multiple exceptions - throw, Exception Handling.
-  
-threads
-runtime vs checked exception
+- multiple exceptions - throw, Exception Handling.
+- threads
+- Exception Type - runtime vs checked exception
+
 arraylist
 linkedlist
 hashmap
@@ -122,6 +122,53 @@ Extend the Thread Class inherit from the Thread class, override its run() method
 1. create a new object of your class
 2. call the start() method - running the thread/s.
 
+
+-------------------------------------------------------------------------------------------
+..\f_Java_Advanced.Threads\
+Messages.java
+ThreadMain.java
+-------------------------------------------------------------------------------------------
+
+-!- run() method statements execute on a different thread.
+-!- setPriority() method - every thread have a priorities range from 1 - 10. (default thread is 5)
+
+
+
+Thread - 
+1. implementing the Runnable interface.
+2. implement the run() method.
+3. create a new thread object
+4. pass the Runnable class to its constructor
+5. start the tread - start() method.
+
+-------------------------------------------------------------------------------------------
+..\f_Java_Advanced.Threads\
+Msg.java
+ThreadMain.java
+-------------------------------------------------------------------------------------------
+
+
+Thread.sleep() method - pause a thread for a specified period of time (millisecond).
+
+Example: Thread Sleep 1000 millisecond = 1 second:
+Thread.sleep(1000);
+
+-!- use try..catch(InterruptedException e) when using Thread.sleep();
+
+-------------------------------------------------------------------------------------------
+	try {
+		t.sleep(1000);
+	} 
+	catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+-------------------------------------------------------------------------------------------
+
+-!- Runnable interface is the best way because it enables you to extends from another class.
+
+
+
+Exception Type - runtime vs checked exception
 
 
 

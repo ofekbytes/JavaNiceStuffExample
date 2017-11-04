@@ -5,8 +5,32 @@ public class ThreadMain
 
 	public static void main(String[] args) 	
 	{
-		Messages msg = new Messages();
+		//priority default = 5
+		Messages msg = new Messages();	
+		System.out.println(msg);
 		msg.start();		
+
+
+		//priority default = 7
+		Messages msg2 = new Messages();
+		msg2.setPriority(7);
+		System.out.println(msg2);
+		msg2.start();
+
+
+		//thread Runnable
+		Thread t = new Thread(new msg());
+		t.start();
+		
+//		try 
+//		{
+//			t.sleep(1000);
+//		} 
+//		catch (InterruptedException e) 
+//		{
+//			e.printStackTrace();
+//		}
+		
 	}
 
 }
