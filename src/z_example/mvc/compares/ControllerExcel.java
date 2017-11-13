@@ -8,11 +8,7 @@ public class ControllerExcel
 
 	private ModelExcel cModel;
 	private ViewExcel cView;
-//	private osUtil osUtil;
-	
-	public ControllerExcel() {
-		
-	}
+
 	
 	
 	//set the view + model.
@@ -53,3 +49,4 @@ public class ControllerExcel
 	
 	
 }
+//סוף

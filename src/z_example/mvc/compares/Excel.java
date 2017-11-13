@@ -3,7 +3,9 @@ package compares;
 public class Excel {
 
 	public Excel() {
-		// TODO Auto-generated constructor stub
+		ModelExcel model = new ModelExcel(); 
+		ViewExcel view = new ViewExcel();
+		ControllerExcel controller = new ControllerExcel(model, view);		
 	}
 
 	/*
@@ -14,9 +16,10 @@ public class Excel {
 	 */
 	public static void main(String[] args) 
 	{	
-		ModelExcel model = new ModelExcel(); 
-		ViewExcel view = new ViewExcel();
-		ControllerExcel controller = new ControllerExcel(model, view);		
+//		ModelExcel model = new ModelExcel(); 
+//		ViewExcel view = new ViewExcel();
+//		ControllerExcel controller = new ControllerExcel(model, view);		
 	}
-
 }
+
+//סוף

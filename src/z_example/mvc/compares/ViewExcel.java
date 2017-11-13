@@ -241,7 +241,7 @@ public class ViewExcel extends JFrame
 
 		
 	
-
+// btnSubmit - ***
 //		btnSubmit.addActionListener(new ActionListener( )
 //		{
 //		public void actionPerformed(ActionEvent ev)
@@ -289,17 +289,7 @@ public class ViewExcel extends JFrame
 	}
 	
 
-	/**
-	 *  main
-	 */
-	public static void main(String[] args) 
-	{
-//		viewExcel ge = new viewExcel();
-//		OsInformation os = new OsInformation();		
-	} //main
-
-
-
-	
 
 } //guiExcel Class
+
+//סוף
