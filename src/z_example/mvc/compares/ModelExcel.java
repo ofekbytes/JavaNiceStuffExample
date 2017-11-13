@@ -16,16 +16,15 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.examples.ExcelComparator;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -142,6 +141,21 @@ public class ModelExcel
 	}    
 
 	
+	/*** 
+	 * 
+	 * @return curernt Date & time.
+	 */
+	private String getCurrentDateTime()
+	{
+		String currentDateTime = "";
+
+		 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss.SSS");
+	     Date now = new Date();
+	     currentDateTime = sdf.format(now);
+	     
+		return currentDateTime;
+	}
+	
 
 	/***
 	 * 
@@ -153,7 +167,7 @@ public class ModelExcel
 	public void Submit(String FileName1, String FileName2) 
 	{
 		
-		//TODO print start time to console/gui
+		System.out.println("***\nStarted At " +  getCurrentDateTime() + "\n***\n");
 		
 		Boolean file1 = IsfileExist(FileName1);
 		Boolean file2 = IsfileExist(FileName2);
@@ -167,7 +181,7 @@ public class ModelExcel
 			System.out.println("\n<<< Attention >>>  nProgram Ended !!! \n because one of the excel file is missing. \n check the ''file name'' and the ''file path'' \n and try again");
 		}	
 	
-		//TODO print end time to console/gui
+		System.out.println("***\nEnded At " +  getCurrentDateTime() + "\n***\n");
 		
 	}//Submit
 	
