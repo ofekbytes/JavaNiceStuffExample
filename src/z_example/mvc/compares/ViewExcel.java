@@ -33,6 +33,9 @@ public class ViewExcel extends JFrame
 	private   JLabel       lblFileName2      =   null; //file2
 	private   JTextField   txtFileName2      =   null;	
 	private   JButton      selectFile2       =   null;	
+
+	
+	private   JTextField   txtSubmitResult      =   null;
 	
 	private   JButton      btnSubmit         =   null; //Submit
 	private   JButton      btnclean          =   null; //Clean Fields from text/data.
@@ -47,6 +50,13 @@ public class ViewExcel extends JFrame
 	private   String        StSourceFileName2  =  null;
 	
 	private String userName = "";
+	
+
+	
+	
+	
+	
+	
 	
 	//private OsInformation os = new OsInformation();	
 	
@@ -102,8 +112,8 @@ public class ViewExcel extends JFrame
 		panelin.setLayout(null);
 
 
-		lblTitle = new JLabel("--");
-		lblTitle.setBounds(18, 20, 400, 22);
+		lblTitle = new JLabel("Welcome Back...");
+		lblTitle.setBounds(18, 16, 400, 22);
 		lblTitle.setFont(new Font("Dialog", Font.BOLD, 22));
 		lblTitle.setToolTipText("Welcome title");
 		panelin.add(lblTitle);
@@ -111,7 +121,7 @@ public class ViewExcel extends JFrame
 
 		// File #1
 		lblFileName1 = new JLabel("#1:");
-		lblFileName1.setBounds(10, 108, 20, 22);
+		lblFileName1.setBounds(10, 86, 20, 22);
 		lblFileName1.setFont(new Font("Dialog", Font.BOLD, 12));
 		lblFileName1.setToolTipText("please select the string that you wish to search the file for.");
 		panelin.add(lblFileName1);
@@ -119,7 +129,7 @@ public class ViewExcel extends JFrame
 		
 		// SelectFile - user manual Select //
 		txtFileName1 = new JTextField("");
-		txtFileName1.setBounds(166, 110, 350, 22); //y100
+		txtFileName1.setBounds(166, 86, 350, 24); //y100
 		txtFileName1.setFont(new Font("Dialog", Font.BOLD, 12));
 		txtFileName1.setToolTipText("please select a source file, for the processing data job - manually.");
 		panelin.add(txtFileName1);
@@ -127,7 +137,7 @@ public class ViewExcel extends JFrame
 		
 		// SelectFile - Gui Select //
 		selectFile1 = new JButton("select a file");
-		selectFile1.setBounds(40, 108, 117, 25);
+		selectFile1.setBounds(40, 86, 117, 25);
 		selectFile1.setToolTipText("please select a source file, for the processing data job - automatically.");
 		panelin.add(selectFile1);
 		
@@ -135,7 +145,7 @@ public class ViewExcel extends JFrame
 				
 		// File #2
 		lblFileName2 = new JLabel("#2:");
-		lblFileName2.setBounds(10, 168, 20, 22);
+		lblFileName2.setBounds(10, 138, 20, 22);
 		lblFileName2.setFont(new Font("Dialog", Font.BOLD, 12));
 		lblFileName2.setToolTipText("please select the string that you wish to search the file for.");
 		panelin.add(lblFileName2);
@@ -143,7 +153,7 @@ public class ViewExcel extends JFrame
 		
 		// SelectFile - user manual Select //
 		txtFileName2 = new JTextField("");
-		txtFileName2.setBounds(166, 170, 350, 22); //y100
+		txtFileName2.setBounds(166, 138, 350, 24); //y100
 		txtFileName2.setFont(new Font("Dialog", Font.BOLD, 12));
 		txtFileName2.setToolTipText("please select a source file, for the processing data job - manually.");
 		panelin.add(txtFileName2);
@@ -151,28 +161,39 @@ public class ViewExcel extends JFrame
 		
 		// SelectFile - Gui Select //
 		selectFile2 = new JButton("select a file");
-		selectFile2.setBounds(40, 168, 117, 25);
+		selectFile2.setBounds(40, 138, 117, 25);
 		selectFile2.setToolTipText("please select a source file, for the processing data job - automatically.");
 		panelin.add(selectFile2);
 	
 		
+
+		
+		// SelectFile - user manual Select //
+		txtSubmitResult = new JTextField("");
+		txtSubmitResult.setBounds(10, 180, 506, 260); //y100
+		txtSubmitResult.setFont(new Font("Dialog", Font.BOLD, 12));
+		txtSubmitResult.setToolTipText("submit result");
+		panelin.add(txtSubmitResult);
+
+		
+		
 		// Button - btnSubmit //		
 		btnSubmit = new JButton(".Submit.");
-		btnSubmit.setBounds(199, 256, 117, 25); //399, 260, 117, 25
+		btnSubmit.setBounds(199, 456, 117, 25); //399, 260, 117, 25
 		btnSubmit.setToolTipText("Exit program, press this button -or- press alt+e.");
 		panelin.add(btnSubmit);
 		
 		
 		// Button - Exit //		
 		btnExit = new JButton(".Exit.");
-		btnExit.setBounds(399, 256, 117, 25); //399, 260, 117, 25
+		btnExit.setBounds(399, 456, 117, 25); //399, 260, 117, 25
 		btnExit.setToolTipText("Exit program, press this button -or- press alt+e.");
 		panelin.add(btnExit);
 	
 		
 		frameMain.getContentPane().add(panelin);
-
-		frameMain.setSize(536, 326); //(536, 316) //800, 572 = full-screen
+		//x,y
+		frameMain.setSize(536, 526); //(536, 316) //800, 572 = full-screen
 		frameMain.setVisible(true);
 		frameMain.setDefaultCloseOperation(frameMain.DO_NOTHING_ON_CLOSE); // EXIT_ON_CLOSE);
 
