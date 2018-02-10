@@ -1,5 +1,7 @@
 package f_Java_Advanced.Threads;
 
+import z_example.old.hd.msg;
+
 public class ThreadMain 
 {
 
@@ -19,7 +21,7 @@ public class ThreadMain
 
 
 		//thread Runnable
-		Thread t = new Thread(new msg());
+		Thread t = new Thread(new Messages());
 		t.start();
 		
 //		try 
