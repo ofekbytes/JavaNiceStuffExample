@@ -1,6 +1,5 @@
 package f_Java_Advanced.Threads;
 
-import z_example.old.hd.msg;
 
 public class ThreadMain 
 {
