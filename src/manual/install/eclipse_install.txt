@@ -4,6 +4,9 @@ swt framework
 http://www.eclipse.org/windowbuilder/download.php
 
 
+SWT 4.8
+http://download.eclipse.org/windowbuilder/WB/integration/4.8/
+
 SWT 4.7
 http://download.eclipse.org/windowbuilder/WB/integration/4.7/
 
