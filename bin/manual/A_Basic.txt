@@ -4,6 +4,14 @@
 //
 //
 
+[ Package ] -  
+A package is a "name space" that organizes a set of related classes and interfaces.
+packages are used to avoid name conflicts and to control access to classes
+import package to be used in another
+
+< Package --> https://en.wikipedia.org/wiki/Java_package >
+
+
 class: every line of code in java need to be inside a "Class".
 class "access modifiers" is public -or- default.
    public - accessible by any other class
@@ -118,10 +126,10 @@ Casting - cast one primitive type variable to another primitive type variable: (
  final - final variable is a constant variable assigned only once; (variable with uppercase)
  
  
- Packages -
- A package is a "name space" that organizes a set of related classes and interfaces.
- packages are used to avoid name conflicts and to control access to classes
- import package to be used in another
+// Package -
+// A package is a "name space" that organizes a set of related classes and interfaces.
+// packages are used to avoid name conflicts and to control access to classes
+// import package to be used in another
  
   
  CLASS -
