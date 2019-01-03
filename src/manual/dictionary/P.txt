@@ -2,13 +2,34 @@
 < P >
 
 
-package - 
+package ***- 
 
-A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains. 
-Classes in the same package can access each other's package-private and protected members. 
-Java packages can be stored in compressed files called JAR files, allowing classes to be downloaded faster as groups rather than individually.
+a "package" (package structure) is equal to file structure in you operating system.
+A Java package organizes Java "classes" into "namespaces", providing a unique "namespace" for each type it contains. 
+"classes" in the same package can access each other's "package private" and "protected members". 
+Java "packages" can be stored in compressed files called "JAR" files, allowing classes to be downloaded faster as groups rather than individually.
 In general, a package can contain the following kinds of types: 
-classes, interfaces, enumerations, annotation types. 
-A package allows a developer to group classes (and interfaces) together. 
-These classes will all be related in some way – they might all have to do with a specific application or perform a specific set of tasks. 
-Programmers also typically use packages to organize classes belonging to the same category or providing similar functionality.
+"classes", "interfaces", "enumerations", "annotation" types. 
+A "package" allows a developer to group "classes" (and interfaces) together. 
+These "classes" will all be related in some way – they might all have to do with a specific application or perform a specific set of tasks. 
+Programmers also typically use "packages" to organize classes belonging to the same category (subject)  or providing similar functionality.
+
+
+Core packages in Java SE 8
+Main article: Java Platform, Standard Edition
+java.lang	— basic language functionality and fundamental types
+java.util	— collection data structure classes
+java.io	— file operations
+java.math	— multiprecision arithmetics
+java.nio	— the Non-blocking I/O framework for Java
+java.net	— networking operations, sockets, DNS lookups, ...
+java.security	— key generation, encryption and decryption
+java.sql	— Java Database Connectivity (JDBC) to access databases
+java.awt	— basic hierarchy of packages for native GUI components
+java.text	— Provides classes and interfaces for handling text, dates, numbers, and messages in a manner independent of natural languages.
+java.rmi	— Provides the RMI package.
+java.time	— The main API for dates, times, instants, and durations.
+java.beans	— The java.beans package contains classes and interfaces related to JavaBeans components.
+The java.lang package is available without the use of an import statement.
+.
+<https://en.wikipedia.org/wiki/Java_package>

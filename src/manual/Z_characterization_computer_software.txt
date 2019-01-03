@@ -106,3 +106,9 @@ function  memoize (number) {
     
 
 ----------------------------------------------------------------------------------------
+
+** task 1 *** method that return a one free array cell to another method and let here use it (only for here), anther request another cell
+
+** take 2 *** take X c / f temperature sample and make an average. (rescue 100 cell)
+
+

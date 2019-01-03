@@ -5,6 +5,7 @@
 //
 
 [ Package ] -  
+a package (package structure) is equal to file structure in you operating system.
 A package is a "name space" that organizes a set of related classes and interfaces.
 packages are used to avoid name conflicts and to control access to classes
 import package to be used in another

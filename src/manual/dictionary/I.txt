@@ -1,0 +1,20 @@
+
+< I >
+
+
+import -  
+import - every program reuse an existing code by importing code into the program file.
+
+example:
+
+//import one class from package.//
+import javax.swing.border.EmptyBorder;
+  
+//import all files from package.//
+import javax.swing.*; 
+interfaces -
+
+
+Static import -
+.
+<https://en.wikipedia.org/wiki/Static_import>

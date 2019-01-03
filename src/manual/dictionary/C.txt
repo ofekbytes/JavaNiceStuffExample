@@ -2,7 +2,7 @@
 < C >
 
 
-class - 
+class ***- 
 In object-oriented programming, a class is an extensible program-code-template for creating objects, 
 providing initial values for state (member variables) and implementations of behavior (member functions or methods).
 In many languages, the class name is used as the name for the class (the template itself), 
@@ -15,4 +15,5 @@ and the member variables specific to the object are called instance variables, t
 In some languages, classes are only a compile-time feature (new classes cannot be declared at runtime), 
 while in other languages classes are first-class citizens, and are generally themselves objects (typically of type Class or similar). 
 In these languages, a class that creates classes is called a metaclass.
+.
 <https://en.wikipedia.org/wiki/Class_(computer_programming)>
