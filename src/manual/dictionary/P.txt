@@ -1,0 +1,14 @@
+
+< P >
+
+
+package - 
+
+A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains. 
+Classes in the same package can access each other's package-private and protected members. 
+Java packages can be stored in compressed files called JAR files, allowing classes to be downloaded faster as groups rather than individually.
+In general, a package can contain the following kinds of types: 
+classes, interfaces, enumerations, annotation types. 
+A package allows a developer to group classes (and interfaces) together. 
+These classes will all be related in some way – they might all have to do with a specific application or perform a specific set of tasks. 
+Programmers also typically use packages to organize classes belonging to the same category or providing similar functionality.
