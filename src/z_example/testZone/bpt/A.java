@@ -1,4 +1,4 @@
-package bpt;
+package z_example.testZone.bpt;
 
 public class A {
 
