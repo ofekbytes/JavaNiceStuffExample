@@ -1,0 +1,158 @@
+.
+.
+Factory pattern (design patterns) - 
+.
+.
+Factory pattern is one of the most used design patterns in Java. 
+This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+In Factory pattern, we create object without exposing the creation logic to the client 
+and refer to newly created object using a common interface.
+
+
+
+/****
+ * Shape.java
+ */
+
+
+/**** 
+ * Step 1 
+ * Create an interface.
+ */
+
+public interface Shape 
+{
+	void draw();
+}
+
+
+
+/****
+ * Step 2 
+ * Create concrete classes implementing the same interface.
+ */
+
+
+
+/****
+ * Nan.java
+ */
+
+public class Nan implements Shape 
+{
+
+   @Override
+   public void draw() 
+   {
+	   System.out.println("Inside Nan::draw() method.");   
+   }
+	
+}
+
+
+
+/****
+ * Rectangle.java
+ */
+ 
+public class Rectangle implements Shape 
+{
+
+   @Override
+   public void draw() 
+   {
+      System.out.println("Inside Rectangle::draw() method.");
+   }
+}
+
+
+
+/****
+ * Square.java
+ */
+
+public class Square implements Shape 
+{
+
+   @Override
+   public void draw() 
+   {
+	   System.out.println("Inside Square::draw() method.");   
+   }
+	
+}
+
+
+
+/****
+ * Circle.java
+ */
+ 
+public class Circle implements Shape 
+{
+
+   @Override
+   public void draw() 
+   {
+	   System.out.println("Inside Circle::draw() method.");   
+   }
+	
+}
+
+
+
+/****
+ * ShapeFactory.java
+ */
+
+
+/****
+ * Step 3
+ * Create a Factory to generate object of concrete class based on given information. 
+ */
+
+
+public class ShapeFactory 
+{
+	
+   //use getShape method to get object of type shape 
+   public Shape getShape(String shapeType)
+   {
+      if(shapeType == null)
+      {
+         return null;
+      }		
+      if(shapeType.equalsIgnoreCase("CIRCLE"))
+      {
+         return new Circle();
+         
+      } 
+      else if(shapeType.equalsIgnoreCase("RECTANGLE"))
+      {
+         return new Rectangle();
+         
+      } 
+      else if(shapeType.equalsIgnoreCase("SQUARE"))
+      {
+         return new Square();
+      }
+      else if(shapeType.equalsIgnoreCase("NAN"))
+      {
+    	  return new Nan();
+      }
+      return null;
+   }
+}
+
+
+
+/****
+* output
+****/
+
+Inside Circle::draw() method.
+Inside Rectangle::draw() method.
+Inside Square::draw() method.
+Inside Nan::draw() method.
+
+
