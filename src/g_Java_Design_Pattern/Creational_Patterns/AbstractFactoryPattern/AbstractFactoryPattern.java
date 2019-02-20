@@ -12,7 +12,7 @@ package g_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
  */
 
 
-public class AbstractFactoryPatternDemo 
+public class AbstractFactoryPattern 
 {
 	
 	   public static void main(String[] args) 

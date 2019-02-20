@@ -10,7 +10,7 @@ package g_Java_Design_Pattern.Creational_Patterns.FactoryPattern;
  * Use the Factory to get object of concrete class by passing an information such as type.
  */
 
-public class FactoryPatternDemo 
+public class FactoryPattern 
 {
 
    public static void main(String[] args) 
