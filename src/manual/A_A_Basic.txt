@@ -3,7 +3,7 @@
 3. java - main Method
 4. java - System.out.println()
 5. java Comments - single-line comment / Multi-Line comment -
-
+6. java Documentation comments (javaDoc)
 
 .
 .
@@ -91,7 +91,7 @@ class MyClass
 
 .
 .
-5. java Comments - single-line comment / Multi-Line comment / javaDoc -
+5. java Comments - single-line comment / Multi-Line comment
  
 The purpose of including comments in your code is to explain what the code is doing.
 
@@ -115,8 +115,10 @@ For example:
  /*  This is also a
     comment spanning
     multiple lines */
-    
-5. java Documentation comments  - 
+
+.
+.
+6. java Documentation comments (javaDoc) - 
 
 Documentation comments are special comments that have the appearance of multi-line comments,
 with the difference being that they generate external documentation of your source code. 
