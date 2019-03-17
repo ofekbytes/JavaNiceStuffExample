@@ -19,13 +19,13 @@ public class F_OOP_Reference_Type {
 		f = new F_Person();
 
 		f.setFName("lee");
-		f.setFName("you");
+		f.setLName("you");
 		f.setAge(44);
-		System.out.println("Age == " + f.getAge()); //44
+		System.out.println("FName == "  + f.getFName() + " , LName == "  + f.getLName() + " , Age == " + f.getAge()); //44
 		
 		//send (reference type) a F_Person object as a parameter to a method.
 		Birthday(f);
-		System.out.println("Age == " + f.getAge()); //66
+		System.out.println("Birthday(Age) == " + f.getAge()); //66
 
 	}
 

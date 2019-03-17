@@ -18,3 +18,7 @@ interfaces -
 Static import -
 .
 <https://en.wikipedia.org/wiki/Static_import>
+
+.
+.
+interface - 

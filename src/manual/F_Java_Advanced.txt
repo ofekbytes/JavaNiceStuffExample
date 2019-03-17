@@ -168,7 +168,7 @@ Thread.sleep(1000);
 
 
 
-Exception Type - runtime vs checked exception
+Exception Type - runtime vs checked exception - 
 
 
 

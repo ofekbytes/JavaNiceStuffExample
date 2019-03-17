@@ -5,8 +5,10 @@ public class AnonymousClassesMain
 	//main method + override walk() method
 	public static void main(String[] args) 
 	{
-		Animal an = new Animal() {
-			@Override public void walk() 
+		Animal an = new Animal() 
+		{
+			@Override 
+			public void walk() 
 			{
 				System.out.println("Not Original: override the walk() method");
 			}
