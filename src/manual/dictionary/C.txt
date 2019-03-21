@@ -17,3 +17,8 @@ while in other languages classes are first-class citizens, and are generally the
 In these languages, a class that creates classes is called a metaclass.
 .
 <https://en.wikipedia.org/wiki/Class_(computer_programming)>
+
+
+Concatenation (String Concatenation) - 
+The + (plus) operator between strings adds them together to make a new string. 
+(this process is called concatenation).

@@ -4,6 +4,9 @@
 4. java - System.out.println()
 5. java Comments - single-line comment / Multi-Line comment -
 6. java Documentation comments (javaDoc)
+7. Java Math Operators
+8. Increment / decrement  Operators
+9. String Concatenation
 
 .
 .
@@ -93,7 +96,7 @@ class MyClass
 .
 5. java Comments - single-line comment / Multi-Line comment
  
-The purpose of including comments in your code is to explain what the code is doing.
+-- The purpose of including comments in your code is to explain what the code is doing.
 
 -- A single-line comment 
    starts with two forward slashes and continues until it reaches the end of the line. 
@@ -110,8 +113,10 @@ system.out.println("test") // a single-line comment after code
 -- Multi-Line Comments (Block comment) - 
    Java also supports comments that span multiple lines.
    You start this type of comment with a forward slash followed by an asterisk, 
-   and end it with an asterisk followed by a forward slash. 
-For example:
+   and end it with an asterisk followed by a forward slash.
+    
+--- example:
+
  /*  This is also a
     comment spanning
     multiple lines */
@@ -120,10 +125,10 @@ For example:
 .
 6. java Documentation comments (javaDoc) - 
 
-Documentation comments are special comments that have the appearance of multi-line comments,
-with the difference being that they generate external documentation of your source code. 
-These begin with a forward slash followed by two asterisks, 
-and end with an asterisk followed by a forward slash.
+-- Documentation comments are special comments that have the appearance of multi-line comments,
+   with the difference being that they generate external documentation of your source code. 
+   These begin with a forward slash followed by two asterisks, 
+   and end with an asterisk followed by a forward slash.
  
 --- example:
 
@@ -135,9 +140,9 @@ and end with an asterisk followed by a forward slash.
 -- Javadoc is a tool which comes with JDK and it is used for generating Java code 
    documentation in HTML format from Java source code which has required documentation in a predefined format.
 
-When a documentation comment begins with more than two asterisks, 
-Javadoc assumes that you want to create a "box" around the comment in the source code. 
-It simply ignores the extra asterisks.
+-- When a documentation comment begins with more than two asterisks, 
+   Javadoc assumes that you want to create a "box" around the comment in the source code. 
+   It simply ignores the extra asterisks.
 
 --- example:
 
@@ -161,6 +166,111 @@ Click Finish.
 
 -!- You should now be able to find the newly generated Javadoc in the destination folder. 
     Open index.html.
+
+.
+.
+7. Java Math Operators
+
+- Java provides a rich set of operators to use in manipulating variables. 
+  A value used on either side of an operator is called an operand. 
+-- For example, numbers <6> and <3> are operands of the plus<+> operator:
+
+   int x = 6 + 3;  
+
+   int operand(x) = operand(6) operators(+) operand(6)
+    
+
+-- Java arithmetic operators:
+ 
+   < + >  addition
+   < - >  subtraction
+   < * >  multiplication
+   < / >  division
+   < % >  modulo
+    
+
+-!- Arithmetic operators are used in mathematical expressions 
+    in the same way that they are used in algebraic equations.
+    
+    
+--- examples
+
+   int sumAddition = 50 + 10; // ==60
+   int sumSubtraction = 1000 - 10; // ==990
+   int sumMultiplication = 5 * 2; //==10
+   int sumDivision = 15 / 3; //==5
+   int sumModulo = 13 % 3; //==1
+
+
+.
+.
+8. Increment / decrement  Operators
+
+
+- increment / decrement operator provides a more convenient and 
+  compact way to increase or decrease the value of a variable by one.
+    
+--- example
+
+	int x==5;
+    x=x+1; //x==6 
+    ++x; //x==7
+     
+    x=x-1; //x==6  
+    --x; //x==5
+
+
+- Prefix & Postfix
+-- prefix and postfix, used with both the increment and decrement operators.
+--- prefix operator appears before the operand. 
+	++x;
+	--x;
+	
+--- postfix operator appears after the operand. 
+	x++;
+	x--;
+
+
+--- example:
+	int num1 = 34;
+	int num2 = ++num1; // num2=35 , num1=35
+
+
+	int num3 = 14;
+	int num4 = num3++; //num4=14, num3=15
+
+
+- Assignment Operators
+
+-- < = > assignment operator
+   int value = 5;
+
+-- assignment operators
+
+   < += >  addition
+   < -= >  subtraction
+   < *= >  multiplication
+   < /= >  division
+   < %= >  modulo
+   
+    
+.
+.
+9. String Concatenation
+
+-- The + (plus) operator between strings adds them together to make a new string. 
+
+   String3 = String1 + String2;
+   
+   String2 += String1;
+
+---  example:
+    String stFullName ="", stFirstName = "yaki", stLastName="maki";
+    
+    
+    
+    
+    
     
     
     

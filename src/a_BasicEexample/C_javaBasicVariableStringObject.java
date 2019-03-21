@@ -47,13 +47,17 @@ public class C_javaBasicVariableStringObject {
 	public void StringConcatenation() {
 		
 		//Declare String variable and assign then a string value
-		String stFullName ="", stFirstName = "yaki", stLastName="yak";
+		String stFullName ="", stFirstName = "yaki", stLastName="maki";
+		String stConcatenation = "This is a ";
 		
 		//String Concatenation - adding 2 string variable to create a new string variable using the + (plus operator)  
 	    stFullName = stLastName + ", " + stFirstName;
 	    
 	    //the new string
-	    System.out.println("My Name is: " + stFullName);		
+	    System.out.println("My Name is: " + stFullName);
+	    
+	    stConcatenation += " stConcatenation *** ";
+	    System.out.println(stConcatenation);
 	}
 	
 	
@@ -243,15 +247,15 @@ public class C_javaBasicVariableStringObject {
 		System.out.printf("float  =  %-,10.5f \n" ,floatNumber);
 		System.out.printf("double =  %-,10.5f \n" ,doubleNumber);
 		
-		
+		System.out.println("----------------------");
 		System.out.printf("%nString = %s %n         to you", welcome);
 		System.out.printf("%nString = %S %n         to you", welcome);
 		System.out.printf("%n");
+		System.out.println("----------------------");
+		
 		for (String  StringOutput: stText) {
 			System.out.printf("%10s", StringOutput);
-		}
-		
-		
+		}		
 
 		//formating - String.format()
 		//game score:
