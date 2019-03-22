@@ -39,6 +39,7 @@ public class D_javaBasicUserInput {
 		 * hasNextDouble()
 		 * hasNextBoolean()
 		 * hasNextLine()
+		 * hasNext
 		 */
 			
 		    // get the user integer input
@@ -53,7 +54,7 @@ public class D_javaBasicUserInput {
 			 * nextDouble()
 			 * nextBoolean()
 			 * nextLine()
-			 * 
+			 * next()
 			 **********/
 			
 			//print result
