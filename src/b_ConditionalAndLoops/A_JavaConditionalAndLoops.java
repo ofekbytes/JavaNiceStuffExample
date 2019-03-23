@@ -8,16 +8,44 @@
 
 package b_ConditionalAndLoops;
 
-public class A_JavaConditionalAndLoops {
+public class A_JavaConditionalAndLoops 
+{
 	//Attributes
 	private int age = 27;
 	
 	
 	
-//	constructor
-	public A_JavaConditionalAndLoops() {
+	//constructor
+	public A_JavaConditionalAndLoops() 
+	{
 		System.out.println("~~~ Java Conditional And Loops ~~~");
 		
+	}
+	
+	
+	
+	/* 
+	 * Conditional Operator 
+	 *   (Conditional)?true:false
+	 */
+	public void JavaConditionalOperator()
+	{
+		int num1 = 20;
+		int num2 = 10;
+		boolean blResult = false;
+		String stResult = "";
+		
+		System.out.println("");
+		System.out.println("Java Conditional Operator :: ");
+		
+		blResult = (num1 > num2) ? true : false;
+	    System.out.println(" (num1 > num2) ? true : false ===> " + blResult);
+
+	    stResult = (num1 < num2) ? " bingo " : " No-Bingo ";
+	    System.out.println(" (num1 < num2) ? \" bingo \" : \" No-Bingo \" ===> " + stResult);
+
+	    stResult = (num1 > num2) ? " on " : " off ";
+	    System.out.println(" (num1 > num2) ? \" on \" : \" off \" ===> " + stResult);		
 	}
 	
 	
@@ -25,6 +53,8 @@ public class A_JavaConditionalAndLoops {
 	//if
 	public void JavaConditionalIf(int age)
 	{
+		System.out.println("");
+		System.out.println("if() ");
 		if (age == 30)
 			System.out.println("#1 age == 30");
 	}
@@ -335,6 +365,8 @@ public class A_JavaConditionalAndLoops {
 		int age = 30;
 		
 		A_JavaConditionalAndLoops ajcal = new A_JavaConditionalAndLoops();
+		
+		ajcal.JavaConditionalOperator();
 		
 		//JavaConditionalIf
 		ajcal.JavaConditionalIf(age);

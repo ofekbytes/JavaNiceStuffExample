@@ -1,6 +1,6 @@
 //
 //
-// B Java Conditional And Loops
+// B Java Conditional statements And Loops
 //
 //
 
