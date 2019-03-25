@@ -10,4 +10,5 @@ public abstract interface InterfaceOne
 	
 	abstract public void welcome();
 	abstract int add(int num1, int num2);
+	abstract int takeAway(int num1, int num2);
 }
