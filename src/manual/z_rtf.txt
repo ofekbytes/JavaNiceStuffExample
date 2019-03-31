@@ -1,9 +1,17 @@
 rtf
 ---
 
+// java 8
+https://www.tutorialspoint.com/java/index.htm
+
+// design pattern
+https://www.tutorialspoint.com/design_pattern/index.htm
+
+//log4j
+https://www.tutorialspoint.com/log4j/index.htm
+
 //**main java 8
 https://docs.oracle.com/javase/8/
-
 
 //*api
 https://docs.oracle.com/javase/8/docs/api/index.html
@@ -36,8 +44,7 @@ https://docs.oracle.com/javase/tutorial/java/data/index.html
 https://www.tutorialspoint.com/design_pattern/index.htm
 
 
-//log4j
-https://www.tutorialspoint.com/log4j/index.htm
+
 
 
 /the end/
