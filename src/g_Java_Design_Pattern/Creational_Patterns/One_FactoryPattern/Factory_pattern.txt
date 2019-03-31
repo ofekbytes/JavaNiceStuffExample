@@ -1,9 +1,8 @@
 .
 .
-Factory Pattern -
+Factory Pattern <creational pattern> -
 .
 .
-
 
 
 -- Factory pattern create object without exposing the creation logic to the client 
