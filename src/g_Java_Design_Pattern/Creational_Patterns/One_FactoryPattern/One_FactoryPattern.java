@@ -1,6 +1,6 @@
 package g_Java_Design_Pattern.Creational_Patterns.One_FactoryPattern;
 
-public class FactoryPatternDemo 
+public class One_FactoryPattern 
 {
 
 	public static void main(String[] args) 
