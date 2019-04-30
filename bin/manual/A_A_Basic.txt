@@ -11,17 +11,19 @@
 .
 .
 1. Java -
+
+- java -
  
-Java is a high level, modern programming language designed in the early 1990s by Sun Microsystems, 
-and currently owned by Oracle. 
+-- Java is a high level, modern programming language designed in the early 1990s by Sun Microsystems, 
+   and currently owned by Oracle. 
 
-Java is Platform Independent, which means that you only need to write the program once 
-to be able to run it on a number of different platforms (operating system).
+-- Java is Platform Independent, which means that you only need to write the program once 
+   to be able to run it on a number of different platforms (operating system).
 
-Java is portable, robust, and dynamic, with the ability to fit the needs of virtually any type of application.
-Java guarantees that you'll be able to Write Once, Run Anywhere.
+-- Java is portable, robust, and dynamic, with the ability to fit the needs of virtually any type of application.
+   Java guarantees that you'll be able to Write Once, Run Anywhere.
 
-More than 3 billion devices run Java. 
+-- More than 3 billion devices run Java. 
 
 - Java is used to: 
 -- develop apps for Google's Android OS
@@ -37,22 +39,31 @@ More than 3 billion devices run Java.
 .
 2. java - first program -
 
--- In Java, every line of code that can actually run needs to be inside a class.
--- In Java, each application has an entry point (a starting point),
-   which is a method called "main".
+- In Java, every line of code that can actually run needs to be inside a class.
 
--- example: class "MyClass".
+- In Java, each application has an entry point (a starting point),
+  which is a method called "main".
 
-class MyClass 
-{
-    public static void main(String[ ] args) 
-    {
-        System.out.println("First Java Program");
-    }
-}
+--- example: class "MyClass".
+
+	class MyClass 
+	{
+	    public static void main(String[ ] args) 
+	    {
+	        System.out.println("First Java Program");
+	    }
+	}
+
+	/*** 
+ 	***output***:
+ 	* First Java Program
+ 	*/
+
 
 -!- Every program in Java must have a class.
+
 -!- Every Java program starts from the main method.
+
 
 .
 .

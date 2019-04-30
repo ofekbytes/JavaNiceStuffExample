@@ -2,7 +2,7 @@
 < P >
 
 
-package ***- 
+<package> ***- 
 
 a "package" (package structure) is equal to file structure in you operating system.
 A Java package organizes Java "classes" into "namespaces", providing a unique "namespace" for each type it contains. 
@@ -33,3 +33,9 @@ java.beans	— The java.beans package contains classes and interfaces related to
 The java.lang package is available without the use of an import statement.
 .
 <https://en.wikipedia.org/wiki/Java_package>
+
+
+<pojo> - Plain old Java object
+
+.
+<https://en.wikipedia.org/wiki/Plain_old_Java_object>
