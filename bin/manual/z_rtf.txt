@@ -25,8 +25,6 @@ https://www.tutorialspoint.com/java8/index.htm
 //* api - math
 https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 
-
-
 //*doc
 https://docs.oracle.com/javase/8/docs/index.html
 https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
@@ -40,9 +38,13 @@ https://docs.oracle.com/javase/tutorial/
 https://docs.oracle.com/javase/tutorial/java/data/index.html
 
 
+//java tutorialspoint//
+https://www.tutorialspoint.com/java/index.htm
+https://www.tutorialspoint.com/java/java_variable_types.htm
+
+
 //design pattern
 https://www.tutorialspoint.com/design_pattern/index.htm
-
 
 
 

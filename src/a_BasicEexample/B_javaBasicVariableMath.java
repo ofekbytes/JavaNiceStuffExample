@@ -57,8 +57,8 @@ public class B_javaBasicVariableMath {
 		System.out.println("6 + 2 = " + (6 + 2));
 		System.out.println("6 - 2 = " + (6 - 2));
 		System.out.println("6 * 2 = " + (6 * 2));
-		System.out.println("6 / 2 = (6.0)" + (6 / 2));
-		System.out.println("6 % 2 = (6.0)" + (6 % 2));
+		System.out.println("6 / 2 = " + (6 / 2));
+		System.out.println("6 % 2 = " + (6 % 2));
 	}
 	
 	

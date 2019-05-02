@@ -17,10 +17,12 @@ class: every line of code in java need to be inside a "Class".
 class "access modifiers" is public -or- default.
    public - accessible by any other class
       example: 
-      Public class MyPublicClass{} 
+      Public class MyPublicClass{}
+       
    default: class is accessible only by classes in the same package.(left blank)
       example: 
       class MyDefaultClass {}
+      
    classes are blue prints used to design objects that contain attributes (variables) and methods (functions).
    class is blueprint / descriptions/ definitions for an object -or for many objects.
 

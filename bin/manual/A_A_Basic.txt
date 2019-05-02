@@ -54,6 +54,7 @@
 	    }
 	}
 
+
 	/*** 
  	***output***:
  	* First Java Program
@@ -88,20 +89,21 @@
 . 
 4. java - System.out.println() - 
  
- -- The println() method prints a line of text to the screen (console).
--- The System() class and its "out" stream are used to access the println() method.
-In classes, methods, and other flow-control structures code is always enclosed in curly braces { }.
+-- The "println()" method prints a line of text to the screen (console).
+-- The "System()" class and its "out" stream are used to access the "println()" method.
+-- "classes", "methods", and other flow-control structures code is always enclosed in curly braces { }.
+-- In Java, each code statement must end with a semicolon.
  
- -!- In Java, each code statement must end with a semicolon. 
---- example:
+--- example: "class" with "main()" method:
 
-class MyClass 
-{
-    public static void main(String[ ] args) 
-    {
-        System.out.println("First Java Program");
-    }
-}
+	class MyClass 
+	{
+	    public static void main(String[ ] args) 
+	    {
+	        System.out.println("First Java Program");
+	    }
+	}
+
 
 .
 .
@@ -114,8 +116,9 @@ class MyClass
 
 --- example:
 
-// this is a single-line comment -
-system.out.println("test") // a single-line comment after code
+	// this is a single-line comment -
+	system.out.println("test") 	// a single-line comment after code
+
 
 -!- Adding comments as you write code is a good practice, 
     because they provide clarification and understanding when you need to refer back to it, 
@@ -128,18 +131,19 @@ system.out.println("test") // a single-line comment after code
     
 --- example:
 
- /*  This is also a
-    comment spanning
-    multiple lines */
+	/*  This is also a
+	*  comment spanning
+	*  multiple lines 
+	*/
 
 .
 .
 6. java Documentation comments (javaDoc) - 
 
--- Documentation comments are special comments that have the appearance of multi-line comments,
-   with the difference being that they generate external documentation of your source code. 
-   These begin with a forward slash followed by two asterisks, 
-   and end with an asterisk followed by a forward slash.
+- Documentation comments are special comments that have the appearance of multi-line comments,
+  with the difference being that they generate external documentation of your source code. 
+  These begin with a forward slash followed by two asterisks, 
+  and end with an asterisk followed by a forward slash.
  
 --- example:
 
@@ -147,6 +151,7 @@ system.out.println("test") // a single-line comment after code
 
 /** This is also a
     documentation comment */
+
 
 -- Javadoc is a tool which comes with JDK and it is used for generating Java code 
    documentation in HTML format from Java source code which has required documentation in a predefined format.
@@ -157,23 +162,24 @@ system.out.println("test") // a single-line comment after code
 
 --- example:
 
-/**********************
-method / fucntion documentation
-***********************/
-
+	/****
+	 * method / fucntion documentation
+	 */
+	 
+	 
 -- generate java doc from eclipse
 
-Project > Generate Javadoc....
+[menu-bar] Project > Generate Javadoc....
 
-In the Javadoc command: field, browse to find javadoc.exe 
-(usually at [path_to_jdk_directory]\bin\javadoc.exe).
+-- In the Javadoc command: field, browse to find javadoc.exe 
+   (usually at [path_to_jdk_directory]\bin\javadoc.exe).
 
-Check the box next to the "project/package/file" for which you are creating the Javadoc.
+-- Check the box next to the "project/package/file" for which you are creating the Javadoc.
 
-In the Destination: field, browse to find the desired destination 
-(for example, the root directory of the current project).
+-- In the Destination: field, browse to find the desired destination 
+   (for example, the root directory of the current project).
 
-Click Finish.
+-- Click Finish.
 
 -!- You should now be able to find the newly generated Javadoc in the destination folder. 
     Open index.html.
@@ -183,12 +189,13 @@ Click Finish.
 7. Java Math Operators
 
 - Java provides a rich set of operators to use in manipulating variables. 
-  A value used on either side of an operator is called an operand. 
--- For example, numbers <6> and <3> are operands of the plus<+> operator:
+  A value used on either side of an operator is called an operand.
+   
+--- example: numbers <6> and <3> are operands of the plus<+> operator:
 
-   int x = 6 + 3;  
+    int x = 6 + 3;  
 
-   int operand(x) = operand(6) operators(+) operand(6)
+    int operand(x) = operand(6) operators(+) operand(6)
     
 
 -- Java arithmetic operators:
@@ -224,15 +231,20 @@ Click Finish.
 --- example
 
 	int x==5;
+	
+	//increment
     x=x+1; //x==6 
     ++x; //x==7
      
+    //decrement
     x=x-1; //x==6  
     --x; //x==5
 
 
 - Prefix & Postfix
+
 -- prefix and postfix, used with both the increment and decrement operators.
+
 --- prefix operator appears before the operand. 
 	++x;
 	--x;
@@ -269,7 +281,7 @@ Click Finish.
 .
 9. String Concatenation
 
--- The + (plus) operator between strings adds them together to make a new string. 
+-- The " + " (plus) operator between strings adds them together to make a new string. 
 
    String3 = String1 + String2;
    
@@ -284,7 +296,7 @@ Click Finish.
 .
 10. Getting User Input
     
--- Scanner object is the most common for getting user input.
+-- " Scanner " object is the most common for getting user input.
 
 
 --- Import the Scanner class to use the Scanner object.
