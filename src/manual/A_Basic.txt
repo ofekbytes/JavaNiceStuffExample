@@ -6,12 +6,12 @@
 
 [ Package ] -  
 a package (package structure) is equal to file structure in you operating system.
-A package is a "name space" that organizes a set of related classes and interfaces.
+A package is a "name space" that organizes a set of related classes and interfaces (file/s).
 packages are used to avoid name conflicts and to control access to classes
 import package to be used in another
 
-< Package --> https://en.wikipedia.org/wiki/Java_package >
-
+example:
+< https://en.wikipedia.org/wiki/Java_package >
 
 class: every line of code in java need to be inside a "Class".
 class "access modifiers" is public -or- default.
@@ -121,43 +121,159 @@ Casting - cast one primitive type variable to another primitive type variable: (
 
 
 
- public - 
- static - no need for instance of the class (static belongs to class) declare with uppercase.
+ public - anyone can access it
+ static - no need for instance of the class (static belongs to class) declare with UPPERCASE.
  example:
  public static int COUNT = 0
  
- final - final variable is a constant variable assigned only once; (variable with uppercase)
+ final - final variable is a constant variable assigned only once; (variable start with UPPERCASE letter)
  
  
-// Package -
-// A package is a "name space" that organizes a set of related classes and interfaces.
-// packages are used to avoid name conflicts and to control access to classes
-// import package to be used in another
- 
+Package -
+(package name start with lowercase letter )
+a package is a "name space" that organizes a set of related classes and interfaces.
+packages are used to avoid name conflicts and to control access to classes
+import package to be used in another package
+
+a package (package structure) is like a file structure in your computer (folder, files..).
+package help to organize the different file in your program.
+package name is usually a domain name in reverse order
+example: 
+< com.domain-name.subject.sub-subject >
+
+package name need to in lower-case.
   
- CLASS -
- A class is the blueprint from which individual objects are created.
- class is a blue print of a object.
- each class has a name and each is used to define attributes and behavior.
-  example:
- attributes: name, age, gender.
- behavior: walk, run, jump, 
+package name serves as high level description of all the program files related to certain topic.
+example: 
+" com.domain-name.subject.sub-subject ".
+	
+-!- Naming_convention - 
+lowercase, UPPERCASE, camelCase, snake_case, kebab-case, PascalCaseVariable, 
+https://en.wikipedia.org/wiki/Naming_convention_(programming)  
+
+
+CLASS -
+
+simple program can consist many code of line and therefore important to post a structure of a program code, 
+such: classes and packages.
+class name start with Capital letter  (start with UPPERCASE letter).
+example:
+ //
+ //  class Car {
+ // }
+
+class should be focused only one topic.
+keep class as small as possible to improve usability and readability.
+a class consist of one or more methods.
+
+A class is the blueprint from which individual objects are created.
+class is a blue print of a object.
+each class has a name and each is used to define attributes and behavior.
+example:
+attributes: name, age, gender.
+behavior: walk, run, jump, 
 
  
- Methods (function) - define the behavior.
- method is a collection of statements that group together to perform an operation.
- example:
- System.out.println();
- 
- 
- attributes / variable declaration : declared inside the Method/s.
+Methods (function) - define the behavior.
+(method name start with lowercase letter)
+method is a collection of statements that group together to perform an operation.
+ // System.out.println();
+
+a method (or function) define how to achieve a certain thing.
+a method name should be a word that best describe the method.
+a method can call other method and perform method hierarchy.
+
+-!- like a book -
+a package name will be like  a book chapter.
+a class name will be like a book paragraph.
+a method name will be like a book sentence.
+
+-!- example:
+method dinner call appetizer method
+method diner call main-course
+method diner call dessert.
+main-course method can internally call build-water method
+
+// package a_BasicEexample.packageClassMethod;
+// 
+// public class Food {
+// 	public Food() {
+// 		Dinner();
+// 	}
+// 
+// 	private void Dinner() {
+// 		System.out.println("Dinner");
+// 		mainCourse();
+// 		dessert();
+// 	}
+// 
+// 	private void mainCourse() {
+// 		System.out.println("mainCourse");
+// 		buildWater();
+// 	}
+// 
+// 	private void buildWater() {
+// 		System.out.println("buildWater");
+// 	}
+// 
+// 	private void dessert() {
+// 		System.out.println("dessert");
+// 	}
+// 
+// 	public static void main(String[] args) {
+// 		Food f = new Food();
+// 	}
+// }
+// 
+
+// output //
+Dinner
+mainCourse
+buildWater
+dessert
+
+
+-!- keep method short as possible.
+    method average between 1 - 3 line/s of code
+    (maximum of 20 lines of code)
+    
+
+attributes / variable declaration : declared inside the Method/s.
  // public methodExample{
  // 	private int age;	
  //	...
  //}
  
- Parameters / Arguments: Values passed to a method "(b1,1)" from outside example main()
+Parameters / Arguments: Values passed to a method "(b1,1)" from outside example main()
  //methodChange(jb, 1);
+ 
+method parameters / Arguments - is the parameters of the method.
+for readability reason use a few method parameter as possible.
+(between 1-5 parameters).
+
+example: method with 1 parameters.
+// drive (speed) {
+// }
+ 
+ 
+// package a_BasicEexample.packageClassMethod;
+//
+// public class Car {
+// 	public Car() {
+// 		drive(50);
+// 	}
+//
+// 	private void drive(int speed) {
+// 		System.out.println("speed is " + speed);
+// 	}
+//
+// 	public static void main(String[] args) {
+// 		Car c = new Car();
+// 	}
+// }
+
+// output //
+speed is 50
  
  
  constructor - is special methods invoked when an object is created. 

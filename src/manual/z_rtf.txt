@@ -1,6 +1,26 @@
 rtf
 ---
 
+***
+import static package
+example: < import static org.junit.Assets.* > 
+
+***
+web component
+oop
+mvc
+desing pattern
+clesign
+android
+ui (awt,swt, swing) java 2d
+jdbc, rmi, cobra
+java j2ee, jsp
+jav, war,
+script -> ant
+
+
+
+
 // java 8
 https://www.tutorialspoint.com/java/index.htm
 
