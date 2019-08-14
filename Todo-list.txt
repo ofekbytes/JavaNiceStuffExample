@@ -1,0 +1,22 @@
+-=[Todo List]=-
+
+
+-- add examples:
+design pattern
+oop
+hibernate
+java 8
+
+
+-- add manual:
+design pattern
+oop
+hibernate
+java 8
+
+
+
+-- links
+
+-- hibernate --
+https://www.tutorialspoint.com/hibernate/index.htm
