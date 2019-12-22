@@ -17,7 +17,7 @@ Factory Pattern <creational pattern> -
 
 
 
-Step 1: Create an interface.
+- Step 1: Create an interface.
 
 ---[Shape.java]------------------------------------------------
 
@@ -27,7 +27,7 @@ public interface Shape
 }
 ---------------------------------------------------
 
-Step 2: Create concrete classes implementing the same interface.
+- Step 2: Create concrete classes implementing the same interface.
 
 ---[Rectangle.java]------------------------------------------------
 

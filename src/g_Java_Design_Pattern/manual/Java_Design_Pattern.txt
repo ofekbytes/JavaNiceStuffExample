@@ -5,6 +5,9 @@ Design patterns represent the best practices used by experienced object-oriented
 Design patterns are solutions to general problems that software developers faced during software development. 
 These solutions were obtained by trial and error by numerous software developers over quite a substantial period of time.
 
+Design patterns provide a standard terminology and are specific to particular scenario. 
+For example, a singleton design pattern signifies use of single object so all developers familiar with 
+single design pattern will make use of single object and they can tell each other that program is following a singleton pattern.
 
 - Types of Design Patterns
 -- As per the design pattern reference book Design Patterns - 
