@@ -6,8 +6,8 @@ public class FinallyExample
 	private int [] arrOneDimensional = new int[4];
 
 	public FinallyExample(int arrayIndex, int ArrayValue)
-	{	
-		System.out.println("\n change value with try..catch..finally validation");
+	{	System.out.println("arrayIndex == " + arrayIndex + " ArrayValue == " + ArrayValue);
+		System.out.println("\nchange value with try..catch..finally validation");
 		try{
 			arrOneDimensional[arrayIndex] = ArrayValue;
 			System.out.println("this syntax will throw an exception (catch)");

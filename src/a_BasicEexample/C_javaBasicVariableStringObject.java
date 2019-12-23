@@ -276,6 +276,18 @@ public class C_javaBasicVariableStringObject {
 	}
 	
 	
+	public void WrapperExample001() {
+		
+		int primitivesInt = 55;
+		Integer ObjectIntOne = Integer.valueOf(primitivesInt);
+		
+		Integer ObjectIntTwo = ObjectIntOne;
+		System.out.println("\n");
+		System.out.println("Wrapper Examples");
+		System.out.println(primitivesInt +" "+ObjectIntOne+" "+ObjectIntTwo);  
+	}
+	
+	
 	public static void main(String[] args) {
 		
 		C_javaBasicVariableStringObject c = new C_javaBasicVariableStringObject();
@@ -293,6 +305,8 @@ public class C_javaBasicVariableStringObject {
 		c.CastingNumbers();
 		
 		c.TextFormatingPrintF();
+		
+		c.WrapperExample001();
 	}
 
 }

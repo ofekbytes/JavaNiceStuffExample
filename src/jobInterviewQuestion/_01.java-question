@@ -1,0 +1,128 @@
+
+01.Q. Explain JDK, JRE and JVM?
+01.A. 
+JDK - Java Development Kit.
+JRE - Java Runtime Environment.
+JVM - Java Virtual Machine.
+
+
+02.Q. Explain public static void main(String args[]) in Java
+02.A. main() in Java is the entry point for any Java program. 
+It is always written as 
+public static void main(String[] args).
+
+
+03.Q. Why Java is platform independent?
+03.A. Java is called platform independent because of its byte codes which can run on any system irrespective of its underlying operating system.
+
+
+04.Q. Why Java is not 100% Object-oriented?
+04.A. Java is not 100% Object-oriented because it makes use primitive (none objects) data types: boolean, byte, char, int, float, double, long, short.
+
+
+05.Q. What are wrapper classes in Java?
+05.A. Wrapper classes convert the Java primitives into the reference types (objects). 
+    (wrapper classes - “wrap” the primitive data type into an object of that class. 
+
+Primitive-Type..+..Wrapper-class
+................|...............
+boolean.........|..Boolean
+char............|..Character
+byte............|..Byte
+short...........|..Short
+int.............|..Integer
+long............|..Long
+float...........|..Float
+double..........|..Double
+................+...............
+
+url: https://www.javatpoint.com/wrapper-class-in-java
+
+
+06.Q. What are constructors in Java?
+06.A. 
+- constructor is used to initialize an object.
+- constructors have the same name as the class name. 
+- constructor return no value.
+- constructor is automatically called when an object is created.
+- There are two types of constructors:
+-- Default Constructor: have NO argument (created by default if user/programmer havent created one)
+-- Parameterized Constructor: have an argument (initializing the instance variables with the provided values).
+
+
+07.Q. What is singleton class in Java and how can we make a class singleton?
+07.A. Singleton class is a class whose only one instance can be created at any given time, in one JVM. 
+      A class can be made singleton by making its constructor private.
+
+
+08.Q. What is the difference between Array list and vector in Java?
+08.A. 
+
+---[ArrayList]--
+1. Array List is not synchronized.	 
+2. Array List is fast as it’s non-synchronized.
+3. If an element is inserted into the Array List, it increases its Array size by 50%.
+4. Array List does not define the increment size.
+5. Array List can only use Iterator for traversing an Array List.
+
+---[Vector]---
+1. Vector is synchronized.
+2. Vector is slow as it is thread safe.
+3. Vector defaults to doubling size of its array.
+4. Vector defines the increment size.
+5. Vector can use both Enumeration and Iterator for traversing.
+
+09.Q. What is the difference between equals() and "==" ?
+09.A. difference between equals() and "==" is
+-- Equals() method is defined in Object class and used for checking equality of two objects defined by business logic.
+   (used to compare the values of two objects)
+
+-- equality operator (“==”) is a binary operator and used to compare primitives and objects. 
+
+10.Q. What are the differences between Heap and Stack Memory in Java?
+10.A. The major difference between Heap and Stack memory are:
+
+1. Features	
+2. Stack	
+3. Heap
+
+1. Memory	
+2. Stack memory is used only by one thread of execution.	
+3. Heap memory is used by all the parts of the application.
+
+1. Access	
+2. Stack memory can’t be accessed by other threads.	
+3. Objects stored in the heap are globally accessible.
+
+1. Memory Management	
+2. Follows LIFO manner to free memory.	
+3. Memory management is based on the generation associated with each object.
+
+1. Lifetime	
+2. Exists until the end of execution of the thread.	
+3. Heap memory lives from the start till the end of application execution.
+
+1. Usage	
+2. Stack memory only contains local primitive and reference variables to objects in heap space.	
+3. Whenever an object is created, it’s always stored in the Heap space.
+
+
+11.Q. What is a package in Java? List down various advantages of packages.
+11.A. Packages in Java, are the collection of related classes and interfaces which are bundled together. 
+     By using packages, developers can easily modularize the code and optimize its reuse. 
+     Also, the code within the packages can be imported by other classes and reused. 
+
+- package advantages:
+-- Packages help in avoiding name clashes.
+-- They provide easier access control on the code.
+-- Packages can also contain hidden classes which are not visible to the outer classes and only used within the package.
+-- Creates a proper hierarchical structure which makes it easier to locate the related classes.
+
+12.Q. What is JIT compiler in Java?
+12.A. JIT (Just-In-Time) compiler in Java. 
+   It is a program that helps in converting the Java bytecode into instructions that are sent directly to the processor. 
+   By default, the JIT compiler is enabled in Java and is activated whenever a Java method is invoked. 
+   The JIT compiler then compiles the bytecode of the invoked method into native machine code, compiling it “just in time” to execute. 
+   Once the method has been compiled, the JVM summons the compiled code of that method directly rather than interpreting it. 
+   This is why it is often responsible for the performance optimization of Java applications at the run time.
+
