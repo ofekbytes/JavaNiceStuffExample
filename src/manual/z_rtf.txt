@@ -66,8 +66,19 @@ https://www.tutorialspoint.com/java/java_variable_types.htm
 //design pattern
 https://www.tutorialspoint.com/design_pattern/index.htm
 
+//design_patterns
+https://sourcemaking.com/design_patterns
 
 
+//design_patterns - youtube
+https://www.youtube.com/watch?v=NU_1StN5Tkk
+
+
+https://refactoring.guru/refactoring
+
+https://medium.com/educative/the-7-most-important-software-design-patterns-d60e546afb0e
+
+https://www.oreilly.com/ideas/5-reasons-to-finally-learn-design-patterns
 
 /the end/
 
