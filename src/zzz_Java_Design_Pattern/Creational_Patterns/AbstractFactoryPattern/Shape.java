@@ -9,7 +9,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /***
  * Shape.java
  */
-
 public interface Shape 
 {
    void draw();

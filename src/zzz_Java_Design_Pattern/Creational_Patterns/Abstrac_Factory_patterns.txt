@@ -1,10 +1,10 @@
 .
 .
-Abstract Factory patterns (design patterns) - 
+---[Abstract Factory patterns - factory of factories (design patterns)]--- 
 .
 .
 Abstract Factory patterns work around a super-factory which creates other factories. 
-This factory is also called as factory of factories.
+This factory is also called as ["factory of factories"].
 In Abstract Factory pattern an interface is responsible for creating a factory of related objects 
 without explicitly specifying their classes. 
 Each generated factory can give the objects as per the Factory pattern.
@@ -21,16 +21,19 @@ It will pass information (CIRCLE / RECTANGLE / SQUARE for Shape) to AbstractFact
 It also passes information (RED / GREEN / BLUE for Color) to AbstractFactory to get the type of object it needs.
 
 
-Step 1
-Create an interface for Shapes.
+--[Step 1]--
+- Create an interface for Shape.
 
-Shape.java
-
+/***
+ * Shape.java
+ */
 public interface Shape {
    void draw();
 }
-Step 2
-Create concrete classes implementing the same interface.
+
+
+--[Step 2]-- 
+- Create concrete classes implementing the same interface.
 
 Rectangle.java
 
