@@ -1,0 +1,16 @@
+
+
+---[MySql Links]---
+
+
+// Java Database Connectivity (JDBC) // 
+ https://en.wikipedia.org/wiki/Java_Database_Connectivity
+ 
+ // Connection_pool
+ https://en.wikipedia.org/wiki/Connection_pool
+
+ // Connection_pool
+ https://en.wikipedia.org/wiki/Neo4j
+ 
+ // Connection_pool
+ https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-usagenotes-j2ee-concepts-connection-pooling.html
