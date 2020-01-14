@@ -7,7 +7,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * Circle.java
  */
-
 public class Circle implements Shape
 {
 

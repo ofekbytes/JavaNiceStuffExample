@@ -10,7 +10,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * Blue.java
  */
-
 public class Blue implements Color 
 {
    @Override

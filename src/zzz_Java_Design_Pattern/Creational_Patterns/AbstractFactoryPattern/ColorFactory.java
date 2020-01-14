@@ -1,5 +1,8 @@
 package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 
+/****
+ * ColorFactory.java
+ */
 public class ColorFactory extends AbstractFactory {
 	
 	   @Override

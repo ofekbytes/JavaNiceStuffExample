@@ -10,7 +10,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * FactoryProducer.java
  */
-
 public class FactoryProducer {
 	   public static AbstractFactory getFactory(String choice){
 	   

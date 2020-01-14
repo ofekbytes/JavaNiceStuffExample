@@ -24,6 +24,7 @@ It also passes information (RED / GREEN / BLUE for Color) to AbstractFactory to 
 --[Step 1]--
 - Create an interface for Shape.
 
+
 /***
  * Shape.java
  */
@@ -35,7 +36,10 @@ public interface Shape {
 --[Step 2]-- 
 - Create concrete classes implementing the same interface.
 
-Rectangle.java
+
+/****
+ * Rectangle.java
+ */
 
 public class Rectangle implements Shape {
 
@@ -44,8 +48,11 @@ public class Rectangle implements Shape {
       System.out.println("Inside Rectangle::draw() method.");
    }
 }
-Square.java
 
+
+/****
+ * Square.java
+ */
 public class Square implements Shape {
 
    @Override
@@ -53,8 +60,11 @@ public class Square implements Shape {
       System.out.println("Inside Square::draw() method.");
    }
 }
-Circle.java
 
+
+/****
+ * Circle.java
+ */
 public class Circle implements Shape {
 
    @Override
@@ -62,19 +72,28 @@ public class Circle implements Shape {
       System.out.println("Inside Circle::draw() method.");
    }
 }
-Step 3
-Create an interface for Colors.
 
-Color.java
+
+--[Step 3]-- 
+- Create an interface for Colors.
+
+
+/**** 
+ * Color.java
+ */
 
 public interface Color {
    void fill();
 }
-Step4
-Create concrete classes implementing the same interface.
 
-Red.java
 
+--[Step 4]-- 
+- Create concrete classes implementing the same interface.
+
+
+/****
+ * Red.java
+ */
 public class Red implements Color {
 
    @Override
@@ -82,8 +101,11 @@ public class Red implements Color {
       System.out.println("Inside Red::fill() method.");
    }
 }
-Green.java
 
+
+/****
+ * Green.java
+ */
 public class Green implements Color {
 
    @Override
@@ -91,8 +113,11 @@ public class Green implements Color {
       System.out.println("Inside Green::fill() method.");
    }
 }
-Blue.java
 
+
+/****
+ * Blue.java
+ */
 public class Blue implements Color {
 
    @Override
@@ -100,20 +125,29 @@ public class Blue implements Color {
       System.out.println("Inside Blue::fill() method.");
    }
 }
-Step 5
-Create an Abstract class to get factories for Color and Shape Objects.
 
-AbstractFactory.java
 
+--[Step 5]-- 
+- Create an Abstract class to get factories for Color and Shape Objects.
+
+
+/****
+ * AbstractFactory.java
+ */
 public abstract class AbstractFactory {
    abstract Color getColor(String color);
    abstract Shape getShape(String shape) ;
 }
-Step 6
-Create Factory classes extending AbstractFactory to generate object of concrete class based on given information.
 
-ShapeFactory.java
 
+--[Step 6]-- 
+- Create Factory classes extending AbstractFactory to generate object of 
+  concrete class based on given information.
+
+
+/**** 
+ * ShapeFactory.java
+ */
 public class ShapeFactory extends AbstractFactory {
 	
    @Override
@@ -141,8 +175,11 @@ public class ShapeFactory extends AbstractFactory {
       return null;
    }
 }
-ColorFactory.java
 
+
+/****
+ * ColorFactory.java
+ */
 public class ColorFactory extends AbstractFactory {
 	
    @Override
@@ -170,11 +207,15 @@ public class ColorFactory extends AbstractFactory {
       return null;
    }
 }
-Step 7
-Create a Factory generator/producer class to get factories by passing an information such as Shape or Color
 
-FactoryProducer.java
 
+--[Step 7]-- 
+- Create a Factory generator/producer class to get factories by passing 
+  an information such as Shape or Color
+
+/****
+ * FactoryProducer.java
+ */
 public class FactoryProducer {
    public static AbstractFactory getFactory(String choice){
    
@@ -188,11 +229,16 @@ public class FactoryProducer {
       return null;
    }
 }
-Step 8
-Use the FactoryProducer to get AbstractFactory in order to get factories of concrete classes by passing an information such as type.
 
-AbstractFactoryPatternDemo.java
 
+--[Step 8]-- 
+- Use the FactoryProducer to get AbstractFactory in order to get 
+  factories of concrete classes by passing an information such as type.
+
+
+/****
+ * AbstractFactoryPattern.java 
+ */
 public class AbstractFactoryPatternDemo {
    public static void main(String[] args) {
 
@@ -239,8 +285,10 @@ public class AbstractFactoryPatternDemo {
       color3.fill();
    }
 }
-Step 9
-Verify the output.
+
+
+--[Step 9]-- 
+- Verify the output.
 
 Inside Circle::draw() method.
 Inside Rectangle::draw() method.
@@ -248,3 +296,4 @@ Inside Square::draw() method.
 Inside Red::fill() method.
 Inside Green::fill() method.
 Inside Blue::fill() method.
+

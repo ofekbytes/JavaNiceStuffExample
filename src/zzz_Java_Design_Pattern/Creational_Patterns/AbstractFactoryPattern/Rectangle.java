@@ -8,7 +8,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * Rectangle.java
  */
-
 public class Rectangle implements Shape
 {
 

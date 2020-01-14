@@ -4,7 +4,8 @@
 .
 .
 Factory pattern is one of the most used design patterns in Java. 
-This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+This type of design pattern comes under creational pattern as this pattern 
+provides one of the best ways to create an object.
 In Factory pattern, we create object without exposing the creation logic to the client 
 and refer to newly created object using a common interface.
 
@@ -25,10 +26,10 @@ public interface Shape
 --[Step 2]--
 -- Create concrete classes implementing the same interface.
 
+
 /****
  * Rectangle.java
  */
- 
 public class Rectangle implements Shape 
 {
 
@@ -43,7 +44,6 @@ public class Rectangle implements Shape
 /****
  * Square.java
  */
-
 public class Square implements Shape 
 {
 
@@ -59,7 +59,6 @@ public class Square implements Shape
 /****
  * Circle.java
  */
- 
 public class Circle implements Shape 
 {
 
@@ -75,7 +74,6 @@ public class Circle implements Shape
 /****
  * Nan.java
  */
-
 public class Nan implements Shape 
 {
 
@@ -95,7 +93,6 @@ public class Nan implements Shape
 /****
  * ShapeFactory.java
  */
-
 public class ShapeFactory 
 {
 	
@@ -129,13 +126,13 @@ public class ShapeFactory
 }
 
 --[Step 4]--
--- Use the Factory to get object of concrete class by passing an information such as type.
+-- Use the Factory to get object of concrete class by passing an information 
+   such as type.
 
 
 /****
  * FactoryPatternDemo.java
  */
- 
 public class FactoryPattern 
 {
 
@@ -171,7 +168,8 @@ public class FactoryPattern
 } //class
 
 
---[output]--
+--[Step 5]-- 
+- Verify the output.
 
 Inside Circle::draw() method.
 Inside Rectangle::draw() method.

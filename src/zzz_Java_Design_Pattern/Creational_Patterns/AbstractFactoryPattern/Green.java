@@ -10,7 +10,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * Green.java
  */
-
 public class Green implements Color 
 {
    @Override

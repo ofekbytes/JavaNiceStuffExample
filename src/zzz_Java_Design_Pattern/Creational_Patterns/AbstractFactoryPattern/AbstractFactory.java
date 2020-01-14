@@ -10,7 +10,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * AbstractFactory.java
  */
-
 public abstract class AbstractFactory 
 {
    abstract Color getColor(String color);

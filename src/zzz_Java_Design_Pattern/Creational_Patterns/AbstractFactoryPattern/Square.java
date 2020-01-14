@@ -8,7 +8,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /****
  * Square.java
  */
-
 public class Square implements Shape
 {
 

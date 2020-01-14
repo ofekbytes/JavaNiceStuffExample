@@ -9,7 +9,6 @@ package zzz_Java_Design_Pattern.Creational_Patterns.AbstractFactoryPattern;
 /**** 
  * Color.java
  */
-
 interface Color 
 {
 	void fill();
