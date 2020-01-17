@@ -1,4 +1,4 @@
-package zzzz_Java_8.Lambda_Expression.ForEachMethod;
+package zzzz_Java_8.Lambda_Expression.C_ForEachFilterLikeMethod;
 
 public class Product {
 

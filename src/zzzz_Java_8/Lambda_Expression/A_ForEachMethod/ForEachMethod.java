@@ -1,7 +1,7 @@
 /**
  * 
  */
-package zzzz_Java_8.Lambda_Expression.ForEachMethod;
+package zzzz_Java_8.Lambda_Expression.A_ForEachMethod;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class ForEachMethod {
 			}
 
 	public static void main(String[] args) {
-		List products = new ArrayList();
+		List <Product> products = new ArrayList();
 		
 		products.add(new Product("id-01","phone - nokia 1122", 1500, 2, "nokia"));
 		products.add(new Product("id-02","phone - nokia 2233", 1500, 3, "nokia"));
@@ -24,7 +24,6 @@ public class ForEachMethod {
 		System.out.println("Product List: ");
 		products.forEach(product -> {
 			System.out.println(product.toString());
-			System.out.println("------------------");
 		}
 		);
 	}
