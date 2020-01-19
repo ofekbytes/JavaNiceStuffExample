@@ -14,14 +14,15 @@ public class ForEachMethod {
 
 	public static void main(String[] args) {
 		List <Product> products = new ArrayList();
+				
+		products.add(new Product("id-01","microwave", 1122, 500, "white" , "hemilton"));
+		products.add(new Product("id-02","toaster-oven", 1500, 600, "black", "hemilton"));
+		products.add(new Product("id-03","phone",4200,  1500, "black", "nokia"));
+		products.add(new Product("id-04","phone", 3200, 2500, "gray", "smasung"));
+		products.add(new Product("id-05","computer",3322, 4000, "green", "dell"));
 		
-		products.add(new Product("id-01","phone - nokia 1122", 1500, 2, "nokia"));
-		products.add(new Product("id-02","phone - nokia 2233", 1500, 3, "nokia"));
-		products.add(new Product("id-03","phone - samsung 4", 2500, 4, "smasung"));
-		products.add(new Product("id-04","phone - samsung 5", 3500, 4, "smasung"));
-		products.add(new Product("id-04","phone - samsung 6", 4000, 5, "smasung"));
 		
-		System.out.println("Product List: ");
+		System.out.println("Product List: (forEach) ");
 		products.forEach(product -> {
 			System.out.println(product.toString());
 		}

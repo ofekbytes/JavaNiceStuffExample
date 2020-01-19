@@ -1,17 +1,17 @@
 /**
  * 
  */
-package zzzz_Java_8.Lambda_Expression.C_ForEachFilterLikeMethod;
+package zzzz_Java_8.Lambda_Expression.D_ForEachSortedAscDescMethod;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import zzzz_Java_8.Lambda_Expression.A_ForEachMethod.Product;
 
-public class ForEachFilterLikeMethod {
+public class ForEachSortedAscDescMethod {
 
 	// constructor
-	public ForEachFilterLikeMethod() {
+	public ForEachSortedAscDescMethod() {
 			}
 
 	public static void main(String[] args) {
@@ -23,31 +23,20 @@ public class ForEachFilterLikeMethod {
 		products.add(new Product("id-04","phone", 3200, 2500, "gray", "smasung"));
 		products.add(new Product("id-05","computer",3322, 4000, "green", "dell"));
 		
-		System.out.println("Product List - like search - search product 'start with' some character/s : ");
+		System.out.println("Product List - sorted - Ascending Order (a...z) ");
 
 		products.stream()
-			.filter(p -> p.getName().startsWith("mic"))
-			.forEach(p -> {
-				System.out.println(p.toString());
-			});		
-
-		
-		System.out.println("\nProduct List - like search - search product 'end with' some character/s : ");
-		
-		products.stream()
-			.filter(p -> p.getColor().endsWith("ck"))
-			.forEach(p -> {
-				System.out.println(p.toString());
-			});
-
-		
-		System.out.println("\nProduct List - like search - search product 'contains' some character/s : ");
-		products.stream()
-			.filter(p -> p.getManufacturer().contains("mil"))
+			.sorted((p1 , p2) -> (int) (p1.getPrice() - p2.getPrice()))
 			.forEach(p -> {
 				System.out.println(p.toString());
 			});
 		
+		System.out.println("\nProduct List - sorted - Descending Order (z...a) ");
+		products.stream()
+			.sorted((p1 , p2) -> (int) (p2.getPrice() - p1.getPrice()))
+			.forEach(p -> {
+				System.out.println(p.toString());
+			});
 	}
 
 }

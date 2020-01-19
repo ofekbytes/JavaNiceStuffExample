@@ -1,5 +1,4 @@
-package zzzz_Java_8.Lambda_Expression.B_ForEachFilterMethod;
-
+package zzzz_Java_8.Lambda_Expression.E_ForEachSortedLimitMethod;
 
 public class Product {
 
