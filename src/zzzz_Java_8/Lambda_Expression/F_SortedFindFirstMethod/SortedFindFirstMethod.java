@@ -1,17 +1,16 @@
 /**
  * 
  */
-package zzzz_Java_8.Lambda_Expression.F_ForEachSortedFindFirstMethod;
+package zzzz_Java_8.Lambda_Expression.F_SortedFindFirstMethod;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import zzzz_Java_8.Lambda_Expression.A_ForEachMethod.Product;
 
-public class ForEachSortedFindFirstMethod {
+public class SortedFindFirstMethod {
 
 	// constructor
-	public ForEachSortedFindFirstMethod() {
+	public SortedFindFirstMethod() {
 			}
 
 	public static void main(String[] args) {

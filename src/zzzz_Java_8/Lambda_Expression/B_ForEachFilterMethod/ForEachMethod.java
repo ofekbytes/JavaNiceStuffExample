@@ -6,7 +6,6 @@ package zzzz_Java_8.Lambda_Expression.B_ForEachFilterMethod;
 import java.util.ArrayList;
 import java.util.List;
 
-import zzzz_Java_8.Lambda_Expression.A_ForEachMethod.Product;
 
 public class ForEachMethod {
 

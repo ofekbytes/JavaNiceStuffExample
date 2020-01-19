@@ -1,4 +1,4 @@
-package zzzz_Java_8.Lambda_Expression.F_ForEachSortedFindFirstMethod;
+package zzzz_Java_8.Lambda_Expression.F_SortedFindFirstMethod;
 
 public class Product {
 

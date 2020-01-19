@@ -6,6 +6,7 @@ package zzzz_Java_8.Lambda_Expression.A_ForEachMethod;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ForEachMethod {
 
 	// constructor
