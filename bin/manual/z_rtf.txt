@@ -19,7 +19,8 @@ jav, war,
 script -> ant
 
 
-
+java arrayList - Ascending / Descending /....
+https://www.geeksforgeeks.org/how-to-sort-an-arraylist-in-ascending-order-in-java/
 
 // java 8
 https://www.tutorialspoint.com/java/index.htm
