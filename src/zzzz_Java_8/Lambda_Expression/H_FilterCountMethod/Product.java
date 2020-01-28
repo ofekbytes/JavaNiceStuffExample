@@ -101,7 +101,7 @@ public class Product {
 			+ "  name:" + this.name + ","  
 			+ "  model:" + this.model + ","
 			+ "  price:" + this.price  + ","
-			+ "  quantity:" + this.color  + ","
+			+ "  color:" + this.color  + ","
 			+ "  manufacturer:" + this.manufacturer + ","
 			+ "  total:" + this.total;
 		

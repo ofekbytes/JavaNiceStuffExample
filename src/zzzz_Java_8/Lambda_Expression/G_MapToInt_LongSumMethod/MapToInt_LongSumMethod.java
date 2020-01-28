@@ -16,6 +16,7 @@ public class MapToInt_LongSumMethod {
 	public static void main(String[] args) {
 		List<Product> products = new ArrayList();
 		
+		// id, name, model, price, color, manufacturer, total //
 		products.add(new Product("id-01","microwave", 1122, 500, "white" , "hemilton" ,2));
 		products.add(new Product("id-02","toaster-oven", 1500, 600, "black", "hemilton" ,3));
 		products.add(new Product("id-03","phone",4200,  1500, "black", "nokia" ,4));
@@ -47,7 +48,7 @@ public class MapToInt_LongSumMethod {
 				.filter(p -> p.getManufacturer().endsWith("kia"))
 				.mapToLong(p -> p.getTotal() * p.getPrice())
 				.sum();
-		System.out.println("Sum All Manufacturer Models - (4 X 1500) - (start with 'kia') :  " + sum4);
+		System.out.println("Sum All Manufacturer Models - (4 X 1500) - (end with 'kia') :  " + sum4);
 	}
 
 	

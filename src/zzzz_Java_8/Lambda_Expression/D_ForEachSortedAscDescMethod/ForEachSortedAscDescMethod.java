@@ -16,23 +16,24 @@ public class ForEachSortedAscDescMethod {
 	public static void main(String[] args) {
 		List<Product> products = new ArrayList();
 		
+		// id, name, model, price, color, manufacturer, total //
 		products.add(new Product("id-01","microwave", 1122, 500, "white" , "hemilton"));
 		products.add(new Product("id-02","toaster-oven", 1500, 600, "black", "hemilton"));
 		products.add(new Product("id-03","phone",4200,  1500, "black", "nokia"));
 		products.add(new Product("id-04","phone", 3200, 2500, "gray", "smasung"));
 		products.add(new Product("id-05","computer",3322, 4000, "green", "dell"));
 		
-		System.out.println("Product List - sorted - Ascending Order (a...z) ");
+		System.out.println("<1> Product List <'price'> - sorted - Ascending Order (a...z) ");
 
 		products.stream()
-			.sorted((p1 , p2) -> (int) (p1.getPrice() - p2.getPrice()))
+			.sorted((first , last) -> (int) (first.getPrice() - last.getPrice()))
 			.forEach(p -> {
 				System.out.println(p.toString());
 			});
 		
-		System.out.println("\nProduct List - sorted - Descending Order (z...a) ");
+		System.out.println("\n<2> Product List <'price'> - sorted - Descending Order (z...a) ");
 		products.stream()
-			.sorted((p1 , p2) -> (int) (p2.getPrice() - p1.getPrice()))
+			.sorted((first , last) -> (int) (last.getPrice() - first.getPrice()))
 			.forEach(p -> {
 				System.out.println(p.toString());
 			});

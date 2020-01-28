@@ -1,4 +1,4 @@
-package zzzz_Java_8.Lambda_Expression.C_ForEachFilterLikeMethod;
+package zzzz_Java_8.Lambda_Expression.I_MinMaxMethod;
 
 public class Product {
 
@@ -8,7 +8,7 @@ public class Product {
 	private long price;
 	private String color;
 	private String manufacturer;
-	
+	private int total;	
 	/* 
 	 * Product() constructor
 	 */	
@@ -18,7 +18,7 @@ public class Product {
 	/* 
 	 * Product(...) constructor
 	 */
-	public Product(String id, String name, int model, long price, String color, String manufacturer) {
+	public Product(String id, String name, int model, long price, String color, String manufacturer, int total) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -26,6 +26,7 @@ public class Product {
 		this.price = price;
 		this.color = color;
 		this.manufacturer = manufacturer;
+		this.total = total;
 	}
 
 
@@ -84,6 +85,14 @@ public class Product {
 	}
 
 
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
 	/*
 	 * toString() - convert local variable to String. 
 	 */
@@ -93,7 +102,9 @@ public class Product {
 			+ "  model:" + this.model + ","
 			+ "  price:" + this.price  + ","
 			+ "  color:" + this.color  + ","
-			+ "  manufacturer:" + this.manufacturer;
+			+ "  manufacturer:" + this.manufacturer + ","
+			+ "  total:" + this.total;
+		
 	}
 
 }
