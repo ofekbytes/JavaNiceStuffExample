@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author yaron
- *
- */
-package zzzz_Java_8.Lambda_Expression.H_FilterCountMethod;
