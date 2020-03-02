@@ -1,0 +1,46 @@
+
+< M >
+
+
+
+- Math (simple) - 
+
+
+-- Java arithmetic operators
+
+   < + >  addition
+   < - >  subtraction
+   < * >  multiplication
+   < / >  division
+   < % >  modulo
+   
+   
+-- increment Operators
+
+   int x==5;
+   x=x+1; //x==6 
+   ++x; //x==7
+   
+   
+-- decrement Operators
+
+    x=x-1; //x==6  
+    --x; //x==5
+    
+    
+--- Prefix operator appears before the operand
+
+	int num1 = 34;
+	int num2 = ++num1; // num2=35 , num1=35
+	
+	
+--- postfix operator appears after the operand.
+
+	int num3 = 14;
+	int num4 = num3++; //num4=14, num3=15 
+	
+
+
+
+
+	

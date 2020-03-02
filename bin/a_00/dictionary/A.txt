@@ -1,0 +1,10 @@
+
+< A >
+
+
+<ARchive> - 
+-- jar - Java ARchive (j.txt)
+
+
+<AOP> - Aspect-oriented programming>
+https://en.wikipedia.org/wiki/Aspect-oriented_programming

@@ -1,0 +1,8 @@
+
+< N >
+
+
+namespace ***- 
+a namespace is a set of symbols that are used to organize objects of various kinds, so that these objects may be referred to by name.
+.
+<https://en.wikipedia.org/wiki/Namespace>
