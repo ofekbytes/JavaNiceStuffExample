@@ -1,0 +1,479 @@
+
+JDBC - 
+
+01. JDBC General
+
+
+
+01. JDBC general 
+
+- JDBC - Java DataBase Connectivity 
+  [Java] <---> [JDBC] <---> [Relational DataBase] 
+
+- relational DataBase machine:
+-- Local machine 
+-- Network
+-- Cloud
+
+- relational DataBase Support:
+-- Oracle (pl/sql)
+-- IBM DB2
+-- IBM Informix 
+-- Microsoft Sql
+-- MySql
+-- MariaDB
+-- SyBase
+-- Postgre Sql
+
+
+- relational DataBase supported list:
+-- https://www.oracle.com/technetwork/java/index-136695.html
+
+
+- download JDBC url:
+  https://dev.mysql.com/downloads/connector/j/
+
+
+- Download Maven JDBC <pom.xml> file:
+
+-- example: 
+
+<!-- [START] -----------------------------------------------  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jsm</groupId>
+  <artifactId>jsm</artifactId>
+  <version>1.1.1</version>
+  <name>jsm</name>
+  <description>java small method</description>
+  
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>mysql</groupId>
+  		<artifactId>mysql-connector-java</artifactId>
+  		<version>8.0.19</version>
+  	</dependency>
+  </dependencies>
+</project>
+
+<!-- [END] -----------------------------------------------  -->
+
+
+- Sql Statements
+-- Select 
+-- Insert
+-- Update
+-- delete
+
+
+- Complex Sql Query
+-- inner joins 
+-- outer joins
+-- call stored procedures
+
+
+- JDBC Driver
+-- JDBC Driver provided by DataBase vendor
+   [Java application] <---> [JDBC Driver] <---> [Relational DataBase] 
+
+
+- JDBC Driver Manger
+-- JDBC Driver Manger help to connect an application to DatabBase connection string
+-- JDBC Driver Loaded in the Classpath
+
+
+- JDBC API have 2 package:
+-- java.sql 
+-- javax.sql
+
+
+- Key Classes:
+-- java.sql.DriverManger
+-- java.sql.Connection
+-- java.sql.Statement
+-- java.sql.ResultSet
+-- java.sql.DataSource (connection pooling)
+
+
+- Development Process Steps:
+-step 1- Get a Connection to Database
+-step 2- Create a Statement Object
+-step 3- Execute SQL Query
+-step 4- Process Result set 
+
+.
+.
+.
+-step 1- Get a Connection to Database
+
+- connect to database:
+-- using Connection String (JDBC URL)
+
+- Basic Syntax:
+  jdbc:<driver protocol>:<driver connection details> 
+  
+ - example:
+ -- microsoft SQL:  [ jdbc:odbc:DemoDNS ]
+ -- Oracle:  [ jdbc:oracle:thin@myServer:1521:demoDB ]
+ -- MySql:  [ jdbc:mysql://localhost:3306/demoDB ]
+ 
+
+// --------------------------------------------------- //
+//
+// example 1: Get a Connection to Database
+//
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class Jdbc {
+
+	private String dbUrl = "dbUrl";
+	private String user = "user";
+	private String password = "password;
+
+	// throws SQLException ////  import java.sql.SQLException; //
+	public Jdbc() throws SQLException { 
+
+		// Get a Connection to Database //
+		// import java.sql.Connection; // = // import java.sql.DriverManager; //
+		Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+
+	}
+}
+// --------------------------------------------------- //
+
+
+// --------------------------------------------------- //
+//
+// example 2: Get a Connection to Database
+//
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+
+public class Jdbc {
+	
+	
+	private String dbUrl = "dbUrl";
+	private String user = "user";
+	private String password = "password";
+	
+
+	public Jdbc() {
+		
+		try 
+		{
+			// Get a Connection to Database //
+			// import java.sql.Connection; // = // import java.sql.DriverManager; //
+			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+		}
+		// import java.sql.SQLException; //
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+		
+	}
+}
+// --------------------------------------------------- //
+ 
+ 
+ - example 1 + 2 failure to connect. sql Exception:
+ -- java.sql.SQLException: bad URL -or- credentials
+ -- java.lang.ClassNotFoundException: JDBC driver not in classpath
+ 
+ .
+ .
+ .
+ -step 2- Create a Statement Object
+ 
+- The Statement Object is based on connection
+
+- example:
+  Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+ 
+
+// --------------------------------------------------- //
+//
+// example 3: Create a Statement Object
+//
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.mysql.cj.protocol.Resultset;
+
+public class Jdbc {
+
+	private String dbUrl = "dbUrl";
+	private String user = "user";
+	private String password = "password";
+
+	public Jdbc() {
+
+		try {
+
+			// Get a Connection to Database //
+			// import java.sql.Connection; // = // import java.sql.DriverManager; //
+			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+
+			// Create a Statement object //
+			// import java.sql.Statement;//
+			Statement myStatement = myConnection.createStatement();
+
+		}
+		// import java.sql.SQLException; //
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+// --------------------------------------------------- //
+ 
+.
+.
+.
+-step 3- Execute SQL Query
+
+- pass sql query.
+ 
+
+// --------------------------------------------------- //
+//
+// example 4: Execute Sql Query
+//
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+
+public class Jdbc {
+
+	private String dbUrl = "dbUrl";
+	private String user = "user";
+	private String password = "password";
+
+	public Jdbc() {
+
+		try {
+
+			// Get a Connection to Database //
+			// import java.sql.Connection; // = // import java.sql.DriverManager; //
+			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+
+			// Create a Statement object //
+			// import java.sql.Statement;//
+			Statement myStatement = myConnection.createStatement();
+			
+			// Execute Sql Query //
+			// import java.sql.ResultSet; //
+			ResultSet myResultSet = myStatement.executeQuery("select * from customer");
+
+		}
+		// import java.sql.SQLException; //
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+// --------------------------------------------------- //
+
+ 
+.
+.
+.
+-step 4- Process Result set
+
+- Result is set before the first row.
+
+- myResultSet.next() Method Moves to the next row.
+-- move to next row.
+-- return true if there is more rows to process.
+
+- looping the Result set (myResultSet)
+
+- example:
+  while (myResultSet.next() ) {
+  	// read data from row (each row)
+  }
+  
+- process the result set by:
+-- "column name"
+-- "column index" 
+
+
+// --------------------------------------------------- //
+//
+// example 5: Process Result set --> column name
+//
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+
+public class Jdbc {
+
+	private String dbUrl = "dbUrl";
+	private String user = "user";
+	private String password = "password";
+
+	public Jdbc() {
+
+		try {
+
+			// Get a Connection to Database //
+			// import java.sql.Connection; // = // import java.sql.DriverManager; //
+			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+
+			// Create a Statement object //
+			// import java.sql.Statement;//
+			Statement myStatement = myConnection.createStatement();
+			
+			// Execute Sql Query //
+			// import java.sql.ResultSet; //
+			ResultSet myResultSet = myStatement.executeQuery("select * from customer");
+			
+			///
+			// Process Result set //
+			while (myResultSet.next() ) {
+				
+				//read Data by "column"
+				System.out.println(myResultSet.getString("first_name"));
+				System.out.println(myResultSet.getString("last_name"));
+				System.out.println(myResultSet.getString("phone"));				
+				
+			}
+		}
+		// import java.sql.SQLException; //
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+}
+// --------------------------------------------------- //
+
+
+.
+.
+.
+- ALL steps - JDBC - Development Process Steps:
+
+-step 1- Get a Connection to Database
+-step 2- Create a Statement Object
+-step 3- Execute SQL Query
+-step 4- Process Result set 
+-step 5- close 
+
+
+// --------------------------------------------------- //
+//
+// example - ALL steps - JDBC - Development Process Steps 
+//
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Jdbc {
+
+	private String dbUrl = "jdbc:mysql://localhost/test1";
+	private String user = "dbadmin";
+	private String password = "2Wsxcde3";
+	private String stQuery = "select * from customer";
+
+	public Jdbc() {
+
+		try {
+
+			// Get a Connection to Database //
+			// import java.sql.Connection; // = // import java.sql.DriverManager; //
+			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
+
+			// Create a Statement object //
+			// import java.sql.Statement;//
+			Statement myStatement = myConnection.createStatement();
+
+			// Execute Sql Query //
+			// import java.sql.ResultSet; //
+			ResultSet myResultSet = myStatement.executeQuery(stQuery);
+
+			///
+			// Process Result set //
+			while (myResultSet.next()) {
+
+				// read Data by "column"
+				System.out.print("" + myResultSet.getString("cust_id"));
+				System.out.print(", " + myResultSet.getString("first_name"));
+				System.out.print(", " + myResultSet.getString("last_name"));
+				System.out.print("," + myResultSet.getString("phone"));
+				System.out.println("");
+
+			}
+
+			// ResultSet - close //
+			myResultSet.close();
+
+			// Statement close//
+			myStatement.close();
+
+			// Connection close//
+			myConnection.close();
+
+		}
+		// import java.sql.SQLException; //
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Jdbc j = new Jdbc();
+
+	}
+
+}
+
+// --------------------------------------------------- //
+
+
+
+
+
+
+
+
+
