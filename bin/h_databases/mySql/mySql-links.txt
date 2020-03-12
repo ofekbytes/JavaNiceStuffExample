@@ -14,3 +14,6 @@
  
  // Connection_pool
  https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-usagenotes-j2ee-concepts-connection-pooling.html
+ 
+ //temp//
+ https://www.youtube.com/watch?v=gU3DLOsw0Eg&list=PLEAQNNR8IlB4R7NfqBY1frapYo97L6fOQ&index=6
