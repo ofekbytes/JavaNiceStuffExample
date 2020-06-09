@@ -1,0 +1,147 @@
+
+
+[Q:] Difference between a Value Type and a Reference Type
+[A:] 
+"Value Type" holds the data within its own memory allocation
+"Reference Type" contains a pointer to another memory location that holds the real data.
+
+"Value Type" variables are stored in the stack.
+"Reference Type" variables are stored in the "heap" 
+
+
+[stack: <value type> <pointer to the reference type> ]
+[heap: "reference type] 
+
+
+
+[Q:] Differences between "Stack" and "Heap"
+[A:]
+"Stack" is used for static  memory allocation 
+"Heap"  is used for dynamic memory allocation, 
+
+"Stack" -and- "Heap" are both stored in the computer's RAM .
+
+
+
+[Q:] "Abstract classes" vs. "interfaces"
+[A:]
+Methods of a Java interface are implicitly abstract and cannot have implementations.
+A Java abstract class can have instance methods that implements a default behavior.
+
+interface: Variables declared in a Java interface are by default final (constant). 
+abstract: An abstract class may contain non-final variables.
+
+interface: Members of a Java interface are public by default. 
+abstract: A Java abstract class can have the usual many of class member  (private, protected, etc.)
+
+interface: A Java interface should be implemented using keyword "implements"; 
+abstract: A Java abstract class should be extended using keyword "extends".
+
+interface: An interface can extend another Java interface only, 
+abstract: an abstract class can extend another Java class and implement multiple Java interfaces.
+
+--!!-- A Java class can implement multiple interfaces but it can extend only one abstract class.
+
+
+example:
+
+public interface LoginAuth{
+   public String encryptPassword(String pass);
+   public void checkDBforUser();
+}
+
+//
+// Now suppose you have 3 databases in your application. 
+// Then each and every implementation for that database needs to define the above 2 methods:
+
+public class DBMySQL implements LoginAuth{
+          // Needs to implement both methods
+}
+
+public class DBOracle implements LoginAuth{
+          // Needs to implement both methods
+}
+
+public class DBAbc implements LoginAuth{
+          // Needs to implement both methods
+}
+
+//
+// But what if encryptPassword() is not database dependent, 
+// and it's the same for each class? 
+// Then the above would not be a good approach.
+//
+//Instead, consider this approach:
+
+public abstract class LoginAuth{
+   public String encryptPassword(String pass){
+            // Implement the same default behavior here 
+            // that is shared by all subclasses.
+   }
+
+   // Each subclass needs to provide their own implementation of this only:
+   public abstract void checkDBforUser();
+}
+
+// Now in each child class, we only need to implement one method - the method that is database dependent.
+
+
+
+[Q:]
+[A:]
+
+
+
+[Q:] what is the difference between final finally and finalize
+[A:] https://www.javatpoint.com/difference-between-final-finally-and-finalize
+
+what is the difference between a thread and a process
+
+
+what is the difference between struct and class
+
+
+
+the first thing that run in the program
+
+what is running first when you declare static
+
+what good static
+
+
+//**main java 8
+https://docs.oracle.com/javase/8/
+
+
+//*api
+https://docs.oracle.com/javase/8/docs/api/index.html
+http://docs.oracle.com/javase/8/javafx/api/toc.htm
+
+
+//*doc
+https://docs.oracle.com/javase/8/docs/index.html
+https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
+
+
+//** tutorial
+http://docs.oracle.com/javase/tutorial/
+https://docs.oracle.com/javase/tutorial/
+
+
+//*Lesson: Numbers and Strings 
+https://docs.oracle.com/javase/tutorial/java/data/index.html
+
+
+//**
+https://www.javatpoint.com/jdbc-driver
+
+
+https://docs.oracle.com/javase/tutorial/java/concepts/interface.html
+
+https://www.tutorialspoint.com/java/java_interfaces.htm
+
+http://beginnersbook.com/2013/05/java-interface/
+
+https://www.javatpoint.com/interface-in-java
+
+https://docs.oracle.com/javase/tutorial/java/concepts/interface.html

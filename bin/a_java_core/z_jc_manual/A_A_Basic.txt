@@ -1,0 +1,344 @@
+1. java
+2. java - first program
+3. java - main Method
+4. java - System.out.println()
+5. java Comments - single-line comment / Multi-Line comment -
+6. java Documentation comments (javaDoc)
+7. Java Math Operators
+8. Increment / decrement  Operators
+9. String Concatenation
+
+.
+.
+1. Java -
+
+- java -
+ 
+-- Java is a high level, modern programming language designed in the early 1990s by Sun Microsystems, 
+   and currently owned by Oracle. 
+
+-- Java is Platform Independent, which means that you only need to write the program once 
+   to be able to run it on a number of different platforms (operating system).
+
+-- Java is portable, robust, and dynamic, with the ability to fit the needs of virtually any type of application.
+   Java guarantees that you'll be able to Write Once, Run Anywhere.
+
+-- More than 3 billion devices run Java. 
+
+- Java is used to: 
+-- develop apps for Google's Android OS
+-- various Desktop Applications 
+
+- various Desktop Applications:
+-- media players, 
+-- antivirus programs
+-- Web Application
+-- Enterprise Applications (example: banking)
+
+.
+.
+2. java - first program -
+
+- In Java, every line of code that can actually run needs to be inside a class.
+
+- In Java, each application has an entry point (a starting point),
+  which is a method called "main".
+
+--- example: class "MyClass".
+
+	class MyClass 
+	{
+	    public static void main(String[ ] args) 
+	    {
+	        System.out.println("First Java Program");
+	    }
+	}
+
+
+	/*** 
+ 	***output***:
+ 	* First Java Program
+ 	*/
+
+
+-!- Every program in Java must have a class.
+
+-!- Every Java program starts from the main method.
+
+
+.
+.
+3. java - main Method -
+
+--  java main() method template:
+
+--- example: main() method template:
+    public static void main(String[ ] args)
+
+-- public: anyone can access it
+-- static: method can be run without creating an instance of the class containing the main method
+-- void: method doesn't return any value
+-- main: the name of the method
+ 
+--- example: test() method, return nothing :
+ 	void test()
+ 
+-- The method's parameters are declared inside the parentheses "()" that follow the name of the method. 
+ 
+.
+. 
+4. java - System.out.println() - 
+ 
+-- The "println()" method prints a line of text to the screen (console).
+-- The "System()" class and its "out" stream are used to access the "println()" method.
+-- "classes", "methods", and other flow-control structures code is always enclosed in curly braces { }.
+-- In Java, each code statement must end with a semicolon.
+ 
+--- example: "class" with "main()" method:
+
+	class MyClass 
+	{
+	    public static void main(String[ ] args) 
+	    {
+	        System.out.println("First Java Program");
+	    }
+	}
+
+
+.
+.
+5. java Comments - single-line comment / Multi-Line comment
+ 
+-- The purpose of including comments in your code is to explain what the code is doing.
+
+-- A single-line comment 
+   starts with two forward slashes and continues until it reaches the end of the line. 
+
+--- example:
+
+	// this is a single-line comment -
+	system.out.println("test") 	// a single-line comment after code
+
+
+-!- Adding comments as you write code is a good practice, 
+    because they provide clarification and understanding when you need to refer back to it, 
+    as well as for others who might need to read it.
+ 
+-- Multi-Line Comments (Block comment) - 
+   Java also supports comments that span multiple lines.
+   You start this type of comment with a forward slash followed by an asterisk, 
+   and end it with an asterisk followed by a forward slash.
+    
+--- example:
+
+	/*  This is also a
+	*  comment spanning
+	*  multiple lines 
+	*/
+
+.
+.
+6. java Documentation comments (javaDoc) - 
+
+- Documentation comments are special comments that have the appearance of multi-line comments,
+  with the difference being that they generate external documentation of your source code. 
+  These begin with a forward slash followed by two asterisks, 
+  and end with an asterisk followed by a forward slash.
+ 
+--- example:
+
+/** This is a documentation comment */
+
+/** This is also a
+    documentation comment */
+
+
+-- Javadoc is a tool which comes with JDK and it is used for generating Java code 
+   documentation in HTML format from Java source code which has required documentation in a predefined format.
+
+-- When a documentation comment begins with more than two asterisks, 
+   Javadoc assumes that you want to create a "box" around the comment in the source code. 
+   It simply ignores the extra asterisks.
+
+--- example:
+
+	/****
+	 * method / fucntion documentation
+	 */
+	 
+	 
+-- generate java doc from eclipse
+
+[menu-bar] Project > Generate Javadoc....
+
+-- In the Javadoc command: field, browse to find javadoc.exe 
+   (usually at [path_to_jdk_directory]\bin\javadoc.exe).
+
+-- Check the box next to the "project/package/file" for which you are creating the Javadoc.
+
+-- In the Destination: field, browse to find the desired destination 
+   (for example, the root directory of the current project).
+
+-- Click Finish.
+
+-!- You should now be able to find the newly generated Javadoc in the destination folder. 
+    Open index.html.
+
+.
+.
+7. Java Math Operators
+
+- Java provides a rich set of operators to use in manipulating variables. 
+  A value used on either side of an operator is called an operand.
+   
+--- example: numbers <6> and <3> are operands of the plus<+> operator:
+
+    int x = 6 + 3;  
+
+    int operand(x) = operand(6) operators(+) operand(6)
+    
+
+-- Java arithmetic operators:
+ 
+   < + >  addition
+   < - >  subtraction
+   < * >  multiplication
+   < / >  division
+   < % >  modulo
+    
+
+-!- Arithmetic operators are used in mathematical expressions 
+    in the same way that they are used in algebraic equations.
+    
+    
+--- examples
+
+   int sumAddition = 50 + 10; // ==60
+   int sumSubtraction = 1000 - 10; // ==990
+   int sumMultiplication = 5 * 2; //==10
+   int sumDivision = 15 / 3; //==5
+   int sumModulo = 13 % 3; //==1
+
+
+.
+.
+8. Increment / decrement  Operators
+
+
+- increment / decrement operator provides a more convenient and 
+  compact way to increase or decrease the value of a variable by one.
+    
+--- example
+
+	int x==5;
+	
+	//increment
+    x=x+1; //x==6 
+    ++x; //x==7
+     
+    //decrement
+    x=x-1; //x==6  
+    --x; //x==5
+
+
+- Prefix & Postfix
+
+-- prefix and postfix, used with both the increment and decrement operators.
+
+--- prefix operator appears before the operand. 
+	++x;
+	--x;
+	
+--- postfix operator appears after the operand. 
+	x++;
+	x--;
+
+
+--- example:
+	int num1 = 34;
+	int num2 = ++num1; // num2=35 , num1=35
+
+
+	int num3 = 14;
+	int num4 = num3++; //num4=14, num3=15
+
+
+- Assignment Operators
+
+-- < = > assignment operator
+   int value = 5;
+
+-- assignment operators
+
+   < += >  addition
+   < -= >  subtraction
+   < *= >  multiplication
+   < /= >  division
+   < %= >  modulo
+   
+    
+.
+.
+9. String Concatenation
+
+-- The " + " (plus) operator between strings adds them together to make a new string. 
+
+   String3 = String1 + String2;
+   
+   String2 += String1;
+
+---  example:
+    String stFullName ="", stFirstName = "yaki", stLastName="maki";
+    
+    
+    
+.
+.
+10. Getting User Input
+    
+-- " Scanner " object is the most common for getting user input.
+
+
+--- Import the Scanner class to use the Scanner object.
+   
+    import java.util.Scanner; 
+
+--- using the Scanner class.
+    create an instance of the class by using the following syntax: 
+    
+    Scanner myVar = new Scanner(System.in);
+    
+    
+--- Reading in different kinds of input data that the user enters: 
+    methods lists through the Scanner class:
+    
+	nextByte()     -  Read a byte
+	nextShort()    -  Read a short
+	nextInt()      -  Read an int
+	nextLong()     -  Read a long
+	nextFloat()    -  Read a float
+	nextDouble()   -  Read a double
+	nextBoolean()  -  Read a boolean
+	nextLine()     -  Read a complete line
+	next()         -  Read a word
+    
+    
+--- example:
+
+	import java.util.Scanner;
+
+	class MyClass 
+	{
+	 	public static void main(String[ ] args) 
+	 	{
+	    	Scanner myVar = new Scanner(System.in);
+	    	System.out.println(myVar.nextLine());        
+	  	}
+	}    
+    
+    
+    
+    
+    
+    
+     

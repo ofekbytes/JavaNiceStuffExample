@@ -1,0 +1,301 @@
+//
+//
+// A. Java Basic
+//
+//
+
+[ Package ] -  
+a package (package structure) is equal to file structure in you operating system.
+A package is a "name space" that organizes a set of related classes and interfaces (file/s).
+packages are used to avoid name conflicts and to control access to classes
+import package to be used in another
+
+example:
+< https://en.wikipedia.org/wiki/Java_package >
+
+class: every line of code in java need to be inside a "Class".
+class "access modifiers" is public -or- default.
+   public - accessible by any other class
+      example: 
+      Public class MyPublicClass{}
+       
+   default: class is accessible only by classes in the same package.(left blank)
+      example: 
+      class MyDefaultClass {}
+      
+   classes are blue prints used to design objects that contain attributes (variables) and methods (functions).
+   class is blueprint / descriptions/ definitions for an object -or for many objects.
+
+
+variable / value types:
+byte, short, int, long, float, double, boolean
+
+variable identifier = value;
+int intAge = 55;
+\\variable: "int"
+\\identifier: "intAge"
+value: "55";
+
+
+[Variable / Attributes]
+boolean true/false.
+Byte   (8 bit / 1 byte)  <number> == -128 <--> 127
+Short  (16 bit / 2 byte) <number> == -32768 <--> 32767
+int    (32 bit / 4 byte) <number> == -2147483648 <--> 2147483647
+Long   (64 bit / 8 byte) <number> == -9223372036854775808 <--> 9223372036854775807
+char   (16 bit / 2 byte) <unicode> 
+Float  (32 bit / 4 byte) <bit decimal> == 1.4E-45 <--> 3.4028235E38
+Double (64 bit / 8 byte) <bit decimal> == 4.9E-324 <--> 1.7976931348623157E308
+
+
+
+variables Reserved words: (cannot be used as variable 
+abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
+boolean, do, if, private, this, break, double, implements, protected, throw,
+byte, else, import,	public,	throws, case, enum, instanceof, return, transient
+catch, extends, int	short, try, char, final, interface, static, void,
+class, finally, long, strictfp, volatile, const, float, native, super, while
+
+
+Java arithmetic operators: 
++ addition, 
+- subtraction, 
+* multiplication, 
+/ devision 
+% modulo
+
+increment
+++test; test++;
+
+decrement
+--test; test--;
+
+//prefix
+int a = 2;
+int b = ++a; // a=3, b=3
+
+//postfix
+int c = 3;
+int d = c--; // d=3 c=2
+
+ 
+logical operators - 
+; ==> semicolons
+! ==> not
+|| ==> logical OR
+&& ==> logical AND
+&  ==> logical AND
+
+
+String object variable --> 
+string is a sequence of character. 
+
+String Concatenation --> String Concatenation - adding 2 string variable to create a new string variable using the + (plus operator)   	
+example:
+stFullName = stLastName + ", " + stFirstName;
+
+
+Primitive Variable To String -->
+String StringVal; 
+StringVal = Byte.toString(byte);
+StringVal = Short.toString(short);
+StringVal = Integer.toString(Integer);
+StringVal = Long.toString(long);
+StringVal = Float.toString(float);
+StringVal = Double.toString(double);
+StringVal = Boolean.toString(boolean);
+
+
+String To Primitive Variable -->
+short shortNumber = Short.parseShort(StringVal);
+byte byteNumber = Byte.parseByte(StringVal);
+int intNumber = Integer.parseInt(StringVal);
+long LongNumber = Long.parseLong(StringVal); 
+float FloatNumber = Float.parseFloat(StringVal);
+double DoubleNumber = Double.parseDouble(StringVal);
+boolean booleanNumber = Boolean.parseBoolean(StringVal); 
+
+
+Casting - cast one primitive type variable to another primitive type variable: (int)  (byte)  (short)  (long)  (double):
+
+
+
+
+ public - anyone can access it
+ static - no need for instance of the class (static belongs to class) declare with UPPERCASE.
+ example:
+ public static int COUNT = 0
+ 
+ final - final variable is a constant variable assigned only once; (variable start with UPPERCASE letter)
+ 
+ 
+Package -
+(package name start with lowercase letter )
+a package is a "name space" that organizes a set of related classes and interfaces.
+packages are used to avoid name conflicts and to control access to classes
+import package to be used in another package
+
+a package (package structure) is like a file structure in your computer (folder, files..).
+package help to organize the different file in your program.
+package name is usually a domain name in reverse order
+example: 
+< com.domain-name.subject.sub-subject >
+
+package name need to in lower-case.
+  
+package name serves as high level description of all the program files related to certain topic.
+example: 
+" com.domain-name.subject.sub-subject ".
+	
+-!- Naming_convention - 
+lowercase, UPPERCASE, camelCase, snake_case, kebab-case, PascalCaseVariable, 
+https://en.wikipedia.org/wiki/Naming_convention_(programming)  
+
+
+CLASS -
+
+simple program can consist many code of line and therefore important to post a structure of a program code, 
+such: classes and packages.
+class name start with Capital letter  (start with UPPERCASE letter).
+example:
+ //
+ //  class Car {
+ // }
+
+class should be focused only one topic.
+keep class as small as possible to improve usability and readability.
+a class consist of one or more methods.
+
+A class is the blueprint from which individual objects are created.
+class is a blue print of a object.
+each class has a name and each is used to define attributes and behavior.
+example:
+attributes: name, age, gender.
+behavior: walk, run, jump, 
+
+ 
+Methods (function) - define the behavior.
+(method name start with lowercase letter)
+method is a collection of statements that group together to perform an operation.
+ // System.out.println();
+
+a method (or function) define how to achieve a certain thing.
+a method name should be a word that best describe the method.
+a method can call other method and perform method hierarchy.
+
+-!- like a book -
+a package name will be like  a book chapter.
+a class name will be like a book paragraph.
+a method name will be like a book sentence.
+
+-!- example:
+method dinner call appetizer method
+method diner call main-course
+method diner call dessert.
+main-course method can internally call build-water method
+
+// package a_BasicEexample.packageClassMethod;
+// 
+// public class Food {
+// 	public Food() {
+// 		Dinner();
+// 	}
+// 
+// 	private void Dinner() {
+// 		System.out.println("Dinner");
+// 		mainCourse();
+// 		dessert();
+// 	}
+// 
+// 	private void mainCourse() {
+// 		System.out.println("mainCourse");
+// 		buildWater();
+// 	}
+// 
+// 	private void buildWater() {
+// 		System.out.println("buildWater");
+// 	}
+// 
+// 	private void dessert() {
+// 		System.out.println("dessert");
+// 	}
+// 
+// 	public static void main(String[] args) {
+// 		Food f = new Food();
+// 	}
+// }
+// 
+
+// output //
+Dinner
+mainCourse
+buildWater
+dessert
+
+
+-!- keep method short as possible.
+    method average between 1 - 3 line/s of code
+    (maximum of 20 lines of code)
+    
+
+attributes / variable declaration : declared inside the Method/s.
+ // public methodExample{
+ // 	private int age;	
+ //	...
+ //}
+ 
+Parameters / Arguments: Values passed to a method "(b1,1)" from outside example main()
+ //methodChange(jb, 1);
+ 
+method parameters / Arguments - is the parameters of the method.
+for readability reason use a few method parameter as possible.
+(between 1-5 parameters).
+
+example: method with 1 parameters.
+// drive (speed) {
+// }
+ 
+ 
+// package a_BasicEexample.packageClassMethod;
+//
+// public class Car {
+// 	public Car() {
+// 		drive(50);
+// 	}
+//
+// 	private void drive(int speed) {
+// 		System.out.println("speed is " + speed);
+// 	}
+//
+// 	public static void main(String[] args) {
+// 		Car c = new Car();
+// 	}
+// }
+
+// output //
+speed is 50
+ 
+ 
+ constructor - is special methods invoked when an object is created. 
+ constructor name must be same as its class name (with no "return" option) 
+ (Constructor is used to create a new Instance of the Class)
+ if constructors not exits it will be created by java automatically when object created. 
+ (all class has constructors)
+
+
+ Object - 
+ Object have states -and- behaviors
+ Example: Human have state (name, age) and behavior (running, sleeping, talking)
+ An object is an instance of a class.
+
+ 
+ Instance - (Instance of the class)
+ An instance is a unique copy of a Class that representing an Object. 
+ When a "new" instance of a class is created, the JVM will allocate a room of memory for that class instance.
+
+
+
+
+
+ 
+ 

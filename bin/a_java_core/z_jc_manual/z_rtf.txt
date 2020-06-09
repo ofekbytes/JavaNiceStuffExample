@@ -1,0 +1,85 @@
+rtf
+---
+
+***
+import static package
+example: < import static org.junit.Assets.* > 
+
+***
+web component
+oop
+mvc
+desing pattern
+clesign
+android
+ui (awt,swt, swing) java 2d
+jdbc, rmi, cobra
+java j2ee, jsp
+jav, war,
+script -> ant
+
+
+java arrayList - Ascending / Descending /....
+https://www.geeksforgeeks.org/how-to-sort-an-arraylist-in-ascending-order-in-java/
+
+// java 8
+https://www.tutorialspoint.com/java/index.htm
+
+// design pattern
+https://www.tutorialspoint.com/design_pattern/index.htm
+
+//log4j
+https://www.tutorialspoint.com/log4j/index.htm
+
+//**main java 8
+https://docs.oracle.com/javase/8/
+
+//*api
+https://docs.oracle.com/javase/8/docs/api/index.html
+http://docs.oracle.com/javase/8/javafx/api/toc.htm
+
+
+//* time api
+https://www.tutorialspoint.com/java8/java8_datetime_api.htm
+https://www.tutorialspoint.com/java8/index.htm
+
+//* api - math
+https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+
+//*doc
+https://docs.oracle.com/javase/8/docs/index.html
+https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
+
+//** tutorial
+http://docs.oracle.com/javase/tutorial/
+https://docs.oracle.com/javase/tutorial/
+
+
+//*Lesson: Numbers and Strings 
+https://docs.oracle.com/javase/tutorial/java/data/index.html
+
+
+//java tutorialspoint//
+https://www.tutorialspoint.com/java/index.htm
+https://www.tutorialspoint.com/java/java_variable_types.htm
+
+
+//design pattern
+https://www.tutorialspoint.com/design_pattern/index.htm
+
+//design_patterns
+https://sourcemaking.com/design_patterns
+
+
+//design_patterns - youtube
+https://www.youtube.com/watch?v=NU_1StN5Tkk
+
+
+https://refactoring.guru/refactoring
+
+https://medium.com/educative/the-7-most-important-software-design-patterns-d60e546afb0e
+
+https://www.oreilly.com/ideas/5-reasons-to-finally-learn-design-patterns
+
+/the end/
+

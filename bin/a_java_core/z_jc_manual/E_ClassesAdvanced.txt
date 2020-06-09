@@ -1,0 +1,528 @@
+
+
+----------------
+Classes Advanced
+----------------
+
+
+- OOP - Object-Oriented-Programming - there are 4 core concept in oop:
+-- Encapsulation, 
+-- Inheritance, 
+-- Polymorphism, 
+
+
+
+- OOP ENCAPSULATION - encapsulate / keep data safe.
+ class hiding data (variable) from other class/user using the private to do the job (data hiding)
+ and use public "getter" and "setters" method to modified.
+
+- OOP INHERITANCE - inheritance is the process that enables one class to acquire the properties 
+ (method and variables) of another (more manageable hierarchical order).
+ 
+- OOP POLYMORPHISM - refers to the idea of "having many forms" -
+  occurs when there is a hierarchy of classes related to each other through "inheritance" (SubClass inheritance SuperClass)
+  -!- "inheritance" (a process by which one class inherits the members and methods of another class)
+
+
+- Overriding - Method Overriding (runtime PolyMorphism)  
+
+- Overloading - Method Overloading (Compile-time PolyMorphism)
+  method overloading - is a methods that have the same method name but different type of parameters.  
+
+- Abstraction / Abstract Classes / Method - 
+  abstract is a SuperClass, an empty template, without any default value/s 
+  (without implementation details).
+  
+- Interfaces - interface is an "abstract class" that contains only abstract methods.
+
+- casting -  class casting have two/2 types of casting: UpCasting, DownCasting.
+-- Class UpCasting - you can cast an (object) instance of subclass to its superclass.
+   example: cat is a subclass of Animal. (cat upCast Animal)
+-- Class DownCasting - Casting an object of SupperClass to its SubClass is called downcasting.
+   example:cat is a subclass of Animal. (Animal DownCast cat)
+  
+- Anonymous Classes- Java way to extend the existing classes.
+
+- Inner Classes - Java support nesting classes (class inside class).
+
+- Equal() method - compare two or more objects.
+
+- enum - enum is a collection of constants.
+
+- Java API - API (Application Program Interface) 
+
+-------------------------------------------------------------------------------------------
+
+
+
+ 
+ OOP ENCAPSULATION - encapsulate / keep data safe.
+ class hiding data (variable) from other class/user using the private to do the job (data hiding)
+ and use public "getter" and "setters" method to modified.
+ that way we can make data validation.
+ *oop encapsulation:
+ **control data is access -or- modified. 
+ **easy to change code. 
+ **change code on one part without effecting other parts 
+ 
+.
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced\
+A_oop_encapsulation.java]
+-------------------------------------------------------------------------------------------
+.
+ 
+ 
+ OOP INHERITANCE:
+ inheritance is the process that enables one class to acquire the properties 
+ (method and variables) of another (more manageable hierarchical order).
+ **subclass - The class inheriting the properties of another is the subclass (derived class -or- child class)
+ **superclass - the class whose properties are inherited is the superclass (base class -or- parent class)
+ to inherit from a class, use the "extends" keyword.
+
+[supper-class] <-- [subclass]
+
+ **subclass inherited from another class (superclass) variable and methods (non private)
+ 
+------------------------------------------------------------------------------------------- 
+/SupperClass
+class Animal 
+{
+	protected int age;
+	
+	public void walk()
+	{
+		System.out.println("Animal Walk All Day " + age);
+	}
+
+}
+
+
+//SubClass
+class Cat extends Animal 
+{
+	Cat() 
+	{
+		age = 4;
+	}
+}
+
+
+class AnimalMainClass 
+{
+	public static void main(String[] args) 
+	{
+		Cat c = new Cat();
+		c.age = 10;
+		c.walk(); //SuperClass method.
+	}
+}
+ -------------------------------------------------------------------------------------------
+ 
+ Inheritance -
+ when one class is Inherited from another class  (subClass from supperClass)
+ it inherits all of the superClass none private variable and method. 
+ 
+ 
+ 
+ -!- constructors are not "member methods" and so are not inherited by subclasses.
+ -!- the constructor of the superclass is called when the subclass is instantiated
+ -!- protected access modifier makes the members visible only to the subclasses.
+ 
+
+-------------------------------------------------------------------------------------------
+//SupperClass
+class classA 
+{
+	//constructor SupperClass is called
+	classA()
+	{
+		System.out.println("Class-A");
+	}
+}
+
+
+//SubClass
+class classB extends classA 
+{
+	//constructor SubClass is called
+	public classB() 
+	{
+		System.out.println("Class-B");
+	}
+	
+}
+
+
+//main
+public class C_SupperClassCall 
+{
+	public static void main(String[] args) 
+	{
+		classB cb = new classB();
+		//-!- call constructor of Class-A and Class-B
+	}
+}
+-------------------------------------------------------------------------------------------
+Class-A
+Class-B
+-------------------------------------------------------------------------------------------
+
+-!- you can access the superclass from the subclass using "super" keyword
+// super.intVariable
+
+
+
+OOP POLYMORPHISM -
+refers to the idea of "having many forms"
+occurs when there is a hierarchy of classes related to each other through "inheritance" (SubClass inheritance SuperClass)
+-!- "inheritance" (a process by which one class inherits the members and methods of another class)
+
+a call to member method will cause a different implementation to be executed, 
+depending on the type of the object invoking the method. 
+
+
+-------------------------------------------------------------------------------------------
+//SupperClass Animals
+class Animels
+{
+	public void makeSound()
+	{
+		System.out.println("Soundit");
+	}
+
+}
+
+
+//SubSlass - Cats
+class Cats extends Animels {
+	public void makeSound() {
+		System.out.println("Sound of mitzi");
+	}
+}
+
+
+//SubClass - Dog
+class Dogs extends Animels {
+	
+	public void makeSound() {
+		System.out.println("Sound of Rexi");
+	}
+}
+
+
+public class D_AnimalSoundsClass {
+
+	public static void main(String[] args) {
+		Cats c = new Cats();
+		Dogs d = new Dogs();
+		
+		c.makeSound();
+		d.makeSound();
+	}
+}
+-------------------------------------------------------------------------------------------
+Sound of mitzi
+Sound of Rexi
+-------------------------------------------------------------------------------------------
+
+-!- you can use SupperClass without knowing what inside of the SubClass 
+(useful in multiple SubClasses that extends the SupperClass.
+
+-!- SubClass can define a behavior thats specific to the subclass type.
+SubClass can implement a parent class method based on it requirement.
+this feature is know as "method overriding"
+
+
+
+Overriding - Method Overriding (runtime PolyMorphism)  
+SubClass can define a behavior thats specific to the subclass type.
+SubClass can implement a parent class method based on it requirement.
+this feature is know as "method overriding"
+
+-------------------------------------------------------------------------------------------
+//SupperClass Animals
+class Animels
+{
+	public void makeSound()
+	{
+		System.out.println("Soundit");
+	}
+
+}
+
+
+//SubSlass - Cats
+class Cats extends Animels {
+	public void makeSound() {
+		System.out.println("Sound of mitzi");
+	}
+}
+
+
+//SubClass - Dog
+class Dogs extends Animels {
+	
+	public void makeSound() {
+		System.out.println("Sound of Rexi");
+	}
+}
+
+
+public class D_AnimalSoundsClass {
+
+	public static void main(String[] args) {
+		Cats c = new Cats();
+		Dogs d = new Dogs();
+		
+		c.makeSound();
+		d.makeSound();
+	}
+}
+-------------------------------------------------------------------------------------------
+Sound of mitzi
+Sound of Rexi
+-------------------------------------------------------------------------------------------
+
+cats and dogs are overrides the MakeSound() Method of Animals.
+
+method overriding should have:
+1. the same argument/s and return type.
+2. The access level cannot be more restrictive then the overridden method/s access level.
+SupperClass method declared as public, the overriding method in the SubClass can be neither private nor protected)
+
+-!- Method Overriding (runtime PolyMorphism).
+
+
+
+Overloading - Method Overloading (Compile-time PolyMorphism)
+method overloading - is a methods that have the same method name but different type of parameters.  
+
+
+-------------------------------------------------------------------------------------------
+public class E_overridingMethod 
+{	
+	static double add (double num1, double num2) {
+		return num1 + num2;
+	}
+
+	static int add (int num1, int num2) {
+		return num1 + num2;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(add(22,33));  //===55
+		System.out.println(add(22.3,33.2)); //===55.5
+	}
+}
+-------------------------------------------------------------------------------------------
+55
+55.5
+-------------------------------------------------------------------------------------------
+
+
+
+Abstraction / Abstract Classes / Method - 
+- abstract is a SuperClass, an empty template, without any default value/s (without implementation details).
+- abstract is a SuperClass that cannot be instantiated directly (cannot create an object of that type..."abstract")   
+  and need to be extends (inherit it) by SubClass to assign value to them.
+- abstract method is a method that is declared without an implementation (without braces {} and follow by semicolon)
+- abstract can be public -or- protected.
+
+-!- class can inherit from One/1 SuperClass
+
+
+abstract class Car {
+	int wheel; //variable/attributes
+	abstract void beep(); //method
+}
+
+.
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced\
+F_AbstractClass.java]
+-------------------------------------------------------------------------------------------
+.
+
+
+
+Interfaces - 
+interface is an "abstract class" that contains only abstract methods.
+interface define:
+- interface defined with "interface" keyword.
+- interface cannot contain "constructor" because "interface" cannot be instantiated directly (cannot create an "object" of that type..."interface")
+  and need to be extends (inherit it) by SuperClass -or- SubClass to assign value to them.
+- interface can extends other interface/s.
+- a class can implement any number of interfaces.
+- interface is an abstract. (no need to declare "abstract interface")
+- each "method" in a "interface" is also "abstract" (no need to declare "abstract method()"
+  and method are public by default.
+
+-!- interface contain only "static final" variable. (constant variable)
+-!- class can inherit from One/1 SuperClass, and can implement many "interface".
+-!- when implement an interface, override all of the interface method.
+
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.Abstract_Interface\
+G_InterfaceOne.java
+G_InterfaceAndAbsract.java
+G_InterfaceMainCall.java
+-------------------------------------------------------------------------------------------
+
+
+
+Casting - Type Casting -
+Casting - A way to assign value of one type in variable of another type.
+Casting - cast one primitive type variable to another primitive type variable: (int)  (byte)  (short)  (long)  (double): 
+
+-------------------------------------------------------------------------------------------
+a_BasicEexample.C_javaBasicVariableStringObject.java 
+CastingNumbers()
+-------------------------------------------------------------------------------------------
+
+
+
+DownCasting - Type Casting - Classes.
+class casting have two/2 types of casting: UpCasting, DownCasting.
+
+
+
+Class UpCasting
+you can cast an (object) instance of subclass to its superclass.
+cat is a subclass of Animal.
+
+----------------------
+Animal a = new Cat();
+----------------------
+upcast the cat type variable to the animal type
+
+
+
+Class DownCasting  
+Casting an object of SupperClass to its SubClass is called downcasting.
+
+------------------------
+Animal a = new Animal()
+((Cat)a).makeSound()
+------------------------
+This will try to cast the variable a to the Cat type
+and call its makeSound() method
+
+
+-!- upcasting automatic , because upcasting can never fail.
+
+-------------------------------------------------------------------------------------------
+UpCasting & DownCasting Example in package
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.castingExample\
+Animal.java
+AnimalMainClass.java
+Cat.java
+Dog.java
+-------------------------------------------------------------------------------------------
+
+
+
+Anonymous Classes - 
+Anonymous Classes is a way to extend the existing classes.
+if we have a class named "Animal" with a method/function "walk()" to be 
+extended and override a method in another Class.
+example: walk() method
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.AnonymousClasses\
+Animal.java
+AnonymousClassesMain
+-------------------------------------------------------------------------------------------
+
+-!- "@verride"  - write "@verride" to make things more clear in the code. 
+(it can help other user/s  to understand the code)
+
+-!- the "@verride" is apply to the current object.
+we can create another object of that Class (original Class) "walk()" method. 
+
+
+
+Inner Classes - 
+Java support nesting classes (class inside class).
+a class can be a member of another class.
+To Creating an inner class, write a class within a class.
+inner class can be private.
+when inner class is private it cannot be accessed from an object outside the class.
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.InnerClasses\
+Animal.java
+AnonymousClassesMain
+-------------------------------------------------------------------------------------------
+
+  
+
+Equal() method -
+when we create object, the variables store references to the objects.
+when we compare object using the equality testing operator "==",
+it compares the references and not the object value.
+
+-------------------------------------------------------------------------------------------
+.\e_ClassAdvanced.EqualMethod\
+Animal.java
+EqualMethodMain
+-------------------------------------------------------------------------------------------
+
+-!-  when we match Two/2 Objects with the same name, the result will be false.
+because we have Two/2 different objects / references / memory locations. 
+
+
+
+enum - 
+enum is a collection of constants.
+collection separated with separated comma "," .
+
+-------------------------------------------------------------------------------------------
+public enum CardDecks { ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE }
+-------------------------------------------------------------------------------------------
+.
+.
+-------------------------------------------------------------------------------------------
+\e_ClassAdvanced.EnumsConstants\ 
+CardDecks.java 
+EnumsConstantsMain.java
+-------------------------------------------------------------------------------------------
+.
+.
+-!- enum define variables that represent fixed member.
+
+-!- using emum when a variable can only take one out of a small set of possible values.
+
+-!- compile time longer , avoiding errors.
+ 
+-!- use enum for: day of week, week numbers, month, names, deck of cards.
+
+
+**** TODO: fix card game using enum ****
+
+
+
+
+Java API - (Application Program Interface)
+The Java API is a collection of "packages", with a "classes" and "interfaces" that have been written for use.
+using package with import "keyword".
+
+-------------------------------------------------------------------------------------------
+import javax.swing.*;
+import java.awt.*;
+-------------------------------------------------------------------------------------------
+.
+.
+-------------------------------------------------------------------------------------------
+Oracle Api List 
+http://docs.oracle.com/javase/8/docs/api/
+-------------------------------------------------------------------------------------------
+.
+.
+    
+    
+    
+    
+ 
