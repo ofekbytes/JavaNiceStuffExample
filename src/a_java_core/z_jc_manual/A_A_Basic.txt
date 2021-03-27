@@ -186,7 +186,7 @@
 
 .
 .
-7. Java Math Operators
+7. Java Math Primitive Operators
 
 - Java provides a rich set of operators to use in manipulating variables. 
   A value used on either side of an operator is called an operand.

@@ -49,7 +49,7 @@ Double (64 bit / 8 byte) <bit decimal> == 4.9E-324 <--> 1.7976931348623157E308
 
 
 
-variables Reserved words: (cannot be used as variable 
+variables Reserved words: (don't use it as variable name) 
 abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
 boolean, do, if, private, this, break, double, implements, protected, throw,
 byte, else, import,	public,	throws, case, enum, instanceof, return, transient
