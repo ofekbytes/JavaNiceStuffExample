@@ -32,10 +32,11 @@ java math Primitive Operators
    < % >  modulo
 
 
-Increment / decrement  Operators
-
+    Increment / decrement  Operators
 
 Prefix & Postfix
+
+Assignment Operators
 
 
 String Concatenation
