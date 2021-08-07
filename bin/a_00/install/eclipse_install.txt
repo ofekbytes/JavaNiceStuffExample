@@ -3,6 +3,11 @@
 windowbuilder - lastgoodbuild
 https://download.eclipse.org/windowbuilder/lastgoodbuild/
 
+windowbuilder 1.9.7
+https://www.eclipse.org/downloads/download.php?file=/windowbuilder/1.9.7/repository.zip
+
+windowbuilder 1.9.6
+https://www.eclipse.org/downloads/download.php?file=/windowbuilder/1.9.6/repository.zip
 
 
 .
@@ -25,9 +30,9 @@ http://download.eclipse.org/windowbuilder/WB/integration/4.5/
 SWT 4.4
 http://download.eclipse.org/windowbuilder/WB/integration/4.4/
 
-.
-.
 
+.
+.
 Spring Tool Suite
 
 If you want to install STS in an existing Eclipse installation, 
