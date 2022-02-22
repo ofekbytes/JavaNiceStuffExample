@@ -296,6 +296,52 @@ speed is 50
 
 
 
+//class
+public class Car { 
 
+   //constructor
+   public Car() {
+      drive(50);
+   }
+
+   //method
+ 	private void drive(int speed) {
+		System.out.println("speed is " + speed);
+ 	}
+
+   //main-method
+ 	public static void main(String[] args) {
+ 		Car c = new Car();
+ 	}
+
+}
+
+
+constructor - 
+constructor is a special method.
+the constructor is called when we call the class and will create an object each time we call this method.
+-!- when construct exists we cannot call this method anymore.
+
+//class
+public class Car { 
+   //constructor
+   public Car() {
+      drive(50);
+   }
+}
  
+object - create new object (in memory) - new Car() object.
+new Car();
+
+variable - variable declaration - new variable declaration type (object) Car 
+Car myCar;
+
+object allocation - allocate the object to the variable.
+Car varCar = new Car();
+
+// [ Car varCar ]  ---> variable declaration 
+// [ new Car(); ]  ---> object creation
+//          [ = ]  ---> object allocation
+Car varCar = new Car();
+
  
