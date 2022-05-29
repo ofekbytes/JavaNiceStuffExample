@@ -77,7 +77,7 @@ public class D_javaBasicUserInput {
 			h++;
 		}
 		
-
+		userInput.close();
 	}
 
 }
